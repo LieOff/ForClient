@@ -1,0 +1,1156 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupCommandAndTumbler" id="149">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group command and tumbler</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Group command and tumbler</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group command and tumbler</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Group command and tumbler</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupCommandAndTumblerExtendedTooltip" id="150"/>
+			<ChildItems>
+				<CommandBar name="GroupCommand" id="151">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group command</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group command</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group command</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group command</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupCommandExtendedTooltip" id="152"/>
+					<ChildItems>
+						<Button name="WriteChanges" id="62">
+							<Type>CommandBarButton</Type>
+							<DefaultButton>true</DefaultButton>
+							<CommandName>Form.Command.WriteChanges</CommandName>
+							<ExtendedTooltip name="WriteChangesExtendedTooltip" id="63"/>
+						</Button>
+						<Button name="Create" id="153">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.Create</CommandName>
+							<ExtendedTooltip name="CreateExtendedTooltip" id="154"/>
+						</Button>
+						<Button name="SetDeletionMark" id="157">
+							<Type>CommandBarButton</Type>
+							<Representation>Picture</Representation>
+							<OnlyInAllActions>true</OnlyInAllActions>
+							<CommandName>Form.StandardCommand.SetDeletionMark</CommandName>
+							<ExtendedTooltip name="SetDeletionMarkExtendedTooltip" id="158"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+				<LabelDecoration name="Decoration1" id="159">
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="Decoration1ContextMenu" id="160"/>
+					<ExtendedTooltip name="Decoration1ExtendedTooltip" id="161"/>
+				</LabelDecoration>
+				<RadioButtonField name="CurrentPageIndex" id="146">
+					<DataPath>CurrentPageIndex</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<RadioButtonType>Tumbler</RadioButtonType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Rights to objects</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Права на объекты</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>cz</v8:lang>
+										<v8:content>Oprávnění nad objekty</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">0</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Additional rights</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Дополнительные права</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>cz</v8:lang>
+										<v8:content>Dodatečná oprávnění</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">1</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Rights to mobile app</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Права в мобильном приложении</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>cz</v8:lang>
+										<v8:content>Oprávnění nad mob. aplikací</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">2</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="CurrentPageIndexContextMenu" id="147"/>
+					<ExtendedTooltip name="CurrentPageIndexExtendedTooltip" id="148"/>
+					<Events>
+						<Event name="OnChange">CurrentPageIndexOnChange</Event>
+					</Events>
+				</RadioButtonField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="RolesOfUsersSettingsComposerUserSettings" id="155">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Roles of users settings composer user settings</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Roles of users settings composer user settings</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Roles of users settings composer user settings</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Roles of users settings composer user settings</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="RolesOfUsersSettingsComposerUserSettingsExtendedTooltip" id="156"/>
+		</UsualGroup>
+		<UsualGroup name="GroupFormTables" id="68">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group form tables</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Group form tables</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group form tables</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Group form tables</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupFormTablesExtendedTooltip" id="69"/>
+			<ChildItems>
+				<Table name="RolesOfUsers" id="1">
+					<CommandBarLocation>None</CommandBarLocation>
+					<Width>30</Width>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>RolesOfUsers</DataPath>
+					<RowPictureDataPath>RolesOfUsers.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<UserSettingsGroup>RolesOfUsersSettingsComposerUserSettings</UserSettingsGroup>
+					<ContextMenu name="RolesOfUsersContextMenu" id="2"/>
+					<AutoCommandBar name="RolesOfUsersCommandBar" id="3"/>
+					<ExtendedTooltip name="RolesOfUsersExtendedTooltip" id="4"/>
+					<SearchStringAddition name="RolesOfUsersSearchString" id="5">
+						<AdditionSource>
+							<Item>RolesOfUsers</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="RolesOfUsersSearchStringContextMenu" id="8"/>
+						<ExtendedTooltip name="RolesOfUsersSearchStringExtendedTooltip" id="9"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="RolesOfUsersViewStatus" id="10">
+						<AdditionSource>
+							<Item>RolesOfUsers</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="RolesOfUsersViewStatusContextMenu" id="13"/>
+						<ExtendedTooltip name="RolesOfUsersViewStatusExtendedTooltip" id="14"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="RolesOfUsersSearchControl" id="15">
+						<AdditionSource>
+							<Item>RolesOfUsers</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="RolesOfUsersSearchControlContextMenu" id="18"/>
+						<ExtendedTooltip name="RolesOfUsersSearchControlExtendedTooltip" id="19"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnActivateRow">RolesOfUsersOnActivateRow</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="Ref" id="59">
+							<DataPath>RolesOfUsers.Ref</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Role of users</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Роль пользователей</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Role uživatelů</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="RefContextMenu" id="60"/>
+							<ExtendedTooltip name="RefExtendedTooltip" id="61"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<Pages name="GroupRightsPages" id="82">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group rights pages</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group rights pages</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group rights pages</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group rights pages</v8:content>
+						</v8:item>
+					</ToolTip>
+					<PagesRepresentation>None</PagesRepresentation>
+					<ExtendedTooltip name="GroupRightsPagesExtendedTooltip" id="83"/>
+					<ChildItems>
+						<Page name="GroupRightsToSystemObjects" id="84">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Rights to objects</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Права на объекты</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Oprávnění nad objekty</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group rights to system objects</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Group rights to system objects</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="GroupRightsToSystemObjectsExtendedTooltip" id="85"/>
+							<ChildItems>
+								<Table name="AccessRightsToSystemObjects" id="32">
+									<Representation>Tree</Representation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<SelectionMode>SingleRow</SelectionMode>
+									<RowSelectionMode>Row</RowSelectionMode>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<InitialListView>Beginning</InitialListView>
+									<DataPath>AccessRightsToSystemObjects</DataPath>
+									<RowPictureDataPath>AccessRightsToSystemObjects.Picture</RowPictureDataPath>
+									<RowsPicture>
+										<xr:Ref>CommonPicture.CatalogHierarchy</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</RowsPicture>
+									<ContextMenu name="AccessRightsToSystemObjectsContextMenu" id="33"/>
+									<AutoCommandBar name="AccessRightsToSystemObjectsCommandBar" id="34"/>
+									<ExtendedTooltip name="AccessRightsToSystemObjectsExtendedTooltip" id="35"/>
+									<SearchStringAddition name="AccessRightsToSystemObjectsSearchString" id="36">
+										<AdditionSource>
+											<Item>AccessRightsToSystemObjects</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="AccessRightsToSystemObjectsSearchStringContextMenu" id="39"/>
+										<ExtendedTooltip name="AccessRightsToSystemObjectsSearchStringExtendedTooltip" id="40"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="AccessRightsToSystemObjectsViewStatus" id="41">
+										<AdditionSource>
+											<Item>AccessRightsToSystemObjects</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="AccessRightsToSystemObjectsViewStatusContextMenu" id="44"/>
+										<ExtendedTooltip name="AccessRightsToSystemObjectsViewStatusExtendedTooltip" id="45"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="AccessRightsToSystemObjectsSearchControl" id="46">
+										<AdditionSource>
+											<Item>AccessRightsToSystemObjects</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="AccessRightsToSystemObjectsSearchControlContextMenu" id="49"/>
+										<ExtendedTooltip name="AccessRightsToSystemObjectsSearchControlExtendedTooltip" id="50"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="AccessRightsToSystemObjectsSystemObjectName" id="70">
+											<DataPath>AccessRightsToSystemObjects.SystemObjectName</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="AccessRightsToSystemObjectsSystemObjectNameContextMenu" id="71"/>
+											<ExtendedTooltip name="AccessRightsToSystemObjectsSystemObjectNameExtendedTooltip" id="72"/>
+										</InputField>
+										<CheckBoxField name="AccessRightsToSystemObjectsRead" id="73">
+											<DataPath>AccessRightsToSystemObjects.Read</DataPath>
+											<ThreeState>true</ThreeState>
+											<ContextMenu name="AccessRightsToSystemObjectsReadContextMenu" id="74"/>
+											<ExtendedTooltip name="AccessRightsToSystemObjectsReadExtendedTooltip" id="75"/>
+											<Events>
+												<Event name="OnChange">AccessRightsToSystemObjectsReadOnChange</Event>
+											</Events>
+										</CheckBoxField>
+										<CheckBoxField name="AccessRightsToSystemObjectsEdit" id="76">
+											<DataPath>AccessRightsToSystemObjects.Edit</DataPath>
+											<ThreeState>true</ThreeState>
+											<ContextMenu name="AccessRightsToSystemObjectsEditContextMenu" id="77"/>
+											<ExtendedTooltip name="AccessRightsToSystemObjectsEditExtendedTooltip" id="78"/>
+											<Events>
+												<Event name="OnChange">AccessRightsToSystemObjectsEditOnChange</Event>
+											</Events>
+										</CheckBoxField>
+										<CheckBoxField name="AccessRightsToSystemObjectsMarkForDeletion" id="79">
+											<DataPath>AccessRightsToSystemObjects.MarkForDeletion</DataPath>
+											<ThreeState>true</ThreeState>
+											<ContextMenu name="AccessRightsToSystemObjectsMarkForDeletionContextMenu" id="80"/>
+											<ExtendedTooltip name="AccessRightsToSystemObjectsMarkForDeletionExtendedTooltip" id="81"/>
+											<Events>
+												<Event name="OnChange">AccessRightsToSystemObjectsMarkForDeletionOnChange</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="GroupAdditionalRights" id="86">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Additional rights</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительные права</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Dodatečná oprávnění</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group additional rights</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Group additional rights</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="GroupAdditionalRightsExtendedTooltip" id="87"/>
+							<ChildItems>
+								<Table name="AdditionalAccessRights" id="88">
+									<Representation>List</Representation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>AdditionalAccessRights</DataPath>
+									<CommandSet>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>SortListAsc</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>CancelSearch</ExcludedCommand>
+										<ExcludedCommand>OutputList</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>SortListDesc</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Find</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="AdditionalAccessRightsContextMenu" id="89"/>
+									<AutoCommandBar name="AdditionalAccessRightsCommandBar" id="90"/>
+									<ExtendedTooltip name="AdditionalAccessRightsExtendedTooltip" id="91"/>
+									<SearchStringAddition name="AdditionalAccessRightsSearchString" id="92">
+										<AdditionSource>
+											<Item>AdditionalAccessRights</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="AdditionalAccessRightsSearchStringContextMenu" id="95"/>
+										<ExtendedTooltip name="AdditionalAccessRightsSearchStringExtendedTooltip" id="96"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="AdditionalAccessRightsViewStatus" id="97">
+										<AdditionSource>
+											<Item>AdditionalAccessRights</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="AdditionalAccessRightsViewStatusContextMenu" id="100"/>
+										<ExtendedTooltip name="AdditionalAccessRightsViewStatusExtendedTooltip" id="101"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="AdditionalAccessRightsSearchControl" id="102">
+										<AdditionSource>
+											<Item>AdditionalAccessRights</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="AdditionalAccessRightsSearchControlContextMenu" id="105"/>
+										<ExtendedTooltip name="AdditionalAccessRightsSearchControlExtendedTooltip" id="106"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="AdditionalAccessRightsAccessRight" id="107">
+											<DataPath>AdditionalAccessRights.AccessRight</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="AdditionalAccessRightsAccessRightContextMenu" id="108"/>
+											<ExtendedTooltip name="AdditionalAccessRightsAccessRightExtendedTooltip" id="109"/>
+										</InputField>
+										<InputField name="AdditionalAccessRightsAccessRightName" id="110">
+											<DataPath>AdditionalAccessRights.AccessRightName</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="AdditionalAccessRightsAccessRightNameContextMenu" id="111"/>
+											<ExtendedTooltip name="AdditionalAccessRightsAccessRightNameExtendedTooltip" id="112"/>
+										</InputField>
+										<CheckBoxField name="AdditionalAccessRightsUse" id="113">
+											<DataPath>AdditionalAccessRights.Use</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="AdditionalAccessRightsUseContextMenu" id="114"/>
+											<ExtendedTooltip name="AdditionalAccessRightsUseExtendedTooltip" id="115"/>
+											<Events>
+												<Event name="OnChange">AdditionalRightsUseOnChange</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="GroupMobileAppRights" id="116">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Rights to mobile app</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Права в мобильном приложении</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Oprávnění nad mob. aplikací</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group mobile app rights</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Group mobile app rights</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="GroupMobileAppRightsExtendedTooltip" id="117"/>
+							<ChildItems>
+								<Table name="MobileAppAccessRights" id="118">
+									<Representation>List</Representation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>MobileAppAccessRights</DataPath>
+									<CommandSet>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>SortListAsc</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>CancelSearch</ExcludedCommand>
+										<ExcludedCommand>OutputList</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>SortListDesc</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Find</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="MobileAppAccessRightsContextMenu" id="119"/>
+									<AutoCommandBar name="MobileAppAccessRightsCommandBar" id="120"/>
+									<ExtendedTooltip name="MobileAppAccessRightsExtendedTooltip" id="121"/>
+									<SearchStringAddition name="MobileAppAccessRightsSearchString" id="122">
+										<AdditionSource>
+											<Item>MobileAppAccessRights</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="MobileAppAccessRightsSearchStringContextMenu" id="125"/>
+										<ExtendedTooltip name="MobileAppAccessRightsSearchStringExtendedTooltip" id="126"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="MobileAppAccessRightsViewStatus" id="127">
+										<AdditionSource>
+											<Item>MobileAppAccessRights</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="MobileAppAccessRightsViewStatusContextMenu" id="130"/>
+										<ExtendedTooltip name="MobileAppAccessRightsViewStatusExtendedTooltip" id="131"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="MobileAppAccessRightsSearchControl" id="132">
+										<AdditionSource>
+											<Item>MobileAppAccessRights</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="MobileAppAccessRightsSearchControlContextMenu" id="135"/>
+										<ExtendedTooltip name="MobileAppAccessRightsSearchControlExtendedTooltip" id="136"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="MobileAppAccessRightsAccessRight" id="137">
+											<DataPath>MobileAppAccessRights.AccessRight</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="MobileAppAccessRightsAccessRightContextMenu" id="138"/>
+											<ExtendedTooltip name="MobileAppAccessRightsAccessRightExtendedTooltip" id="139"/>
+										</InputField>
+										<InputField name="MobileAppAccessRightsAccessRightName" id="140">
+											<DataPath>MobileAppAccessRights.AccessRightName</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="MobileAppAccessRightsAccessRightNameContextMenu" id="141"/>
+											<ExtendedTooltip name="MobileAppAccessRightsAccessRightNameExtendedTooltip" id="142"/>
+										</InputField>
+										<CheckBoxField name="MobileAppAccessRightsUse" id="143">
+											<DataPath>MobileAppAccessRights.Use</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="MobileAppAccessRightsUseContextMenu" id="144"/>
+											<ExtendedTooltip name="MobileAppAccessRightsUseExtendedTooltip" id="145"/>
+											<Events>
+												<Event name="OnChange">MobileAppAccessRightsUseOnChange</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="RolesOfUsers" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Roles of users</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Роли пользователей</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Role uživatelů</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.RolesOfUsers</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="AccessRightsToSystemObjects" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Access rights to system objects</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Права на объекты системы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Oprávnění nad systémovými objekty</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="Read" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Read</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Просмотр</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Read</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="SystemObject" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>System object</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект системы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Systйmovэ objekt</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.SystemObjects</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Picture" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Picture</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Picture</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="SystemObjectName" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Object</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Objekt</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Edit" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Edit</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Редактирование</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Upravit</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>0</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="MarkForDeletion" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Mark for deletion</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка на удаление</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Mark for deletion</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>0</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ItsSection" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Its section</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Its section</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ItsReport" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Its report</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Its report</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="AdditionalAccessRights" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Additional access rights</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные права</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Dodatečná oprávnění</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="AccessRight" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Access right</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Право</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Oprávnění </v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.AdditionalAccessRights</v8:Type>
+					</Type>
+				</Column>
+				<Column name="AccessRightName" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Right</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Право</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Oprávnění</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Use" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Use</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Použit</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="MobileAppAccessRights" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Mobile app access rights</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Права доступа в мобильном приложении</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Mobile app access rights</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="AccessRight" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Access right</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Право</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Oprávnění </v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.MobileAppAccessRights</v8:Type>
+					</Type>
+				</Column>
+				<Column name="AccessRightName" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Right</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Право</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Oprávnění</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Use" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Use</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Použit</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="CurrentPageIndex" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Current page index</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Index aktuбlnн strбnky</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>AccessRightsToSystemObjectsSystemObjectName</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>AccessRightsToSystemObjectsRead</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>AccessRightsToSystemObjectsEdit</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>AccessRightsToSystemObjectsMarkForDeletion</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">AccessRightsToSystemObjects.ItsSection</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>BackColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:AliceBlue</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>TextColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>AccessRightsToSystemObjectsEdit</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>AccessRightsToSystemObjectsMarkForDeletion</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">AccessRightsToSystemObjects.ItsReport</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>BackColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:AliceBlue</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Visible</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ReadOnly</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Show</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="WriteChanges" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Write changes</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать изменения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Uložit změny</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Write changes</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать изменения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Uložit změny</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>WriteChanges</Action>
+		</Command>
+	</Commands>
+</Form>

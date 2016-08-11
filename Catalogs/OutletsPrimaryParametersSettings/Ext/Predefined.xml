@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.1">
+	<Item id="f130f7d7-e735-4e8f-8ab7-cc562f38059f">
+		<Name>Address</Name>
+		<Code>000000002</Code>
+		<Description>en = 'Address'; ru = 'Адрес'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6c694ffb-fa65-4f0b-9147-8254e40f4ff8">
+		<Name>Class</Name>
+		<Code>000000005</Code>
+		<Description>en = 'Class'; ru = 'Класс'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4d34add7-f750-4065-977c-5868c021df2c">
+		<Name>Coordinates</Name>
+		<Code>000000003</Code>
+		<Description>en = 'Coordinates'; ru = 'Координаты'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="16ce7ba2-8ea6-4e62-b627-c36162691af8">
+		<Name>Description</Name>
+		<Code>000000001</Code>
+		<Description>en = 'Description'; ru = 'Наименование'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3ad19132-b854-4472-9200-433bcd4bab37">
+		<Name>Distributor</Name>
+		<Code>000000006</Code>
+		<Description>en = 'Partner'; ru = 'Партнер'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bd226959-a002-4fa0-b7f0-8158ebe66501">
+		<Name>Snapshots</Name>
+		<Code>000000008</Code>
+		<Description>en = 'Snapshots'; ru = 'Фотографии'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5f82b839-f1b8-423b-951a-f3067de32697">
+		<Name>Status</Name>
+		<Code>000000007</Code>
+		<Description>en = 'Status'; ru = 'Статус'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bb118895-1c2d-4d1f-898d-24690bd2f65d">
+		<Name>Type</Name>
+		<Code>000000004</Code>
+		<Description>en = 'Type'; ru = 'Тип'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

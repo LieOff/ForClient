@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupNumberDate" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group number date</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Group number date</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group number date</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Group number date</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupNumberDateExtendedTooltip" id="32"/>
+			<ChildItems>
+				<InputField name="Number" id="1">
+					<DataPath>Object.Number</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="NumberContextMenu" id="2"/>
+					<ExtendedTooltip name="NumberРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<InputField name="Date" id="3">
+					<DataPath>Object.Date</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Date</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Datum</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="DateContextMenu" id="4"/>
+					<ExtendedTooltip name="DateРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<CheckBoxField name="Status" id="68">
+					<DataPath>Object.Status</DataPath>
+					<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="StatusContextMenu" id="69"/>
+					<ExtendedTooltip name="StatusExtendedTooltip" id="70"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="PlanSet" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Plan set</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Plan set</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="PlanSetExtendedTooltip" id="36"/>
+			<ChildItems>
+				<InputField name="StartPlanDate" id="41">
+					<DataPath>Object.StartPlanDate</DataPath>
+					<ContextMenu name="StartPlanDateContextMenu" id="42"/>
+					<ExtendedTooltip name="StartPlanDateExtendedTooltip" id="43"/>
+				</InputField>
+				<InputField name="EndPlanDate" id="44">
+					<DataPath>Object.EndPlanDate</DataPath>
+					<ContextMenu name="EndPlanDateContextMenu" id="45"/>
+					<ExtendedTooltip name="EndPlanDateExtendedTooltip" id="46"/>
+				</InputField>
+				<InputField name="Outlet" id="47">
+					<DataPath>Object.Outlet</DataPath>
+					<ContextMenu name="OutletContextMenu" id="48"/>
+					<ExtendedTooltip name="OutletExtendedTooltip" id="49"/>
+					<Events>
+						<Event name="StartChoice">OutletStartChoice</Event>
+						<Event name="ChoiceProcessing">OutletChoiceProcessing</Event>
+					</Events>
+				</InputField>
+				<InputField name="TextTask" id="53">
+					<DataPath>Object.TextTask</DataPath>
+					<TitleLocation>Left</TitleLocation>
+					<Height>3</Height>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="TextTaskContextMenu" id="54"/>
+					<ExtendedTooltip name="TextTaskExtendedTooltip" id="55"/>
+				</InputField>
+				<InputField name="PlanExecutor" id="50">
+					<DataPath>Object.PlanExecutor</DataPath>
+					<ChoiceParameters>
+						<app:item name="Filter.Role">
+							<app:value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:string">SR</Value>
+							</app:value>
+						</app:item>
+					</ChoiceParameters>
+					<ContextMenu name="PlanExecutorContextMenu" id="51"/>
+					<ExtendedTooltip name="PlanExecutorExtendedTooltip" id="52"/>
+					<Events>
+						<Event name="StartChoice">PlanExecutorStartChoice</Event>
+						<Event name="ChoiceProcessing">PlanExecutorChoiceProcessing</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="CreatedAtMA" id="71">
+					<DataPath>Object.CreatedAtMA</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="CreatedAtMAContextMenu" id="72"/>
+					<ExtendedTooltip name="CreatedAtMAExtendedTooltip" id="73"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="FactSet" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Fact set</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Fact set</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="FactSetExtendedTooltip" id="38"/>
+			<ChildItems>
+				<InputField name="ExecutionDate" id="62">
+					<DataPath>Object.ExecutionDate</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ExecutionDateContextMenu" id="63"/>
+					<ExtendedTooltip name="ExecutionDateExtendedTooltip" id="64"/>
+				</InputField>
+				<InputField name="Result" id="59">
+					<DataPath>Object.Result</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>Left</TitleLocation>
+					<Height>3</Height>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="ResultContextMenu" id="60"/>
+					<ExtendedTooltip name="ResultExtendedTooltip" id="61"/>
+				</InputField>
+				<InputField name="FactExecutor" id="56">
+					<DataPath>Object.FactExecutor</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="FactExecutorContextMenu" id="57"/>
+					<ExtendedTooltip name="FactExecutorExtendedTooltip" id="58"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Optional" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Optional</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Optional</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="OptionalExtendedTooltip" id="40"/>
+			<ChildItems>
+				<InputField name="Responsible" id="65">
+					<DataPath>Object.Responsible</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ResponsibleContextMenu" id="66"/>
+					<ExtendedTooltip name="ResponsibleExtendedTooltip" id="67"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Task</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

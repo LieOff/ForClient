@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<CommandsVisibility>
+		<Command name="InformationRegister.bitmobile_АдресаЭлПочтыДляОтчетов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.User">false</xr:Value>
+				<xr:Value name="e8da9fdb-dc42-437e-8248-690be49dbdf7">false</xr:Value>
+				<xr:Value name="453b0486-4ce4-4cf2-89c7-cea6c92dea3c">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.bitmobile_ИзмененныеДанные.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.User">false</xr:Value>
+				<xr:Value name="e8da9fdb-dc42-437e-8248-690be49dbdf7">false</xr:Value>
+				<xr:Value name="453b0486-4ce4-4cf2-89c7-cea6c92dea3c">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.bitmobile_ОбъектыСОшибками.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="e8da9fdb-dc42-437e-8248-690be49dbdf7">false</xr:Value>
+				<xr:Value name="453b0486-4ce4-4cf2-89c7-cea6c92dea3c">false</xr:Value>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+</CommandInterface>

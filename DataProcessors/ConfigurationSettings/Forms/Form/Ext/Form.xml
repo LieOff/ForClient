@@ -1,0 +1,740 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Button name="SaveSettings" id="31">
+			<Type>UsualButton</Type>
+			<DefaultItem>true</DefaultItem>
+			<CommandName>Form.Command.SaveSettings</CommandName>
+			<ExtendedTooltip name="SaveSettingsExtendedTooltip" id="32"/>
+		</Button>
+		<LabelDecoration name="Decoration3" id="33">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Settings for configuration</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки для конфигурации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Settings for configuration</v8:content>
+				</v8:item>
+			</Title>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+			</Border>
+			<ContextMenu name="Decoration3ContextMenu" id="34"/>
+			<ExtendedTooltip name="Decoration3ExtendedTooltip" id="35"/>
+		</LabelDecoration>
+		<InputField name="SizeOfThumbnailPhotos" id="42">
+			<DataPath>SizeOfThumbnailPhotos</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>0 - Disabled</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>0 - Отключено</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>0 - Vypnuto</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+			<ContextMenu name="SizeOfThumbnailPhotosContextMenu" id="43"/>
+			<ExtendedTooltip name="SizeOfThumbnailPhotosExtendedTooltip" id="44"/>
+		</InputField>
+		<LabelDecoration name="Decoration1" id="1">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Settings for configuration and mobile apps</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки для конфигурации и мобильных приложений</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Settings for configuration and mobile apps</v8:content>
+				</v8:item>
+			</Title>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+			</Border>
+			<ContextMenu name="Decoration1ContextMenu" id="2"/>
+			<ExtendedTooltip name="Decoration1ExtendedTooltip" id="3"/>
+		</LabelDecoration>
+		<CheckBoxField name="SKUFeaturesRegistration" id="36">
+			<DataPath>SKUFeaturesRegistration</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>SKU features enable</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать характеристики номенклатуры</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>SKU features enable</v8:content>
+				</v8:item>
+			</Title>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="SKUFeaturesRegistrationContextMenu" id="37"/>
+			<ExtendedTooltip name="SKUFeaturesRegistrationExtendedTooltip" id="38"/>
+		</CheckBoxField>
+		<CheckBoxField name="MultistockEnabled" id="7">
+			<DataPath>MultistockEnabled</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="MultistockEnabledContextMenu" id="8"/>
+			<ExtendedTooltip name="MultistockEnabledExtendedTooltip" id="9"/>
+		</CheckBoxField>
+		<CheckBoxField name="CreateEncashmentsEnabled" id="45">
+			<DataPath>CreateEncashmentsEnabled</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="CreateEncashmentsEnabledContextMenu" id="46"/>
+			<ExtendedTooltip name="CreateEncashmentsEnabledExtendedTooltip" id="47"/>
+		</CheckBoxField>
+		<CheckBoxField name="CreateOrdersEnabled" id="48">
+			<DataPath>CreateOrdersEnabled</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="CreateOrdersEnabledContextMenu" id="49"/>
+			<ExtendedTooltip name="CreateOrdersEnabledExtendedTooltip" id="50"/>
+		</CheckBoxField>
+		<CheckBoxField name="CreateReturnsEnabled" id="39">
+			<DataPath>CreateReturnsEnabled</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="CreateReturnsEnabledContextMenu" id="40"/>
+			<ExtendedTooltip name="CreateReturnsEnabledExtendedTooltip" id="41"/>
+		</CheckBoxField>
+		<LabelDecoration name="Decoration2" id="4">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Settings for mobile apps</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки для мобильных приложений</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Settings for mobile apps</v8:content>
+				</v8:item>
+			</Title>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+			</Border>
+			<ContextMenu name="Decoration2ContextMenu" id="5"/>
+			<ExtendedTooltip name="Decoration2ExtendedTooltip" id="6"/>
+		</LabelDecoration>
+		<UsualGroup name="Group1" id="75">
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Group1ExtendedTooltip" id="76"/>
+			<ChildItems>
+				<CheckBoxField name="ControlOrderReasonEnabled" id="10">
+					<DataPath>ControlOrderReasonEnabled</DataPath>
+					<CheckBoxType>CheckBox</CheckBoxType>
+					<ContextMenu name="ControlOrderReasonEnabledContextMenu" id="11"/>
+					<ExtendedTooltip name="ControlOrderReasonEnabledExtendedTooltip" id="12"/>
+				</CheckBoxField>
+				<CheckBoxField name="ControlVisitReasonEnabled" id="13">
+					<DataPath>ControlVisitReasonEnabled</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ControlVisitReasonEnabledContextMenu" id="14"/>
+					<ExtendedTooltip name="ControlVisitReasonEnabledExtendedTooltip" id="15"/>
+				</CheckBoxField>
+				<CheckBoxField name="UseSaveQuest" id="72">
+					<DataPath>UseSaveQuest</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Continion fill question after quit</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продолжать заполнение анкеты после завершения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Continion fill question after quit</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="UseSaveQuestContextMenu" id="73"/>
+					<ExtendedTooltip name="UseSaveQuestExtendedTooltip" id="74"/>
+				</CheckBoxField>
+				<CheckBoxField name="CoordinateControlEnabled" id="16">
+					<DataPath>CoordinateControlEnabled</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="CoordinateControlEnabledContextMenu" id="17"/>
+					<ExtendedTooltip name="CoordinateControlEnabledExtendedTooltip" id="18"/>
+				</CheckBoxField>
+				<CheckBoxField name="EmptyStockEnabled" id="19">
+					<DataPath>EmptyStockEnabled</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="EmptyStockEnabledContextMenu" id="20"/>
+					<ExtendedTooltip name="EmptyStockEnabledExtendedTooltip" id="21"/>
+				</CheckBoxField>
+				<CheckBoxField name="PlanVisitEnabled" id="22">
+					<DataPath>PlanVisitEnabled</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="PlanVisitEnabledContextMenu" id="23"/>
+					<ExtendedTooltip name="PlanVisitEnabledExtendedTooltip" id="24"/>
+				</CheckBoxField>
+				<CheckBoxField name="RecOrderEnabled" id="25">
+					<DataPath>RecOrderEnabled</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="RecOrderEnabledContextMenu" id="26"/>
+					<ExtendedTooltip name="RecOrderEnabledExtendedTooltip" id="27"/>
+					<Events>
+						<Event name="OnChange">RecOrderEnabledOnChange</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="UseAutoFillForRecOrder" id="54">
+					<DataPath>UseAutoFillForRecOrder</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="UseAutoFillForRecOrderContextMenu" id="55"/>
+					<ExtendedTooltip name="UseAutoFillForRecOrderExtendedTooltip" id="56"/>
+				</CheckBoxField>
+				<InputField name="SnapshotSize" id="28">
+					<DataPath>SnapshotSize</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>0 - Disabled</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>0 - Отключено</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>0 - Vypnuto</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+					<ContextMenu name="SnapshotSizeContextMenu" id="29"/>
+					<ExtendedTooltip name="SnapshotSizeExtendedTooltip" id="30"/>
+				</InputField>
+				<InputField name="UserCoordinatesActualityTime" id="51">
+					<DataPath>UserCoordinatesActualityTime</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>0 - Disabled</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>0 - Отключено</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>0 - Vypnuto</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+					<ContextMenu name="UserCoordinatesActualityTimeContextMenu" id="52"/>
+					<ExtendedTooltip name="UserCoordinatesActualityTimeExtendedTooltip" id="53"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Decoration4" id="57">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Settings for GPS</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки GPS</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Constants are actual only if setting "Write GPS-track" is on (look in User roles - Rights in MA)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки актуальны только при и включенной настройке "Записывать трек перемещений" (см. Роли пользователей - Права в МП)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+			</Border>
+			<ContextMenu name="Decoration4ContextMenu" id="58"/>
+			<ExtendedTooltip name="Decoration4ExtendedTooltip" id="59"/>
+		</LabelDecoration>
+		<InputField name="DefaultCity" id="69">
+			<DataPath>DefaultCity</DataPath>
+			<ContextMenu name="DefaultCityContextMenu" id="70"/>
+			<ExtendedTooltip name="DefaultCityExtendedTooltip" id="71"/>
+		</InputField>
+		<CheckBoxField name="GPSSource" id="60">
+			<DataPath>GPSSource</DataPath>
+			<Visible>false</Visible>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Satellites more accurate, but slow. Mobile networks less accurate, but fast.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>При использовании спутников в качестве источника точность координат выше, но ниже скорость их приёма. При использовании мобильных сетей ниже точность, но выше скорость приёма.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+			<CheckBoxType>Tumbler</CheckBoxType>
+			<ContextMenu name="GPSSourceContextMenu" id="61"/>
+			<ExtendedTooltip name="GPSSourceExtendedTooltip" id="62"/>
+		</CheckBoxField>
+		<InputField name="GPSTrackWriteFrequency" id="63">
+			<DataPath>GPSTrackWriteFrequency</DataPath>
+			<Visible>false</Visible>
+			<ContextMenu name="GPSTrackWriteFrequencyContextMenu" id="64"/>
+			<ExtendedTooltip name="GPSTrackWriteFrequencyExtendedTooltip" id="65"/>
+		</InputField>
+		<InputField name="GPSTrackSendFrequency" id="66">
+			<DataPath>GPSTrackSendFrequency</DataPath>
+			<Visible>false</Visible>
+			<ContextMenu name="GPSTrackSendFrequencyContextMenu" id="67"/>
+			<ExtendedTooltip name="GPSTrackSendFrequencyExtendedTooltip" id="68"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ConfigurationSettings</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ControlOrderReasonEnabled" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Check to specify reasons for not taking orders at planned visit</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверять указание причины не взятия заказа при плановом визите</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Check to specify reasons for not taking orders at planned visit</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ControlVisitReasonEnabled" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Check to specify reasons for an unscheduled visit</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверять указание причины внепланового визита</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Kontrolovat vyplnění důvodu k neplánované návštěvě</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="CoordinateControlEnabled" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Control for received coordinates of scheduled visit</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контроль получения координат планового визита</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Control for received coordinates of scheduled visit</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="EmptyStockEnabled" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>SKU with zero balance available for order</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура с нулевым остатком доступна для заказа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>SKU with zero balance available for order</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="MultistockEnabled" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Multistock enable</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать многоскладской учет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Multistock enable</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="SnapshotSize" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Size of snapshot created in mobile app (px)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер снимка создаваемого в мобильном приложении (px)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Size of snapshot created in mobile app (px)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="PlanVisitEnabled" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Creating a scheduled visit from a mobile application</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Cоздание планового визита из мобильного приложения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Creating a scheduled visit from a mobile application</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="RecOrderEnabled" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Calculate recommended order</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитывать рекомендованный заказ</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Spočitat doporučenou objednávku</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="SKUFeaturesRegistration" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>SKUFeatures registration</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>SKUFeatures registration</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="CreateReturnsEnabled" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Create returns enabled</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать возвраты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Create returns enabled</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="SizeOfThumbnailPhotos" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Size of thumbnail photos (for WebDAV, px)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер миниатюр фотоснимков (для WebDAV, px)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Size of thumbnail photos (for WebDAV, px)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="CreateEncashmentsEnabled" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Create encashments enabled</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать инкассации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Create encashments enabled</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="CreateOrdersEnabled" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Create orders enabled</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать заказы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Create orders enabled</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="UserCoordinatesActualityTime" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>User coordinates actuality time (in minutes)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время актуальности координат пользователя (в минутах)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="UseAutoFillForRecOrder" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Use auto fill for recomended order</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать автозаполнение для рекомендованных заказов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="GPSSource" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>GPS source</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник определения координат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="GPSTrackWriteFrequency" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>GPS-track write frequency</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Частота записи трека (сек)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="GPSTrackSendFrequency" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>GPSTrack send frequency</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Частота передачи трека (сек)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="DefaultCity" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Default city</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Город по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="UseSaveQuest" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Use save quest</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="SaveSettings" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Save settings</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Uložit nastavení</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Save settings</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Uložit nastavení</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>SaveSettings</Action>
+		</Command>
+	</Commands>
+</Form>

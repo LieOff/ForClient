@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<ChildItems>
+			<Button name="FormSetDeletionMark" id="47">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<OnlyInAllActions>true</OnlyInAllActions>
+				<CommandName>Form.StandardCommand.SetDeletionMark</CommandName>
+				<ExtendedTooltip name="FormSetDeletionMarkExtendedTooltip" id="48"/>
+			</Button>
+			<Button name="FormCommonCommandCreateTasks" id="14">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>CommonCommand.CreateTasks</CommandName>
+				<ExtendedTooltip name="FormCommonCommandCreateTasksРасширеннаяПодсказка" id="16"/>
+			</Button>
+			<Button name="FormCommonCommandHistoryTask" id="15">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>CommonCommand.HistoryTask</CommandName>
+				<ExtendedTooltip name="FormCommonCommandHistoryTaskРасширеннаяПодсказка" id="17"/>
+			</Button>
+			<Button name="FormCommonCommandShowOutletsOnMap" id="53">
+				<Type>CommandBarButton</Type>
+				<CommandName>CommonCommand.ShowOutletsOnMap</CommandName>
+				<ExtendedTooltip name="FormCommonCommandShowOutletsOnMapExtendedTooltip" id="54"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ListSettingsComposerUserSettings" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>List settings composer user settings</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>List settings composer user settings</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>List settings composer user settings</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>List settings composer user settings</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ListSettingsComposerUserSettingsExtendedTooltip" id="50"/>
+		</UsualGroup>
+		<Table name="List" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>List</DataPath>
+			<RowPictureDataPath>List.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>ListSettingsComposerUserSettings</UserSettingsGroup>
+			<ContextMenu name="ListContextMenu" id="2"/>
+			<AutoCommandBar name="ListCommandBar" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ListРасширеннаяПодсказка" id="18"/>
+			<SearchStringAddition name="ListСтрокаПоиска" id="19">
+				<AdditionSource>
+					<Item>List</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ListСтрокаПоискаКонтекстноеМеню" id="20"/>
+				<ExtendedTooltip name="ListСтрокаПоискаРасширеннаяПодсказка" id="21"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ListСостояниеПросмотра" id="22">
+				<AdditionSource>
+					<Item>List</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ListСостояниеПросмотраКонтекстноеМеню" id="23"/>
+				<ExtendedTooltip name="ListСостояниеПросмотраРасширеннаяПодсказка" id="24"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ListУправлениеПоиском" id="25">
+				<AdditionSource>
+					<Item>List</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ListУправлениеПоискомКонтекстноеМеню" id="26"/>
+				<ExtendedTooltip name="ListУправлениеПоискомРасширеннаяПодсказка" id="27"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Description" id="4">
+					<DataPath>List.Description</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="DescriptionContextMenu" id="5"/>
+					<ExtendedTooltip name="DescriptionРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<LabelField name="Code" id="6">
+					<DataPath>List.Code</DataPath>
+					<ContextMenu name="CodeContextMenu" id="7"/>
+					<ExtendedTooltip name="CodeРасширеннаяПодсказка" id="29"/>
+				</LabelField>
+				<LabelField name="Distributor" id="8">
+					<DataPath>List.Distributor</DataPath>
+					<ContextMenu name="DistributorContextMenu" id="9"/>
+					<ExtendedTooltip name="DistributorРасширеннаяПодсказка" id="30"/>
+				</LabelField>
+				<LabelField name="Lattitude" id="12">
+					<DataPath>List.Lattitude</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="LattitudeContextMenu" id="13"/>
+					<ExtendedTooltip name="LattitudeРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<LabelField name="Longitude" id="32">
+					<DataPath>List.Longitude</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="LongitudeContextMenu" id="33"/>
+					<ExtendedTooltip name="LongitudeExtendedTooltip" id="34"/>
+				</LabelField>
+				<LabelField name="OutletStatus" id="35">
+					<DataPath>List.OutletStatus</DataPath>
+					<ContextMenu name="OutletStatusContextMenu" id="36"/>
+					<ExtendedTooltip name="OutletStatusExtendedTooltip" id="37"/>
+				</LabelField>
+				<LabelField name="Type" id="38">
+					<DataPath>List.Type</DataPath>
+					<ContextMenu name="TypeContextMenu" id="39"/>
+					<ExtendedTooltip name="TypeExtendedTooltip" id="40"/>
+				</LabelField>
+				<LabelField name="Address" id="44">
+					<DataPath>List.Address</DataPath>
+					<ContextMenu name="AddressContextMenu" id="45"/>
+					<ExtendedTooltip name="AddressExtendedTooltip" id="46"/>
+				</LabelField>
+				<LabelField name="Class" id="41">
+					<DataPath>List.Class</DataPath>
+					<ContextMenu name="ClassContextMenu" id="42"/>
+					<ExtendedTooltip name="ClassExtendedTooltip" id="43"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="List" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.Outlet</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="OutletsOnMap" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Outlets on map</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Торговые точки на карте</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Outlets on map</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Торговые точки на карте</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>OutletsOnMap</Action>
+		</Command>
+	</Commands>
+</Form>

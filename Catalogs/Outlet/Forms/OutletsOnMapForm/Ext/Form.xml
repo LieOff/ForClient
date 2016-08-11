@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<ChildItems>
+			<Button name="FormShow" id="31">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Show</CommandName>
+				<ExtendedTooltip name="FormShowExtendedTooltip" id="32"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="GroupPages" id="103">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Group pages</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Group pages</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="GroupPagesExtendedTooltip" id="104"/>
+			<ChildItems>
+				<Page name="PageMap" id="105">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page map</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page map</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="PageMapExtendedTooltip" id="106"/>
+					<ChildItems>
+						<UsualGroup name="GroupUserSettings" id="14">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>User settings</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользовательские настройки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Uživatelská nastavení</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group user settings</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<Collapsed>true</Collapsed>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<ExtendedTooltip name="GroupUserSettingsExtendedTooltip" id="15"/>
+							<ChildItems>
+								<Table name="SettingCompUserSettings" id="109">
+									<Representation>Tree</Representation>
+									<Autofill>true</Autofill>
+									<HorizontalLines>false</HorizontalLines>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<InitialTreeView>ExpandAllLevels</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>SettingComp.Settings.Filter</DataPath>
+									<CommandSet>
+										<ExcludedCommand>HierarchicalList</ExcludedCommand>
+										<ExcludedCommand>Tree</ExcludedCommand>
+										<ExcludedCommand>List</ExcludedCommand>
+									</CommandSet>
+									<ViewMode>All</ViewMode>
+									<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
+									<ContextMenu name="SettingCompUserSettingsContextMenu" id="110"/>
+									<AutoCommandBar name="SettingCompUserSettingsCommandBar" id="111"/>
+									<ExtendedTooltip name="SettingCompUserSettingsExtendedTooltip" id="112"/>
+									<SearchStringAddition name="SettingCompUserSettingsSearchString" id="113">
+										<AdditionSource>
+											<Item>SettingCompUserSettings</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="SettingCompUserSettingsSearchStringContextMenu" id="114"/>
+										<ExtendedTooltip name="SettingCompUserSettingsSearchStringExtendedTooltip" id="115"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="SettingCompUserSettingsViewStatus" id="116">
+										<AdditionSource>
+											<Item>SettingCompUserSettings</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="SettingCompUserSettingsViewStatusContextMenu" id="117"/>
+										<ExtendedTooltip name="SettingCompUserSettingsViewStatusExtendedTooltip" id="118"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="SettingCompUserSettingsSearchControl" id="119">
+										<AdditionSource>
+											<Item>SettingCompUserSettings</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="SettingCompUserSettingsSearchControlContextMenu" id="120"/>
+										<ExtendedTooltip name="SettingCompUserSettingsSearchControlExtendedTooltip" id="121"/>
+									</SearchControlAddition>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="GroupMap" id="29">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group map</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group map</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="GroupMapExtendedTooltip" id="30"/>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="PageHidden" id="107">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page hidden</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page hidden</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="PageHiddenExtendedTooltip" id="108"/>
+					<ChildItems>
+						<Table name="Outlets" id="33">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>Outlets</DataPath>
+							<RowPictureDataPath>Outlets.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="OutletsContextMenu" id="34"/>
+							<AutoCommandBar name="OutletsCommandBar" id="35"/>
+							<ExtendedTooltip name="OutletsExtendedTooltip" id="36"/>
+							<SearchStringAddition name="OutletsSearchString" id="37">
+								<AdditionSource>
+									<Item>Outlets</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="OutletsSearchStringContextMenu" id="38"/>
+								<ExtendedTooltip name="OutletsSearchStringExtendedTooltip" id="39"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="OutletsViewStatus" id="40">
+								<AdditionSource>
+									<Item>Outlets</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="OutletsViewStatusContextMenu" id="41"/>
+								<ExtendedTooltip name="OutletsViewStatusExtendedTooltip" id="42"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="OutletsSearchControl" id="43">
+								<AdditionSource>
+									<Item>Outlets</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="OutletsSearchControlContextMenu" id="44"/>
+								<ExtendedTooltip name="OutletsSearchControlExtendedTooltip" id="45"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="OutletsDescription" id="46">
+									<DataPath>Outlets.Description</DataPath>
+									<ContextMenu name="OutletsDescriptionContextMenu" id="47"/>
+									<ExtendedTooltip name="OutletsDescriptionExtendedTooltip" id="48"/>
+								</LabelField>
+								<LabelField name="OutletsCode" id="49">
+									<DataPath>Outlets.Code</DataPath>
+									<ContextMenu name="OutletsCodeContextMenu" id="50"/>
+									<ExtendedTooltip name="OutletsCodeExtendedTooltip" id="51"/>
+								</LabelField>
+								<LabelField name="OutletsAddress" id="52">
+									<DataPath>Outlets.Address</DataPath>
+									<ContextMenu name="OutletsAddressContextMenu" id="53"/>
+									<ExtendedTooltip name="OutletsAddressExtendedTooltip" id="54"/>
+								</LabelField>
+								<LabelField name="OutletsClass" id="55">
+									<DataPath>Outlets.Class</DataPath>
+									<ContextMenu name="OutletsClassContextMenu" id="56"/>
+									<ExtendedTooltip name="OutletsClassExtendedTooltip" id="57"/>
+								</LabelField>
+								<LabelField name="OutletsClosingCause" id="58">
+									<DataPath>Outlets.ClosingCause</DataPath>
+									<ContextMenu name="OutletsClosingCauseContextMenu" id="59"/>
+									<ExtendedTooltip name="OutletsClosingCauseExtendedTooltip" id="60"/>
+								</LabelField>
+								<LabelField name="OutletsDistributor" id="61">
+									<DataPath>Outlets.Distributor</DataPath>
+									<ContextMenu name="OutletsDistributorContextMenu" id="62"/>
+									<ExtendedTooltip name="OutletsDistributorExtendedTooltip" id="63"/>
+								</LabelField>
+								<LabelField name="OutletsEmail" id="64">
+									<DataPath>Outlets.Email</DataPath>
+									<ContextMenu name="OutletsEmailContextMenu" id="65"/>
+									<ExtendedTooltip name="OutletsEmailExtendedTooltip" id="66"/>
+								</LabelField>
+								<LabelField name="OutletsINN" id="67">
+									<DataPath>Outlets.INN</DataPath>
+									<ContextMenu name="OutletsINNContextMenu" id="68"/>
+									<ExtendedTooltip name="OutletsINNExtendedTooltip" id="69"/>
+								</LabelField>
+								<LabelField name="OutletsKPP" id="70">
+									<DataPath>Outlets.KPP</DataPath>
+									<ContextMenu name="OutletsKPPContextMenu" id="71"/>
+									<ExtendedTooltip name="OutletsKPPExtendedTooltip" id="72"/>
+								</LabelField>
+								<LabelField name="OutletsLattitude" id="73">
+									<DataPath>Outlets.Lattitude</DataPath>
+									<ContextMenu name="OutletsLattitudeContextMenu" id="74"/>
+									<ExtendedTooltip name="OutletsLattitudeExtendedTooltip" id="75"/>
+								</LabelField>
+								<LabelField name="OutletsLegalAddress" id="76">
+									<DataPath>Outlets.LegalAddress</DataPath>
+									<ContextMenu name="OutletsLegalAddressContextMenu" id="77"/>
+									<ExtendedTooltip name="OutletsLegalAddressExtendedTooltip" id="78"/>
+								</LabelField>
+								<LabelField name="OutletsLegalName" id="79">
+									<DataPath>Outlets.LegalName</DataPath>
+									<ContextMenu name="OutletsLegalNameContextMenu" id="80"/>
+									<ExtendedTooltip name="OutletsLegalNameExtendedTooltip" id="81"/>
+								</LabelField>
+								<LabelField name="OutletsLongitude" id="82">
+									<DataPath>Outlets.Longitude</DataPath>
+									<ContextMenu name="OutletsLongitudeContextMenu" id="83"/>
+									<ExtendedTooltip name="OutletsLongitudeExtendedTooltip" id="84"/>
+								</LabelField>
+								<LabelField name="OutletsOutletStatus" id="85">
+									<DataPath>Outlets.OutletStatus</DataPath>
+									<ContextMenu name="OutletsOutletStatusContextMenu" id="86"/>
+									<ExtendedTooltip name="OutletsOutletStatusExtendedTooltip" id="87"/>
+								</LabelField>
+								<LabelField name="OutletsOwnershipType" id="88">
+									<DataPath>Outlets.OwnershipType</DataPath>
+									<ContextMenu name="OutletsOwnershipTypeContextMenu" id="89"/>
+									<ExtendedTooltip name="OutletsOwnershipTypeExtendedTooltip" id="90"/>
+								</LabelField>
+								<LabelField name="OutletsPhoneNumber" id="91">
+									<DataPath>Outlets.PhoneNumber</DataPath>
+									<ContextMenu name="OutletsPhoneNumberContextMenu" id="92"/>
+									<ExtendedTooltip name="OutletsPhoneNumberExtendedTooltip" id="93"/>
+								</LabelField>
+								<LabelField name="OutletsReceivableLimit" id="94">
+									<DataPath>Outlets.ReceivableLimit</DataPath>
+									<ContextMenu name="OutletsReceivableLimitContextMenu" id="95"/>
+									<ExtendedTooltip name="OutletsReceivableLimitExtendedTooltip" id="96"/>
+								</LabelField>
+								<LabelField name="OutletsType" id="97">
+									<DataPath>Outlets.Type</DataPath>
+									<ContextMenu name="OutletsTypeContextMenu" id="98"/>
+									<ExtendedTooltip name="OutletsTypeExtendedTooltip" id="99"/>
+								</LabelField>
+								<LabelField name="OutletsWebSite" id="100">
+									<DataPath>Outlets.WebSite</DataPath>
+									<ContextMenu name="OutletsWebSiteContextMenu" id="101"/>
+									<ExtendedTooltip name="OutletsWebSiteExtendedTooltip" id="102"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Outlets" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Outlets</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Торговые точки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Prodejnн mнsta</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>SELECT
+	CatalogOutlet.Ref,
+	CatalogOutlet.DeletionMark,
+	CatalogOutlet.Code,
+	CatalogOutlet.Description,
+	CatalogOutlet.Address,
+	CatalogOutlet.Class,
+	CatalogOutlet.ClosingCause,
+	CatalogOutlet.Distributor,
+	CatalogOutlet.Email,
+	CatalogOutlet.INN,
+	CatalogOutlet.KPP,
+	CatalogOutlet.Lattitude,
+	CatalogOutlet.LegalAddress,
+	CatalogOutlet.LegalName,
+	CatalogOutlet.Longitude,
+	CatalogOutlet.OutletStatus,
+	CatalogOutlet.OwnershipType,
+	CatalogOutlet.PhoneNumber,
+	CatalogOutlet.ReceivableLimit,
+	CatalogOutlet.Type,
+	CatalogOutlet.WebSite,
+	CatalogOutlet.Contacts.(
+		Ref,
+		LineNumber,
+		ContactName,
+		Position,
+		PhoneNumber,
+		Email,
+		NotActual
+	),
+	CatalogOutlet.Parameters.(
+		Ref,
+		LineNumber,
+		Parameter,
+		Value
+	),
+	CatalogOutlet.Prices.(
+		Ref,
+		LineNumber,
+		PriceList
+	),
+	CatalogOutlet.Snapshots.(
+		Ref,
+		LineNumber,
+		FileName,
+		Deleted
+	),
+	CatalogOutlet.ContactPersons.(
+		Ref,
+		LineNumber,
+		ContactPerson,
+		NotActual
+	),
+	CatalogOutlet.ContractorsList.(
+		Ref,
+		LineNumber,
+		Contractor,
+		Default
+	),
+	CatalogOutlet.Predefined,
+	CatalogOutlet.PredefinedDataName
+FROM
+	Catalog.Outlet AS CatalogOutlet</QueryText>
+				<MainTable>Catalog.Outlet</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="SettingComp" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Setting comp</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Show" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Show</Action>
+		</Command>
+	</Commands>
+</Form>

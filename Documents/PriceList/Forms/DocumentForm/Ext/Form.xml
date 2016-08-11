@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">AfterWriteAtServer</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="GroupNumberDate" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group number date</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Group number date</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group number date</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Group number date</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupNumberDateExtendedTooltip" id="22"/>
+			<ChildItems>
+				<InputField name="Number" id="1">
+					<DataPath>Object.Number</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="NumberContextMenu" id="2"/>
+					<ExtendedTooltip name="NumberРасширеннаяПодсказка" id="23"/>
+				</InputField>
+				<InputField name="Date" id="3">
+					<DataPath>Object.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="DateContextMenu" id="4"/>
+					<ExtendedTooltip name="DateРасширеннаяПодсказка" id="24"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Description" id="18">
+			<DataPath>Object.Description</DataPath>
+			<ContextMenu name="DescriptionContextMenu" id="19"/>
+			<ExtendedTooltip name="DescriptionРасширеннаяПодсказка" id="25"/>
+		</InputField>
+		<CheckBoxField name="DefaultPriceList" id="20">
+			<DataPath>Object.DefaultPriceList</DataPath>
+			<TitleLocation>Left</TitleLocation>
+			<CheckBoxType>Tumbler</CheckBoxType>
+			<EditFormat>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>BF=No; BT=Yes</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>BF=Нет; BT=Да</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>BF=No; BT=Yes</v8:content>
+				</v8:item>
+			</EditFormat>
+			<ContextMenu name="DefaultPriceListContextMenu" id="21"/>
+			<ExtendedTooltip name="DefaultPriceListРасширеннаяПодсказка" id="26"/>
+		</CheckBoxField>
+		<Table name="Prices" id="44">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Prices</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="PricesContextMenu" id="45"/>
+			<AutoCommandBar name="PricesCommandBar" id="46">
+				<ChildItems>
+					<Button name="SKUDelete" id="42">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Command.DeleteSKU</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.Delete</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="SKUDeleteExtendedTooltip" id="43"/>
+					</Button>
+					<Button name="FillSKU" id="14">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.FillSKU</CommandName>
+						<ExtendedTooltip name="FillSKUРасширеннаяПодсказка" id="27"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="PricesExtendedTooltip" id="47"/>
+			<SearchStringAddition name="PricesSearchString" id="48">
+				<AdditionSource>
+					<Item>Prices</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="PricesSearchStringContextMenu" id="51"/>
+				<ExtendedTooltip name="PricesSearchStringExtendedTooltip" id="52"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="PricesViewStatus" id="53">
+				<AdditionSource>
+					<Item>Prices</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="PricesViewStatusContextMenu" id="56"/>
+				<ExtendedTooltip name="PricesViewStatusExtendedTooltip" id="57"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="PricesSearchControl" id="58">
+				<AdditionSource>
+					<Item>Prices</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="PricesSearchControlContextMenu" id="61"/>
+				<ExtendedTooltip name="PricesSearchControlExtendedTooltip" id="62"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="PricesSKU" id="66">
+					<DataPath>Prices.SKU</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="PricesSKUContextMenu" id="67"/>
+					<ExtendedTooltip name="PricesSKUExtendedTooltip" id="68"/>
+				</InputField>
+				<InputField name="PricesPrice" id="63">
+					<DataPath>Prices.Price</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="PricesPriceContextMenu" id="64"/>
+					<ExtendedTooltip name="PricesPriceExtendedTooltip" id="65"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.PriceList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="Prices" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Prices</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цены</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Ceny</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="Price" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Price</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цена</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Cena</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="SKU" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>SKU</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Zboží</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.SKU</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="FillSKU" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Fill SKU</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Fill SKU</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Fill SKU</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Fill SKU</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>FillSKU</Action>
+		</Command>
+		<Command name="DeleteSKU" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Delete SKU</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Delete SKU</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>DeleteSKU</Action>
+		</Command>
+	</Commands>
+</Form>

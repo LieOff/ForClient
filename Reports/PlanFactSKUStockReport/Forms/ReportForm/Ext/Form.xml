@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<CommandBarLocation>None</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>Generate</ExcludedCommand>
+	</CommandSet>
+	<ReportResult>Result</ReportResult>
+	<DetailsData>DetailsData</DetailsData>
+	<ReportFormType>Main</ReportFormType>
+	<VariantAppearance/>
+	<AutoShowState>Auto</AutoShowState>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<CommandBar name="CommandBar" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Command bar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Ovlбdacн prvky</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Command bar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Ovlбdacн prvky</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="CommandBarExtendedTooltip" id="11"/>
+			<ChildItems>
+				<Button name="Compose" id="8">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.Compose</CommandName>
+					<ExtendedTooltip name="ComposeExtendedTooltip" id="9"/>
+				</Button>
+				<ButtonGroup name="Group1" id="38">
+					<ExtendedTooltip name="Group1ExtendedTooltip" id="39"/>
+					<ChildItems>
+						<Button name="ReportSettings" id="14">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.ReportSettings</CommandName>
+							<ExtendedTooltip name="ReportSettingsExtendedTooltip" id="15"/>
+						</Button>
+						<Button name="LoadReportSettings" id="16">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.LoadReportSettings</CommandName>
+							<ExtendedTooltip name="LoadReportSettingsExtendedTooltip" id="17"/>
+						</Button>
+						<Button name="SaveReportSettings" id="18">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.SaveReportSettings</CommandName>
+							<ExtendedTooltip name="SaveReportSettingsExtendedTooltip" id="19"/>
+						</Button>
+						<Button name="StandardSettings" id="20">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.StandardSettings</CommandName>
+							<ExtendedTooltip name="StandardSettingsExtendedTooltip" id="21"/>
+						</Button>
+					</ChildItems>
+				</ButtonGroup>
+				<ButtonGroup name="Group2" id="40">
+					<ExtendedTooltip name="Group2ExtendedTooltip" id="41"/>
+					<ChildItems>
+						<Button name="ChangeVariant" id="22">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.ChangeVariant</CommandName>
+							<ExtendedTooltip name="ChangeVariantExtendedTooltip" id="23"/>
+						</Button>
+						<Button name="LoadVariant" id="12">
+							<Type>CommandBarButton</Type>
+							<OnlyInAllActions>true</OnlyInAllActions>
+							<CommandName>Form.StandardCommand.LoadVariant</CommandName>
+							<ExtendedTooltip name="LoadVariantExtendedTooltip" id="13"/>
+						</Button>
+						<Button name="SaveVariant" id="24">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.SaveVariant</CommandName>
+							<ExtendedTooltip name="SaveVariantExtendedTooltip" id="25"/>
+						</Button>
+					</ChildItems>
+				</ButtonGroup>
+				<Button name="NewWindow" id="28">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.StandardCommand.NewWindow</CommandName>
+					<ExtendedTooltip name="NewWindowExtendedTooltip" id="29"/>
+				</Button>
+				<Button name="Save" id="30">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.StandardCommand.Save</CommandName>
+					<ExtendedTooltip name="SaveExtendedTooltip" id="31"/>
+				</Button>
+				<Button name="Print" id="32">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.StandardCommand.Print</CommandName>
+					<ExtendedTooltip name="PrintExtendedTooltip" id="33"/>
+				</Button>
+				<Button name="ChangeSettingsStructure" id="34">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.StandardCommand.ChangeSettingsStructure</CommandName>
+					<ExtendedTooltip name="ChangeSettingsStructureExtendedTooltip" id="35"/>
+				</Button>
+				<Button name="Help" id="36">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.StandardCommand.Help</CommandName>
+					<ExtendedTooltip name="HelpExtendedTooltip" id="37"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<UsualGroup name="SettingsComposerUserSettings" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>User settings</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользовательские настройки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Uživatelská nastavení</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="SettingsComposerUserSettingsExtendedTooltip" id="4"/>
+			<ChildItems>
+				<Table name="SettingsComposerUserSettingsTable" id="42">
+					<CommandBarLocation>None</CommandBarLocation>
+					<Autofill>true</Autofill>
+					<DataPath>Report.SettingsComposer.UserSettings</DataPath>
+					<CommandSet>
+						<ExcludedCommand>HierarchicalList</ExcludedCommand>
+						<ExcludedCommand>Tree</ExcludedCommand>
+						<ExcludedCommand>List</ExcludedCommand>
+					</CommandSet>
+					<ViewMode>All</ViewMode>
+					<ContextMenu name="SettingsComposerUserSettingsTableContextMenu" id="43"/>
+					<AutoCommandBar name="SettingsComposerUserSettingsTableCommandBar" id="44"/>
+					<ExtendedTooltip name="SettingsComposerUserSettingsTableExtendedTooltip" id="45"/>
+					<SearchStringAddition name="SettingsComposerUserSettingsTableSearchString" id="46">
+						<AdditionSource>
+							<Item>SettingsComposerUserSettingsTable</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="SettingsComposerUserSettingsTableSearchStringContextMenu" id="49"/>
+						<ExtendedTooltip name="SettingsComposerUserSettingsTableSearchStringExtendedTooltip" id="50"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="SettingsComposerUserSettingsTableViewStatus" id="51">
+						<AdditionSource>
+							<Item>SettingsComposerUserSettingsTable</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="SettingsComposerUserSettingsTableViewStatusContextMenu" id="54"/>
+						<ExtendedTooltip name="SettingsComposerUserSettingsTableViewStatusExtendedTooltip" id="55"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="SettingsComposerUserSettingsTableSearchControl" id="56">
+						<AdditionSource>
+							<Item>SettingsComposerUserSettingsTable</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="SettingsComposerUserSettingsTableSearchControlContextMenu" id="59"/>
+						<ExtendedTooltip name="SettingsComposerUserSettingsTableSearchControlExtendedTooltip" id="60"/>
+					</SearchControlAddition>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<SpreadSheetDocumentField name="Result" id="5">
+			<DataPath>Result</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<Width>100</Width>
+			<ContextMenu name="ResultContextMenu" id="6"/>
+			<ExtendedTooltip name="ResultExtendedTooltip" id="7"/>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Report" id="1">
+			<Type>
+				<v8:Type>cfg:ReportObject.PlanFactSKUStockReport</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Result" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Result</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Vэsledek</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="DetailsData" id="3">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="FieldsTable" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Fields table</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Fields table</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Field" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Field</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Pole</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="ParamName" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Param name</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Jmйno parametru</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="ParamValue" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Param value</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Hodnota parametru</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="Type" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Type</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Typ</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Compose" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Compose</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Compose</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Compose</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Compose</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Compose</Action>
+		</Command>
+	</Commands>
+</Form>

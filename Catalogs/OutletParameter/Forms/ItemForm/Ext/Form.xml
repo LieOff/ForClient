@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">AfterWrite</Event>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="BeforeWrite">BeforeWrite</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Group" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Group</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Group</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupExtendedTooltip" id="38"/>
+			<ChildItems>
+				<InputField name="Code" id="1">
+					<DataPath>Object.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="CodeContextMenu" id="2"/>
+					<ExtendedTooltip name="CodeExtendedTooltip" id="14"/>
+				</InputField>
+				<CheckBoxField name="VisibleInMA" id="31">
+					<DataPath>Object.VisibleInMA</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="VisibleInMAContextMenu" id="32"/>
+					<ExtendedTooltip name="VisibleInMAExtendedTooltip" id="33"/>
+					<Events>
+						<Event name="OnChange">VisibleInMAOnChange</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="EditableInMA" id="34">
+					<DataPath>Object.EditableInMA</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="EditableInMAContextMenu" id="35"/>
+					<ExtendedTooltip name="EditableInMAExtendedTooltip" id="36"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Description" id="3">
+			<DataPath>Object.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DescriptionContextMenu" id="4"/>
+			<ExtendedTooltip name="DescriptionExtendedTooltip" id="15"/>
+		</InputField>
+		<InputField name="DataType" id="5">
+			<DataPath>Object.DataType</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DataTypeContextMenu" id="6"/>
+			<ExtendedTooltip name="DataTypeExtendedTooltip" id="16"/>
+			<Events>
+				<Event name="OnChange">DataTypeOnChange</Event>
+			</Events>
+		</InputField>
+		<Table name="ValueList" id="7">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Object.ValueList</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ValueListContextMenu" id="8"/>
+			<AutoCommandBar name="ValueListCommandBar" id="9">
+				<ChildItems>
+					<Button name="ValueListDelete" id="29">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.ValueList.StandardCommand.Delete</CommandName>
+						<ExtendedTooltip name="ValueListDeleteExtendedTooltip" id="30"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ValueListExtendedTooltip" id="17"/>
+			<SearchStringAddition name="ValueListSearchString" id="20">
+				<AdditionSource>
+					<Item>ValueList</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ValueListSearchStringContextMenu" id="21"/>
+				<ExtendedTooltip name="ValueListSearchStringExtendedTooltip" id="22"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ValueListViewStatus" id="23">
+				<AdditionSource>
+					<Item>ValueList</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ValueListViewStatusContextMenu" id="24"/>
+				<ExtendedTooltip name="ValueListViewStatusExtendedTooltip" id="25"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ValueListSearchControl" id="26">
+				<AdditionSource>
+					<Item>ValueList</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ValueListSearchControlContextMenu" id="27"/>
+				<ExtendedTooltip name="ValueListSearchControlExtendedTooltip" id="28"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ValueListLineNumber" id="10">
+					<DataPath>Object.ValueList.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ValueListLineNumberContextMenu" id="11"/>
+					<ExtendedTooltip name="ValueListLineNumberExtendedTooltip" id="18"/>
+				</LabelField>
+				<InputField name="ValueListValue" id="12">
+					<DataPath>Object.ValueList.Value</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ValueListValueContextMenu" id="13"/>
+					<ExtendedTooltip name="ValueListValueExtendedTooltip" id="19"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.OutletParameter</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>4:6dbe2ff9-443e-4d86-b703-f689e8d3886a</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

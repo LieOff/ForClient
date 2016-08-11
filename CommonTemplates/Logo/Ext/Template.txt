@@ -1,0 +1,58 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<style type="text/css">
+	html { height: 100%; overflow: hidden; }
+	body { height: 100%; overflow: hidden; }
+	img { height: auto; width: 70%; }
+	.fig {
+		margin-top: 10%;
+		text-align: center;
+	}
+</style>
+<script type='text/javascript'> 
+	
+	window.onerror = myOnError;
+	
+	function myOnError(msg, url, lno) {return true}
+	
+	function checkRegExp(pattern, inputstr) {
+		
+		var result = pattern.test(inputstr);
+	
+		if (result == true) {
+			
+			document.getElementById('Result').value = "true";
+			
+		} else {
+			
+			document.getElementById('Result').value = "false";
+			
+		}
+		
+	}
+	
+	function WebClientClick() {
+		
+		var WebClientOperation = document.getElementById('WebClientOperation').value;
+		
+		switch (WebClientOperation) {
+			case "0":
+				var a = 1;
+			default:
+				eval(WebClientOperation);
+		}
+		
+		document.getElementById('WebClientOperation').value = "0";
+		
+	}
+
+</script>
+</head>
+<body>
+	<p class="fig"><img src="//-PictureAddress-//"/></p>
+	<input type='hidden' id='WebClientOperation' name='WebClientOperation' value='0'></input>
+	<input type='hidden' id='Result' name='Result' value='0'></input>
+	<input type='hidden' id="WebClient" name='WebClient' onclick='WebClientClick();'></input>
+</body>
+</html>

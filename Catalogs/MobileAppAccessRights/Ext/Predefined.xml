@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.1">
+	<Item id="37cf16ae-3fa7-4594-8648-b28af91ecfb8">
+		<Name>AccessToEncashment</Name>
+		<Code>000000004</Code>
+		<Description>en = 'Access to encashment'; ru = 'Доступ к инкассации'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="acd8efb3-9fab-43f2-879a-ce856655345b">
+		<Name>AccessToMobileApp</Name>
+		<Code>000000001</Code>
+		<Description>en = 'Access to mobile app'; ru = 'Доступ к мобильному приложению'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b645b669-c153-4a02-80cf-e3fd24e911f9">
+		<Name>AccessToOrder</Name>
+		<Code>000000005</Code>
+		<Description>en = 'Access to order'; ru = 'Доступ к заказу'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4c87c60d-cb4d-465b-bda5-f54feee2ddac">
+		<Name>AccessToReturn</Name>
+		<Code>000000006</Code>
+		<Description>en = 'Access to return'; ru = 'Доступ к возврату'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ed4bffd8-241f-4764-89e7-e43e844fe46d">
+		<Name>AmountDiscount</Name>
+		<Code>000000011</Code>
+		<Description>en = 'Amount discounts'; ru = 'Установка суммовой скидки в заказе/возврате'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d84d080b-3338-446a-bc9b-9cfb462672cd">
+		<Name>EditContractorsAttributes</Name>
+		<Code>000000007</Code>
+		<Description>en = 'Edit contractors attributes'; ru = 'Редактирование реквизитов контрагентов'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3bfcfa40-65c9-470c-b5f0-991cd12395d9">
+		<Name>EditOutletContacts</Name>
+		<Code>000000008</Code>
+		<Description>en = 'Edit outlet contacts'; ru = 'Редактирование контактов торговых точек'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5c602579-8df9-4524-95e5-578a0a34a615">
+		<Name>EditParametersInOutlet</Name>
+		<Code>000000002</Code>
+		<Description>en = 'Edit parameters in outlet'; ru = 'Редактирование параметров в торговой точке'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="69eaabd8-83a3-40bd-bd2d-932053d8e1ed">
+		<Name>EditPartnerContacts</Name>
+		<Code>000000009</Code>
+		<Description>en = 'Edit partner contacts'; ru = 'Редактирование контактов партнеров'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6d40cec0-703f-4cb8-b2b8-55dbf5a6dab4">
+		<Name>EditTasksWithoutVisit</Name>
+		<Code>000000013</Code>
+		<Description>en = 'Edit tasks without visit'; ru = 'Выполнение задач вне визита'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f90ea737-8341-40c1-8d12-77c8948a21d7">
+		<Name>NewTotalDiscount</Name>
+		<Code>000000012</Code>
+		<Description>en = 'New total discounts'; ru = 'Установка новой цены в заказе/возврате'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="08b4a690-6021-43b4-ba14-c870ea1ef6a7">
+		<Name>PercentDiscount</Name>
+		<Code>000000010</Code>
+		<Description>en = 'Percent discounts'; ru='Установка процентной скидки в заказе/возврате'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="88673410-6d62-4c65-ab64-016f6012803f">
+		<Name>SelectSnapshotFromGallery</Name>
+		<Code>000000003</Code>
+		<Description>en = 'Select snapshots from the gallery'; ru = 'Выбор снимков из галереи'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

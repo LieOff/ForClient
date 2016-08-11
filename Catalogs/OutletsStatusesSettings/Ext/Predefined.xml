@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.1">
+	<Item id="5d3f8441-f0d8-4319-8276-3ba0c05f4122">
+		<Name>Active</Name>
+		<Code>000000002</Code>
+		<Description>en = 'Active'; ru = 'Активная'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="92317e3b-d31b-4d71-a621-7c2ddf4c95a5">
+		<Name>Closed</Name>
+		<Code>000000003</Code>
+		<Description>en = 'Closed'; ru = 'Закрыта'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="56faf60d-3010-443c-9417-f2d246043d6b">
+		<Name>Potential</Name>
+		<Code>000000001</Code>
+		<Description>en = 'Potential'; ru = 'Потенциальная'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

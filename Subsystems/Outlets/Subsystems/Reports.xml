@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<Subsystem uuid="4341b987-50fe-45e7-8507-3371b8175f89">
+		<Properties>
+			<Name>Reports</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Reports</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Vэkazy</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.NumberOfOutlets</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.OutletsStatus</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.AnalysisOutletParameters</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.BindingOutlets</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ShowBindingOutlets</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ShowAnalysisOutletParameters</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ShowOutletsStatuses</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ShowNumberOfOutlets</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ShowPlanFactSKUStockReport</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ShowOutletAssortmentAvailability</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.OutletAssortmentAvailability</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.PlanFactSKUStockReport</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.OutletWithoutCoordinates</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ShowOutletWithoutCoordinates</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ShowOutletsOnMap</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

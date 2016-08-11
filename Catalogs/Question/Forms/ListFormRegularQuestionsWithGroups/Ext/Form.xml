@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<Title>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Regular questions</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Общие вопросы</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>cz</v8:lang>
+			<v8:content>Regular questions</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<Group>Horizontal</Group>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Table name="GroupsList" id="32">
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<SelectionMode>SingleRow</SelectionMode>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>GroupsList</DataPath>
+			<RowPictureDataPath>GroupsList.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="GroupsListContextMenu" id="33"/>
+			<AutoCommandBar name="GroupsListCommandBar" id="34"/>
+			<ExtendedTooltip name="GroupsListExtendedTooltip" id="35"/>
+			<SearchStringAddition name="GroupsListSearchString" id="36">
+				<AdditionSource>
+					<Item>GroupsList</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="GroupsListSearchStringContextMenu" id="39"/>
+				<ExtendedTooltip name="GroupsListSearchStringExtendedTooltip" id="40"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="GroupsListViewStatus" id="41">
+				<AdditionSource>
+					<Item>GroupsList</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="GroupsListViewStatusContextMenu" id="44"/>
+				<ExtendedTooltip name="GroupsListViewStatusExtendedTooltip" id="45"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="GroupsListSearchControl" id="46">
+				<AdditionSource>
+					<Item>GroupsList</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="GroupsListSearchControlContextMenu" id="49"/>
+				<ExtendedTooltip name="GroupsListSearchControlExtendedTooltip" id="50"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateRow">GroupsListOnActivateRow</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="GroupsListRef" id="57">
+					<DataPath>GroupsList.Ref</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Questions group</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа вопросов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Questions group</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="GroupsListRefContextMenu" id="58"/>
+					<ExtendedTooltip name="GroupsListRefExtendedTooltip" id="59"/>
+				</LabelField>
+				<LabelField name="GroupsListCode" id="54">
+					<DataPath>GroupsList.Code</DataPath>
+					<ContextMenu name="GroupsListCodeContextMenu" id="55"/>
+					<ExtendedTooltip name="GroupsListCodeExtendedTooltip" id="56"/>
+				</LabelField>
+				<LabelField name="GroupsListDescription" id="51">
+					<DataPath>GroupsList.Description</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="GroupsListDescriptionContextMenu" id="52"/>
+					<ExtendedTooltip name="GroupsListDescriptionExtendedTooltip" id="53"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="GroupList" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group list</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Group list</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group list</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Group list</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupListExtendedTooltip" id="64"/>
+			<ChildItems>
+				<UsualGroup name="GroupFilterAndCommand" id="70">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group filter and command</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group filter and command</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group filter and command</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group filter and command</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="GroupFilterAndCommandExtendedTooltip" id="71"/>
+					<ChildItems>
+						<CheckBoxField name="UseGroupFilter" id="67">
+							<DataPath>UseGroupFilter</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<CheckBoxType>Tumbler</CheckBoxType>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>BF=All; BT='From group'</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>BF=Все; BT='Из группы'</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>BF=All; BT='From group'</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="UseGroupFilterContextMenu" id="68"/>
+							<ExtendedTooltip name="UseGroupFilterExtendedTooltip" id="69"/>
+							<Events>
+								<Event name="OnChange">UseGroupFilterOnChange</Event>
+							</Events>
+						</CheckBoxField>
+						<CommandBar name="GroupListCommand" id="65">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group list command</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Group list command</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group list command</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Group list command</v8:content>
+								</v8:item>
+							</ToolTip>
+							<CommandSource>Form</CommandSource>
+							<ExtendedTooltip name="GroupListCommandExtendedTooltip" id="66"/>
+						</CommandBar>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="List" id="1">
+					<Representation>List</Representation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<DefaultItem>true</DefaultItem>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<InitialTreeView>ExpandTopLevel</InitialTreeView>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>List</DataPath>
+					<RowPictureDataPath>List.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="ListContextMenu" id="2"/>
+					<AutoCommandBar name="ListCommandBar" id="3"/>
+					<ExtendedTooltip name="ListExtendedTooltip" id="4"/>
+					<SearchStringAddition name="ListSearchString" id="5">
+						<AdditionSource>
+							<Item>List</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ListSearchStringContextMenu" id="8"/>
+						<ExtendedTooltip name="ListSearchStringExtendedTooltip" id="9"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ListViewStatus" id="10">
+						<AdditionSource>
+							<Item>List</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ListViewStatusContextMenu" id="13"/>
+						<ExtendedTooltip name="ListViewStatusExtendedTooltip" id="14"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ListSearchControl" id="15">
+						<AdditionSource>
+							<Item>List</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ListSearchControlContextMenu" id="18"/>
+						<ExtendedTooltip name="ListSearchControlExtendedTooltip" id="19"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="Description" id="20">
+							<DataPath>List.Description</DataPath>
+							<DefaultItem>true</DefaultItem>
+							<ContextMenu name="DescriptionContextMenu" id="21"/>
+							<ExtendedTooltip name="DescriptionExtendedTooltip" id="22"/>
+						</LabelField>
+						<LabelField name="Code" id="23">
+							<DataPath>List.Code</DataPath>
+							<ContextMenu name="CodeContextMenu" id="24"/>
+							<ExtendedTooltip name="CodeExtendedTooltip" id="25"/>
+						</LabelField>
+						<LabelField name="AnswerType" id="26">
+							<DataPath>List.AnswerType</DataPath>
+							<ContextMenu name="AnswerTypeContextMenu" id="27"/>
+							<ExtendedTooltip name="AnswerTypeExtendedTooltip" id="28"/>
+						</LabelField>
+						<InputField name="Owner" id="60">
+							<DataPath>List.Owner</DataPath>
+							<ContextMenu name="OwnerContextMenu" id="61"/>
+							<ExtendedTooltip name="OwnerExtendedTooltip" id="62"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="List" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.Question</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Owner.Type</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Enum.QuestionGroupTypes.RegularQuestions</dcsset:right>
+							<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="GroupsList" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Groups list</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Groups list</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.QuestionGroup</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Type</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Enum.QuestionGroupTypes.RegularQuestions</dcsset:right>
+							<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="UseGroupFilter" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Use group filter</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Use group filter</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

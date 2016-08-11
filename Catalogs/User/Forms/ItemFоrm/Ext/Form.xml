@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">AfterWrite</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="BeforeWrite">BeforeWrite</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+		<Event name="OnWriteAtServer">OnWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Pages" id="130">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="PagesExtendedTooltip" id="131"/>
+			<ChildItems>
+				<Page name="PageMasterData" id="132">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Master data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные данные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Primбrnн data</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page master data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Page master data</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="PageMasterDataExtendedTooltip" id="133"/>
+					<ChildItems>
+						<InputField name="Code" id="1">
+							<DataPath>Object.Code</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Code</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Kуd</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="CodeContextMenu" id="2"/>
+							<ExtendedTooltip name="CodeExtendedTooltip" id="101"/>
+						</InputField>
+						<InputField name="Description" id="3">
+							<DataPath>Object.Description</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Description</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Popis</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="DescriptionContextMenu" id="4"/>
+							<ExtendedTooltip name="DescriptionExtendedTooltip" id="102"/>
+						</InputField>
+						<InputField name="Login" id="97">
+							<DataPath>Object.UserName</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Login</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Логин</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Login</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="LoginContextMenu" id="98"/>
+							<ExtendedTooltip name="LoginExtendedTooltip" id="103"/>
+							<Events>
+								<Event name="OnChange">UserNameOnChange</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="GroupPassword" id="198">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group password</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group password</v8:content>
+								</v8:item>
+							</ToolTip>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupPasswordExtendedTooltip" id="199"/>
+							<ChildItems>
+								<InputField name="Password" id="95">
+									<DataPath>Object.Password</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Password</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пароль</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>cz</v8:lang>
+											<v8:content>Password</v8:content>
+										</v8:item>
+									</Title>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="PasswordContextMenu" id="96"/>
+									<ExtendedTooltip name="PasswordExtendedTooltip" id="104"/>
+								</InputField>
+								<Button name="GenerateRandomPassword" id="196">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.GenerateRandomPassword</CommandName>
+									<ExtendedTooltip name="GenerateRandomPasswordExtendedTooltip" id="197"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Position" id="99">
+							<DataPath>Object.Position</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Position</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Должность</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Position</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="PositionContextMenu" id="100"/>
+							<ExtendedTooltip name="PositionExtendedTooltip" id="105"/>
+						</InputField>
+						<InputField name="RoleOfUser" id="124">
+							<DataPath>Object.RoleOfUser</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Role of user</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Роль пользователя</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Role uživatele</v8:content>
+								</v8:item>
+							</Title>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="RoleOfUserContextMenu" id="125"/>
+							<ExtendedTooltip name="RoleOfUserExtendedTooltip" id="126"/>
+						</InputField>
+						<InputField name="InterfaceLanguage" id="127">
+							<DataPath>Object.InterfaceLanguage</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Interface language CMS</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Язык интерфейса ЦУП</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Interface language CMS</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>true</HorizontalStretch>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<TextEdit>false</TextEdit>
+							<ChoiceListButton>true</ChoiceListButton>
+							<ContextMenu name="InterfaceLanguageContextMenu" id="128"/>
+							<ExtendedTooltip name="InterfaceLanguageExtendedTooltip" id="129"/>
+						</InputField>
+						<InputField name="Manager" id="5">
+							<DataPath>Object.Manager</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Manager</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Менеджер</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Manager</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceParameters>
+								<app:item name="Role">
+									<app:value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xs:string">SRM</Value>
+									</app:value>
+								</app:item>
+							</ChoiceParameters>
+							<ContextMenu name="ManagerContextMenu" id="6"/>
+							<ExtendedTooltip name="ManagerExtendedTooltip" id="108"/>
+						</InputField>
+						<UsualGroup name="GroupEmai" id="194">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group emai</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group emai</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupEmaiExtendedTooltip" id="195"/>
+							<ChildItems>
+								<InputField name="EMail" id="7">
+									<DataPath>Object.EMail</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="EMailContextMenu" id="8"/>
+									<ExtendedTooltip name="EMailExtendedTooltip" id="109"/>
+								</InputField>
+								<Button name="SendUserPassword" id="192">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.SendUserPassword</CommandName>
+									<ExtendedTooltip name="SendUserPasswordExtendedTooltip" id="193"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="PageTerritories" id="134">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Territories</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Территории</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Ъzemн</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page territories</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Page territories</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="PageTerritoriesExtendedTooltip" id="135"/>
+					<ChildItems>
+						<Table name="Territories" id="163">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Territories</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="TerritoriesContextMenu" id="164"/>
+							<AutoCommandBar name="TerritoriesCommandBar" id="165">
+								<ChildItems>
+									<Button name="TerritoriesDelete" id="190">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.Territories.StandardCommand.Delete</CommandName>
+										<ExtendedTooltip name="TerritoriesDeleteExtendedTooltip" id="191"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="TerritoriesExtendedTooltip" id="166"/>
+							<SearchStringAddition name="TerritoriesSearchString" id="167">
+								<AdditionSource>
+									<Item>Territories</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="TerritoriesSearchStringContextMenu" id="170"/>
+								<ExtendedTooltip name="TerritoriesSearchStringExtendedTooltip" id="171"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="TerritoriesViewStatus" id="172">
+								<AdditionSource>
+									<Item>Territories</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="TerritoriesViewStatusContextMenu" id="175"/>
+								<ExtendedTooltip name="TerritoriesViewStatusExtendedTooltip" id="176"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="TerritoriesSearchControl" id="177">
+								<AdditionSource>
+									<Item>Territories</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="TerritoriesSearchControlContextMenu" id="180"/>
+								<ExtendedTooltip name="TerritoriesSearchControlExtendedTooltip" id="181"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeEditEnd">TerritoriesBeforeEditEnd</Event>
+								<Event name="OnChange">TerritoriesOnChange</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="TerritoriesLineNumber" id="185">
+									<DataPath>Territories.LineNumber</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>7</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="TerritoriesLineNumberContextMenu" id="186"/>
+									<ExtendedTooltip name="TerritoriesLineNumberExtendedTooltip" id="187"/>
+								</InputField>
+								<InputField name="TerritoriesTerritory" id="182">
+									<DataPath>Territories.Territory</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="TerritoriesTerritoryContextMenu" id="183"/>
+									<ExtendedTooltip name="TerritoriesTerritoryExtendedTooltip" id="184"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="PageRegions" id="136">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Regions</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регионы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Regiony</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page regions</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Page regions</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="PageRegionsExtendedTooltip" id="137"/>
+					<ChildItems>
+						<Table name="Regions" id="138">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Regions</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="RegionsContextMenu" id="139"/>
+							<AutoCommandBar name="RegionsCommandBar" id="140">
+								<ChildItems>
+									<Button name="RegionsDelete" id="188">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.Regions.StandardCommand.Delete</CommandName>
+										<ExtendedTooltip name="RegionsDeleteExtendedTooltip" id="189"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="RegionsExtendedTooltip" id="141"/>
+							<SearchStringAddition name="RegionsSearchString" id="142">
+								<AdditionSource>
+									<Item>Regions</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="RegionsSearchStringContextMenu" id="145"/>
+								<ExtendedTooltip name="RegionsSearchStringExtendedTooltip" id="146"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="RegionsViewStatus" id="147">
+								<AdditionSource>
+									<Item>Regions</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="RegionsViewStatusContextMenu" id="150"/>
+								<ExtendedTooltip name="RegionsViewStatusExtendedTooltip" id="151"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="RegionsSearchControl" id="152">
+								<AdditionSource>
+									<Item>Regions</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="RegionsSearchControlContextMenu" id="155"/>
+								<ExtendedTooltip name="RegionsSearchControlExtendedTooltip" id="156"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeEditEnd">RegionsBeforeEditEnd</Event>
+								<Event name="OnChange">RegionsOnChange</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="RegionsLineNumber" id="160">
+									<DataPath>Regions.LineNumber</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>7</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="RegionsLineNumberContextMenu" id="161"/>
+									<ExtendedTooltip name="RegionsLineNumberExtendedTooltip" id="162"/>
+								</InputField>
+								<InputField name="RegionsRegion" id="157">
+									<DataPath>Regions.Region</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="RegionsRegionContextMenu" id="158"/>
+									<ExtendedTooltip name="RegionsRegionExtendedTooltip" id="159"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.User</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Territories" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Territories</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Территории</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Ъzemн</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Territory" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Territory</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Территория</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Ъzemн</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Territory</v8:Type>
+					</Type>
+				</Column>
+				<Column name="LineNumber" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>N</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>N</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>N</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Regions" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Regions</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регионы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Regiony</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Region" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Region</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регион</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Region</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Region</v8:Type>
+					</Type>
+				</Column>
+				<Column name="LineNumber" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>N</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>N</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>N</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>0</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="SendUserPassword" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Send user password</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить логин/пароль</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Send user password</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить логин/пароль</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>SendUserPassword</Action>
+		</Command>
+		<Command name="GenerateRandomPassword" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Generate random password</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать пароль</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Generate random password</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать пароль</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>GenerateRandomPassword</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="UserID">
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

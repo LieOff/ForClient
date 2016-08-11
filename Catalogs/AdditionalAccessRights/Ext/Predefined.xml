@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.1">
+	<Item id="fc9fa283-3a12-458e-a314-37c55f7536c0">
+		<Name>EditCatalogNumbers</Name>
+		<Code>000000005</Code>
+		<Description>en = 'Edit catalog codes'; ru = 'Редактирование кодов справочников'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f8c36879-9a0b-4721-a2bd-85dbb1cbb18d">
+		<Name>EditDocumentNumbers</Name>
+		<Code>000000004</Code>
+		<Description>en = 'Edit document numbers'; ru = 'Редактирование номеров документов'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9567dcfa-172b-4553-8aa5-25a825831592">
+		<Name>EditOutletContacts</Name>
+		<Code>000000002</Code>
+		<Description>en = 'Edit outlet contacts list'; ru = 'Редактирование списка контактов торговых точек'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="24433ca9-cce6-44b4-b4aa-b078f8bb5979">
+		<Name>EditParametersInOutlet</Name>
+		<Code>000000001</Code>
+		<Description>en = 'Edit parameters in outlet'; ru = 'Редактирование параметров в торговой точке'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5d222ba2-b056-4255-849f-230e8de6dbf8">
+		<Name>EditPartnerContacts</Name>
+		<Code>000000003</Code>
+		<Description>en = 'Edit partner contacts list'; ru = 'Редактирование списка контактов партнеров'</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

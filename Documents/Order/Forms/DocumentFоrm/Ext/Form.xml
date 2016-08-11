@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnOpen">OnOpen</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Pages" id="86">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="PagesExtendedTooltip" id="87"/>
+			<ChildItems>
+				<Page name="GroupMasterData" id="84">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Master data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные данные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Primбrnн data</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group master data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group master data</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupMasterDataExtendedTooltip" id="85"/>
+					<ChildItems>
+						<UsualGroup name="GroupNumberDate" id="28">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group number date</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Group number date</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group number date</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Group number date</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupNumberDateРасширеннаяПодсказка" id="50"/>
+							<ChildItems>
+								<InputField name="Number" id="1">
+									<DataPath>Object.Number</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="NumberContextMenu" id="2"/>
+									<ExtendedTooltip name="NumberРасширеннаяПодсказка" id="51"/>
+								</InputField>
+								<InputField name="Date" id="3">
+									<DataPath>Object.Date</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="DateContextMenu" id="4"/>
+									<ExtendedTooltip name="DateРасширеннаяПодсказка" id="52"/>
+								</InputField>
+								<InputField name="Status" id="33">
+									<DataPath>Object.Status</DataPath>
+									<ContextMenu name="StatusContextMenu" id="34"/>
+									<ExtendedTooltip name="StatusРасширеннаяПодсказка" id="53"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Outlet" id="5">
+							<DataPath>Object.Outlet</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="OutletContextMenu" id="6"/>
+							<ExtendedTooltip name="OutletРасширеннаяПодсказка" id="54"/>
+						</InputField>
+						<InputField name="SR" id="7">
+							<DataPath>Object.SR</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceParameters>
+								<app:item name="Role">
+									<app:value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xs:string">SR</Value>
+									</app:value>
+								</app:item>
+							</ChoiceParameters>
+							<ContextMenu name="SRContextMenu" id="8"/>
+							<ExtendedTooltip name="SRРасширеннаяПодсказка" id="55"/>
+						</InputField>
+						<InputField name="Visit" id="13">
+							<DataPath>Object.Visit</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="VisitContextMenu" id="14"/>
+							<ExtendedTooltip name="VisitРасширеннаяПодсказка" id="57"/>
+						</InputField>
+						<InputField name="Contractor" id="124">
+							<DataPath>Object.Contractor</DataPath>
+							<ContextMenu name="ContractorContextMenu" id="125"/>
+							<ExtendedTooltip name="ContractorExtendedTooltip" id="126"/>
+						</InputField>
+						<InputField name="PriceList" id="44">
+							<DataPath>Object.PriceList</DataPath>
+							<ContextMenu name="PriceListContextMenu" id="45"/>
+							<ExtendedTooltip name="PriceListРасширеннаяПодсказка" id="58"/>
+						</InputField>
+						<InputField name="Stock" id="48">
+							<DataPath>Object.Stock</DataPath>
+							<ContextMenu name="StockContextMenu" id="49"/>
+							<ExtendedTooltip name="StockРасширеннаяПодсказка" id="59"/>
+						</InputField>
+						<InputField name="DateDelivery" id="9">
+							<DataPath>Object.DeliveryDate</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Delivery date</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата доставки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Datum dodбnн</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>13</Width>
+							<ContextMenu name="DateDeliveryContextMenu" id="10"/>
+							<ExtendedTooltip name="DateDeliveryРасширеннаяПодсказка" id="56"/>
+						</InputField>
+						<InputField name="Lattitude" id="40">
+							<DataPath>Object.Lattitude</DataPath>
+							<ContextMenu name="LattitudeContextMenu" id="41"/>
+							<ExtendedTooltip name="LattitudeРасширеннаяПодсказка" id="82"/>
+						</InputField>
+						<InputField name="Longitude" id="42">
+							<DataPath>Object.Longitude</DataPath>
+							<ContextMenu name="LongitudeContextMenu" id="43"/>
+							<ExtendedTooltip name="LongitudeРасширеннаяПодсказка" id="83"/>
+						</InputField>
+						<InputField name="Commentary" id="11">
+							<DataPath>Object.Commentary</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="CommentaryContextMenu" id="12"/>
+							<ExtendedTooltip name="CommentaryРасширеннаяПодсказка" id="80"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="GroupSKUs" id="90">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>SKUs</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Zboží</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group SKUs</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group SKUs</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupSKUsExtendedTooltip" id="91"/>
+					<ChildItems>
+						<Table name="SKUs" id="15">
+							<Representation>List</Representation>
+							<Footer>true</Footer>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.SKUs</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="SKUsContextMenu" id="16"/>
+							<AutoCommandBar name="SKUsCommandBar" id="17">
+								<ChildItems>
+									<Button name="SKUsDelete" id="92">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.SKUs.StandardCommand.Delete</CommandName>
+										<ExtendedTooltip name="SKUsDeleteExtendedTooltip" id="93"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="SKUsРасширеннаяПодсказка" id="60"/>
+							<SearchStringAddition name="SKUsСтрокаПоиска" id="61">
+								<AdditionSource>
+									<Item>SKUs</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="SKUsСтрокаПоискаКонтекстноеМеню" id="62"/>
+								<ExtendedTooltip name="SKUsСтрокаПоискаРасширеннаяПодсказка" id="63"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="SKUsСостояниеПросмотра" id="64">
+								<AdditionSource>
+									<Item>SKUs</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="SKUsСостояниеПросмотраКонтекстноеМеню" id="65"/>
+								<ExtendedTooltip name="SKUsСостояниеПросмотраРасширеннаяПодсказка" id="66"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="SKUsУправлениеПоиском" id="67">
+								<AdditionSource>
+									<Item>SKUs</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="SKUsУправлениеПоискомКонтекстноеМеню" id="68"/>
+								<ExtendedTooltip name="SKUsУправлениеПоискомРасширеннаяПодсказка" id="69"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="SKUsLineNumber" id="18">
+									<DataPath>Object.SKUs.LineNumber</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="SKUsLineNumberContextMenu" id="19"/>
+									<ExtendedTooltip name="SKUsLineNumberРасширеннаяПодсказка" id="70"/>
+								</LabelField>
+								<InputField name="SKUsSKU" id="20">
+									<DataPath>Object.SKUs.SKU</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="SKUsSKUContextMenu" id="21"/>
+									<ExtendedTooltip name="SKUsSKUРасширеннаяПодсказка" id="71"/>
+									<Events>
+										<Event name="OnChange">SKUsSKUOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="SKUsFeature" id="46">
+									<DataPath>Object.SKUs.Feature</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="SKUsFeatureContextMenu" id="47"/>
+									<ExtendedTooltip name="SKUsFeatureРасширеннаяПодсказка" id="72"/>
+								</InputField>
+								<InputField name="SKUsQty" id="22">
+									<DataPath>Object.SKUs.Qty</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="SKUsQtyContextMenu" id="23"/>
+									<ExtendedTooltip name="SKUsQtyРасширеннаяПодсказка" id="73"/>
+									<Events>
+										<Event name="OnChange">SKUsQtyOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="SKUsBaseUnit" id="35">
+									<EditMode>EnterOnInput</EditMode>
+									<Width>8</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="SKUsBaseUnitContextMenu" id="36"/>
+									<ExtendedTooltip name="SKUsBaseUnitРасширеннаяПодсказка" id="74"/>
+								</InputField>
+								<InputField name="SKUsSelectedUnit" id="37">
+									<DataPath>Object.SKUs.Units</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="SKUsSelectedUnitContextMenu" id="38"/>
+									<ExtendedTooltip name="SKUsSelectedUnitРасширеннаяПодсказка" id="75"/>
+								</InputField>
+								<InputField name="SKUsPrice" id="24">
+									<DataPath>Object.SKUs.Price</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="SKUsPriceContextMenu" id="25"/>
+									<ExtendedTooltip name="SKUsPriceРасширеннаяПодсказка" id="76"/>
+									<Events>
+										<Event name="OnChange">SKUsPriceOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="SKUsDiscount" id="29">
+									<DataPath>Object.SKUs.Discount</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Discount/MarkUp %</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Скидка/Наценка %</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="SKUsDiscountContextMenu" id="30"/>
+									<ExtendedTooltip name="SKUsDiscountРасширеннаяПодсказка" id="77"/>
+									<Events>
+										<Event name="OnChange">SKUsDiscountOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="SKUsTotal" id="31">
+									<DataPath>Object.SKUs.Total</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="SKUsTotalContextMenu" id="32"/>
+									<ExtendedTooltip name="SKUsTotalРасширеннаяПодсказка" id="78"/>
+									<Events>
+										<Event name="OnChange">SKUsTotalOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="SKUsAmount" id="26">
+									<DataPath>Object.SKUs.Amount</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Object.SKUs.TotalAmount</FooterDataPath>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="SKUsAmountContextMenu" id="27"/>
+									<ExtendedTooltip name="SKUsAmountРасширеннаяПодсказка" id="79"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupParameters" id="94">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Parameters</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Parameters</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group parameters</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group parameters</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupParametersExtendedTooltip" id="95"/>
+					<ChildItems>
+						<Table name="Parameters" id="96">
+							<CommandBarLocation>None</CommandBarLocation>
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.Parameters</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ParametersContextMenu" id="97"/>
+							<AutoCommandBar name="ParametersCommandBar" id="98"/>
+							<ExtendedTooltip name="ParametersExtendedTooltip" id="99"/>
+							<SearchStringAddition name="ParametersSearchString" id="100">
+								<AdditionSource>
+									<Item>Parameters</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ParametersSearchStringContextMenu" id="103"/>
+								<ExtendedTooltip name="ParametersSearchStringExtendedTooltip" id="104"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ParametersViewStatus" id="105">
+								<AdditionSource>
+									<Item>Parameters</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ParametersViewStatusContextMenu" id="108"/>
+								<ExtendedTooltip name="ParametersViewStatusExtendedTooltip" id="109"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ParametersSearchControl" id="110">
+								<AdditionSource>
+									<Item>Parameters</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ParametersSearchControlContextMenu" id="113"/>
+								<ExtendedTooltip name="ParametersSearchControlExtendedTooltip" id="114"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ParametersParameter" id="118">
+									<DataPath>Object.Parameters.Parameter</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ParametersParameterContextMenu" id="119"/>
+									<ExtendedTooltip name="ParametersParameterExtendedTooltip" id="120"/>
+								</InputField>
+								<InputField name="ParametersValue" id="121">
+									<DataPath>Object.Parameters.Value</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ParametersValueContextMenu" id="122"/>
+									<ExtendedTooltip name="ParametersValueExtendedTooltip" id="123"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Order</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

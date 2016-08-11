@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>WriteAndClose</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Write</ExcludedCommand>
+	</CommandSet>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Pages" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Strбnky</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="PagesExtendedTooltip" id="156"/>
+			<ChildItems>
+				<Page name="GroupMasterData" id="103">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Master data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные данные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Primбrnн data</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group master data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group master data</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupMasterDataExtendedTooltip" id="139"/>
+					<ChildItems>
+						<UsualGroup name="GroupNumberAndDate" id="47">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group number and date</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Group number and date</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group number and date</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Group number and date</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupNumberAndDateExtendedTooltip" id="140"/>
+							<ChildItems>
+								<InputField name="Number" id="1">
+									<DataPath>Object.Number</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="NumberContextMenu" id="2"/>
+									<ExtendedTooltip name="NumberExtendedTooltip" id="141"/>
+								</InputField>
+								<InputField name="Date" id="3">
+									<DataPath>Object.Date</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="DateContextMenu" id="4"/>
+									<ExtendedTooltip name="DateExtendedTooltip" id="142"/>
+								</InputField>
+								<InputField name="Status" id="9">
+									<DataPath>Object.Status</DataPath>
+									<Visible>false</Visible>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="StatusContextMenu" id="10"/>
+									<ExtendedTooltip name="StatusExtendedTooltip" id="143"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Plan" id="50">
+							<DataPath>Object.Plan</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="PlanContextMenu" id="51"/>
+							<ExtendedTooltip name="PlanExtendedTooltip" id="144"/>
+						</InputField>
+						<InputField name="Outlet" id="5">
+							<DataPath>Object.Outlet</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="OutletContextMenu" id="6"/>
+							<ExtendedTooltip name="OutletExtendedTooltip" id="145"/>
+						</InputField>
+						<InputField name="SR" id="7">
+							<DataPath>Object.SR</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>Left</TitleLocation>
+							<TitleHeight>1</TitleHeight>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="SRContextMenu" id="8"/>
+							<ExtendedTooltip name="SRExtendedTooltip" id="146"/>
+						</InputField>
+						<InputField name="Encashment" id="48">
+							<ContextMenu name="EncashmentContextMenu" id="49"/>
+							<ExtendedTooltip name="EncashmentExtendedTooltip" id="147"/>
+						</InputField>
+						<InputField name="ReasonForVisit" id="133">
+							<DataPath>Object.ReasonForVisit</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="ReasonForVisitContextMenu" id="134"/>
+							<ExtendedTooltip name="ReasonForVisitExtendedTooltip" id="224"/>
+						</InputField>
+						<InputField name="ReasonForNotOfTakingOrder" id="135">
+							<DataPath>Object.ReasonForNotOfTakingOrder</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="ReasonForNotOfTakingOrderContextMenu" id="136"/>
+							<ExtendedTooltip name="ReasonForNotOfTakingOrderExtendedTooltip" id="225"/>
+						</InputField>
+						<InputField name="StartTime" id="11">
+							<DataPath>Object.StartTime</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="StartTimeContextMenu" id="12"/>
+							<ExtendedTooltip name="StartTimeExtendedTooltip" id="150"/>
+						</InputField>
+						<InputField name="EndTime" id="13">
+							<DataPath>Object.EndTime</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="EndTimeContextMenu" id="14"/>
+							<ExtendedTooltip name="EndTimeExtendedTooltip" id="151"/>
+						</InputField>
+						<InputField name="Lattitude" id="78">
+							<DataPath>Object.Lattitude</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="LattitudeContextMenu" id="79"/>
+							<ExtendedTooltip name="LattitudeExtendedTooltip" id="153"/>
+						</InputField>
+						<InputField name="Longitude" id="80">
+							<DataPath>Object.Longitude</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="LongitudeContextMenu" id="81"/>
+							<ExtendedTooltip name="LongitudeExtendedTooltip" id="154"/>
+						</InputField>
+						<InputField name="Commentary" id="137">
+							<DataPath>Object.Commentary</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>Left</TitleLocation>
+							<ContextMenu name="CommentaryContextMenu" id="138"/>
+							<ExtendedTooltip name="CommentaryExtendedTooltip" id="226"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="GroupTasks" id="67">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Tasks</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задачи</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Ъkoly</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group tasks</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group tasks</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupTasksExtendedTooltip" id="157"/>
+					<ChildItems>
+						<Table name="Task" id="68">
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.deprecated_Task</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="TaskContextMenu" id="69"/>
+							<AutoCommandBar name="TaskCommandBar" id="70">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="TaskExtendedTooltip" id="158"/>
+							<SearchStringAddition name="TaskSearchString" id="159">
+								<AdditionSource>
+									<Item>Task</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="TaskSearchStringContextMenu" id="160"/>
+								<ExtendedTooltip name="TaskSearchStringExtendedTooltip" id="161"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="TaskViewStatus" id="162">
+								<AdditionSource>
+									<Item>Task</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="TaskViewStatusContextMenu" id="163"/>
+								<ExtendedTooltip name="TaskViewStatusExtendedTooltip" id="164"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="TaskSearchControl" id="165">
+								<AdditionSource>
+									<Item>Task</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="TaskSearchControlContextMenu" id="166"/>
+								<ExtendedTooltip name="TaskSearchControlExtendedTooltip" id="167"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="TaskLineNumber" id="71">
+									<DataPath>Object.deprecated_Task.LineNumber</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="TaskLineNumberContextMenu" id="72"/>
+									<ExtendedTooltip name="TaskLineNumberExtendedTooltip" id="168"/>
+								</LabelField>
+								<InputField name="TaskTextTask" id="73">
+									<DataPath>Object.deprecated_Task.TextTask</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="TaskTextTaskContextMenu" id="74"/>
+									<ExtendedTooltip name="TaskTextTaskExtendedTooltip" id="169"/>
+								</InputField>
+								<CheckBoxField name="TaskResult" id="75">
+									<DataPath>Object.deprecated_Task.Result</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="TaskResultContextMenu" id="76"/>
+									<ExtendedTooltip name="TaskResultExtendedTooltip" id="170"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupQuestionaires" id="268">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Results of questioning</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результаты анкетирования</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Vэsledky dotazovбnн</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group questionaires</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group questionaires</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupQuestionairesExtendedTooltip" id="269"/>
+					<ChildItems>
+						<Table name="TempQuestionaires" id="270">
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<SelectionMode>SingleRow</SelectionMode>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<VerticalLines>false</VerticalLines>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<InitialListView>Beginning</InitialListView>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>TempQuestionaires</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="TempQuestionairesContextMenu" id="271"/>
+							<AutoCommandBar name="TempQuestionairesCommandBar" id="272">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="TempQuestionairesExtendedTooltip" id="273"/>
+							<SearchStringAddition name="TempQuestionairesSearchString" id="274">
+								<AdditionSource>
+									<Item>TempQuestionaires</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="TempQuestionairesSearchStringContextMenu" id="277"/>
+								<ExtendedTooltip name="TempQuestionairesSearchStringExtendedTooltip" id="278"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="TempQuestionairesViewStatus" id="279">
+								<AdditionSource>
+									<Item>TempQuestionaires</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="TempQuestionairesViewStatusContextMenu" id="282"/>
+								<ExtendedTooltip name="TempQuestionairesViewStatusExtendedTooltip" id="283"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="TempQuestionairesSearchControl" id="284">
+								<AdditionSource>
+									<Item>TempQuestionaires</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="TempQuestionairesSearchControlContextMenu" id="287"/>
+								<ExtendedTooltip name="TempQuestionairesSearchControlExtendedTooltip" id="288"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">TempQuestionairesSelection</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="TempQuestionairesQuestionnaireResult" id="304">
+									<DataPath>TempQuestionaires.QuestionnaireResult</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Result of questioning</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Результат анкетирования</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>cz</v8:lang>
+											<v8:content>Result of questioning</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="TempQuestionairesQuestionnaireResultContextMenu" id="305"/>
+									<ExtendedTooltip name="TempQuestionairesQuestionnaireResultExtendedTooltip" id="306"/>
+								</LabelField>
+								<LabelField name="TempQuestionairesQuestionnaire" id="289">
+									<DataPath>TempQuestionaires.Questionnaire</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="TempQuestionairesQuestionnaireContextMenu" id="290"/>
+									<ExtendedTooltip name="TempQuestionairesQuestionnaireExtendedTooltip" id="291"/>
+								</LabelField>
+								<LabelField name="TempQuestionairesVisit" id="292">
+									<DataPath>TempQuestionaires.Visit</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="TempQuestionairesVisitContextMenu" id="293"/>
+									<ExtendedTooltip name="TempQuestionairesVisitExtendedTooltip" id="294"/>
+								</LabelField>
+								<LabelField name="TempQuestionairesOutlet" id="295">
+									<DataPath>TempQuestionaires.Outlet</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="TempQuestionairesOutletContextMenu" id="296"/>
+									<ExtendedTooltip name="TempQuestionairesOutletExtendedTooltip" id="297"/>
+								</LabelField>
+								<LabelField name="TempQuestionairesSR" id="298">
+									<DataPath>TempQuestionaires.SR</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="TempQuestionairesSRContextMenu" id="299"/>
+									<ExtendedTooltip name="TempQuestionairesSRExtendedTooltip" id="300"/>
+								</LabelField>
+								<LabelField name="TempQuestionairesDate" id="301">
+									<DataPath>TempQuestionaires.Filter</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="TempQuestionairesDateContextMenu" id="302"/>
+									<ExtendedTooltip name="TempQuestionairesDateExtendedTooltip" id="303"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Visit</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="PictureAddress" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Picture address</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Picture address</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="PictureExtension" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Picture extension</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Picture extension</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="TempQuestionaires" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Temp questionaires</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Анкеты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Dotazníky (doč.)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.QuestioningResults</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="QuestionnaireResult" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Questionnaire result</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Questionnaire result</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="FileTable" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>File table</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>File table</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="FileName" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>File name</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя файла</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Jmйno souboru</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="StorageAddress" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Storage address</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Adresa uložiště </v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Extension" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Extension</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расширение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Extension</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+</Form>

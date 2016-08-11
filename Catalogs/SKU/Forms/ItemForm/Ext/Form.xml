@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+		<Event name="OnWriteAtServer">OnWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Pages" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="PagesExtendedTooltip" id="75"/>
+			<ChildItems>
+				<Page name="GroupMasterData" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Master data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные данные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Primбrnн data</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group master data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group master data</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Height>6</Height>
+					<VerticalStretch>false</VerticalStretch>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="GroupMasterDataExtendedTooltip" id="61"/>
+					<ChildItems>
+						<UsualGroup name="GroupPicture" id="27">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group picture</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Group picture</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group picture</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Group picture</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>32</Width>
+							<Height>6</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupPictureExtendedTooltip" id="62"/>
+							<ChildItems>
+								<CommandBar name="GroupPictureCommands" id="112">
+									<Title>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group picture commands</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group picture commands</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="GroupPictureCommandsExtendedTooltip" id="113"/>
+									<ChildItems>
+										<Button name="OpenPicture" id="46">
+											<Type>CommandBarButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.OpenPicture</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.Magnifier</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="OpenPictureExtendedTooltip" id="66"/>
+										</Button>
+										<Button name="DeletePicture" id="45">
+											<Type>CommandBarButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.DeletePicture</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.Delete</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="DeletePictureExtendedTooltip" id="65"/>
+										</Button>
+									</ChildItems>
+								</CommandBar>
+								<PictureField name="PictureAddress" id="28">
+									<DataPath>PictureAddress</DataPath>
+									<TitleFont ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+									<TitleLocation>None</TitleLocation>
+									<Height>6</Height>
+									<PictureSize>AutoSize</PictureSize>
+									<Zoomable>true</Zoomable>
+									<Hyperlink>true</Hyperlink>
+									<NonselectedPictureText>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Add snapshot</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Добавить фотоснимок</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>cz</v8:lang>
+											<v8:content>Novй foto</v8:content>
+										</v8:item>
+									</NonselectedPictureText>
+									<TextColor>#C0C0C0</TextColor>
+									<ContextMenu name="PictureAddressContextMenu" id="29"/>
+									<ExtendedTooltip name="PictureAddressExtendedTooltip" id="67"/>
+									<Events>
+										<Event name="Click">PictureAddressClick</Event>
+									</Events>
+								</PictureField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="GroupDetails" id="26">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group details</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Group details</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group details</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Group details</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupDetailsExtendedTooltip" id="68"/>
+							<ChildItems>
+								<InputField name="Code" id="1">
+									<DataPath>Object.Code</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="CodeContextMenu" id="2"/>
+									<ExtendedTooltip name="CodeExtendedTooltip" id="69"/>
+								</InputField>
+								<InputField name="Description" id="3">
+									<DataPath>Object.Description</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<ContextMenu name="DescriptionContextMenu" id="4"/>
+									<ExtendedTooltip name="DescriptionExtendedTooltip" id="70"/>
+								</InputField>
+								<InputField name="Owner" id="5">
+									<DataPath>Object.Owner</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="OwnerContextMenu" id="6"/>
+									<ExtendedTooltip name="OwnerExtendedTooltip" id="71"/>
+								</InputField>
+								<InputField name="Brand" id="9">
+									<DataPath>Object.Brand</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="BrandContextMenu" id="10"/>
+									<ExtendedTooltip name="BrandExtendedTooltip" id="72"/>
+								</InputField>
+								<InputField name="BaseUnit" id="24">
+									<DataPath>Object.BaseUnit</DataPath>
+									<ContextMenu name="BaseUnitContextMenu" id="25"/>
+									<ExtendedTooltip name="BaseUnitExtendedTooltip" id="73"/>
+									<Events>
+										<Event name="OnChange">BaseUnitOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="Stock" id="41">
+									<DataPath>Object.CommonStock</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="StockContextMenu" id="42"/>
+									<ExtendedTooltip name="StockExtendedTooltip" id="74"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="GroupPacking" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Packing</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Упаковки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Packing</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group packing</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group packing</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupPackingExtendedTooltip" id="76"/>
+					<ChildItems>
+						<Table name="Packing" id="14">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.Packing</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="PackingContextMenu" id="15"/>
+							<AutoCommandBar name="PackingCommandBar" id="16">
+								<ChildItems>
+									<Button name="PackingDelete" id="106">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.Packing.StandardCommand.Delete</CommandName>
+										<ExtendedTooltip name="PackingDeleteExtendedTooltip" id="107"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="PackingExtendedTooltip" id="77"/>
+							<SearchStringAddition name="PackingSearchString" id="88">
+								<AdditionSource>
+									<Item>Packing</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="PackingSearchStringContextMenu" id="89"/>
+								<ExtendedTooltip name="PackingSearchStringExtendedTooltip" id="90"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="PackingViewStatus" id="91">
+								<AdditionSource>
+									<Item>Packing</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="PackingViewStatusContextMenu" id="92"/>
+								<ExtendedTooltip name="PackingViewStatusExtendedTooltip" id="93"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="PackingSearchControl" id="94">
+								<AdditionSource>
+									<Item>Packing</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="PackingSearchControlContextMenu" id="95"/>
+								<ExtendedTooltip name="PackingSearchControlExtendedTooltip" id="96"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeDeleteRow">PackingBeforeDeleteRow</Event>
+								<Event name="BeforeRowChange">PackingBeforeRowChange</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="PackingLineNumber" id="17">
+									<DataPath>Object.Packing.LineNumber</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="PackingLineNumberContextMenu" id="18"/>
+									<ExtendedTooltip name="PackingLineNumberExtendedTooltip" id="78"/>
+								</LabelField>
+								<InputField name="PackingPack" id="19">
+									<DataPath>Object.Packing.Pack</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="PackingPackContextMenu" id="20"/>
+									<ExtendedTooltip name="PackingPackExtendedTooltip" id="79"/>
+								</InputField>
+								<InputField name="PackingMultiplier" id="21">
+									<DataPath>Object.Packing.Multiplier</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="PackingMultiplierContextMenu" id="22"/>
+									<ExtendedTooltip name="PackingMultiplierExtendedTooltip" id="80"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupStocks" id="49">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Stocks</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остатки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Skladem</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group stocks</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group stocks</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupStocksExtendedTooltip" id="81"/>
+					<ChildItems>
+						<Table name="Stocks" id="50">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.Stocks</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="StocksContextMenu" id="51"/>
+							<AutoCommandBar name="StocksCommandBar" id="52">
+								<ChildItems>
+									<Button name="StocksDelete" id="108">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.Stocks.StandardCommand.Delete</CommandName>
+										<ExtendedTooltip name="StocksDeleteExtendedTooltip" id="109"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="StocksExtendedTooltip" id="82"/>
+							<SearchStringAddition name="StocksSearchString" id="97">
+								<AdditionSource>
+									<Item>Stocks</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="StocksSearchStringContextMenu" id="98"/>
+								<ExtendedTooltip name="StocksSearchStringExtendedTooltip" id="99"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="StocksViewStatus" id="100">
+								<AdditionSource>
+									<Item>Stocks</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="StocksViewStatusContextMenu" id="101"/>
+								<ExtendedTooltip name="StocksViewStatusExtendedTooltip" id="102"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="StocksSearchControl" id="103">
+								<AdditionSource>
+									<Item>Stocks</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="StocksSearchControlContextMenu" id="104"/>
+								<ExtendedTooltip name="StocksSearchControlExtendedTooltip" id="105"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="StocksLineNumber" id="53">
+									<DataPath>Object.Stocks.LineNumber</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="StocksLineNumberContextMenu" id="54"/>
+									<ExtendedTooltip name="StocksLineNumberExtendedTooltip" id="83"/>
+								</LabelField>
+								<InputField name="StocksFeature" id="55">
+									<DataPath>Object.Stocks.Feature</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="StocksFeatureContextMenu" id="56"/>
+									<ExtendedTooltip name="StocksFeatureExtendedTooltip" id="84"/>
+								</InputField>
+								<InputField name="StocksStock" id="59">
+									<DataPath>Object.Stocks.Stock</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="StocksStockContextMenu" id="60"/>
+									<ExtendedTooltip name="StocksStockExtendedTooltip" id="85"/>
+								</InputField>
+								<InputField name="StocksStockValue" id="57">
+									<DataPath>Object.Stocks.StockValue</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="StocksStockValueContextMenu" id="58"/>
+									<ExtendedTooltip name="StocksStockValueExtendedTooltip" id="86"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.SKU</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="PictureAddress" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Picture address</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Picture address</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="NewPictureName" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>New picture name</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>New picture name</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="NewPictureExtension" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>New picture extension</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>New picture extension</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="DefaultPictureName" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Default picture name</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Default picture name</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="DefaultPictureExtension" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Default picture extension</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширение основного изображения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Default picture extension</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="NewPictureType" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>New picture type</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>New picture type</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="DeletePicture" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Delete snapshot</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить фотоснимок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Odstranit foto</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Delete picture</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Odstranit obrбzek</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>DeletePicture</Action>
+		</Command>
+		<Command name="OpenPicture" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Open snapshot</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть фотоснимок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Open snapshot</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Open picture</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть файл</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Open picture</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>OpenPicture</Action>
+		</Command>
+	</Commands>
+</Form>

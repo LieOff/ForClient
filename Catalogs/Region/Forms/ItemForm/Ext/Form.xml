@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Code" id="1">
+			<DataPath>Object.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="CodeContextMenu" id="2"/>
+			<ExtendedTooltip name="CodeРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Description" id="3">
+			<DataPath>Object.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DescriptionContextMenu" id="4"/>
+			<ExtendedTooltip name="DescriptionРасширеннаяПодсказка" id="10"/>
+		</InputField>
+		<InputField name="Parent" id="5">
+			<DataPath>Object.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ParentContextMenu" id="6"/>
+			<ExtendedTooltip name="ParentРасширеннаяПодсказка" id="11"/>
+		</InputField>
+		<Table name="Managers" id="13">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Object.Managers</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ManagersContextMenu" id="14"/>
+			<AutoCommandBar name="ManagersCommandBar" id="15">
+				<ChildItems>
+					<Button name="ManagersDelete" id="66">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.Managers.StandardCommand.Delete</CommandName>
+						<ExtendedTooltip name="ManagersDeleteExtendedTooltip" id="67"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ManagersExtendedTooltip" id="16"/>
+			<SearchStringAddition name="ManagersSearchString" id="17">
+				<AdditionSource>
+					<Item>Managers</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ManagersSearchStringContextMenu" id="20"/>
+				<ExtendedTooltip name="ManagersSearchStringExtendedTooltip" id="21"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ManagersViewStatus" id="22">
+				<AdditionSource>
+					<Item>Managers</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ManagersViewStatusContextMenu" id="25"/>
+				<ExtendedTooltip name="ManagersViewStatusExtendedTooltip" id="26"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ManagersSearchControl" id="27">
+				<AdditionSource>
+					<Item>Managers</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ManagersSearchControlContextMenu" id="30"/>
+				<ExtendedTooltip name="ManagersSearchControlExtendedTooltip" id="31"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ManagersLineNumber" id="32">
+					<DataPath>Object.Managers.LineNumber</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ManagersLineNumberContextMenu" id="33"/>
+					<ExtendedTooltip name="ManagersLineNumberExtendedTooltip" id="34"/>
+				</LabelField>
+				<InputField name="ManagersManager" id="35">
+					<DataPath>Object.Managers.Manager</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceParameters>
+						<app:item name="Role">
+							<app:value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:string">SRM</Value>
+							</app:value>
+						</app:item>
+					</ChoiceParameters>
+					<ContextMenu name="ManagersManagerContextMenu" id="36"/>
+					<ExtendedTooltip name="ManagersManagerExtendedTooltip" id="37"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Region</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>Catalog.Territory.StandardCommand.OpenByValue</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

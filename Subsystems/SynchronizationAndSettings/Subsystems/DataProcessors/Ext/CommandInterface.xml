@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<CommandsVisibility>
+		<Command name="DataProcessor.РегламентныеИФоновыеЗадания.Command.РегламентныеИФоновыеЗадания">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.User">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ShowSyncAndSettings">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.User">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ShowConfigurationSettings">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.User">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ShowScheduledJobs">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.User">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ShowDeleteObjects">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.User">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ConfigurationSettings.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.User">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.bitmobile_DataExchanger.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.РегламентныеИФоновыеЗадания.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.bitmobile_СинхронизацияИНастройки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.УдалениеПомеченныхОбъектов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsOrder>
+		<Command name="DataProcessor.РегламентныеИФоновыеЗадания.Command.РегламентныеИФоновыеЗадания">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ShowSyncAndSettings">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ShowConfigurationSettings">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ShowScheduledJobs">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ShowDeleteObjects">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+	</GroupsOrder>
+</CommandInterface>

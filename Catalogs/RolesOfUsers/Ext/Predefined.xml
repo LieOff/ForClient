@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.1">
+	<Item id="ac7a675b-2387-463f-a7db-18deb5efb172">
+		<Name>SR</Name>
+		<Code>000000001</Code>
+		<Description>SR</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e4fda3f3-400c-45b9-b123-8ac55c9cf06f">
+		<Name>SRM</Name>
+		<Code>000000002</Code>
+		<Description>SRM</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

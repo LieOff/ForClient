@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">AfterWriteAtServer</Event>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="BeforeWrite">BeforeWrite</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Code" id="1">
+			<DataPath>Object.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="CodeContextMenu" id="2"/>
+			<ExtendedTooltip name="CodeExtendedTooltip" id="35"/>
+		</InputField>
+		<InputField name="Description" id="3">
+			<DataPath>Object.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DescriptionContextMenu" id="4"/>
+			<ExtendedTooltip name="DescriptionExtendedTooltip" id="36"/>
+		</InputField>
+		<InputField name="Owner" id="5">
+			<DataPath>Object.Owner</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="OwnerContextMenu" id="6"/>
+			<ExtendedTooltip name="OwnerExtendedTooltip" id="37"/>
+			<Events>
+				<Event name="OnChange">OwnerOnChange</Event>
+			</Events>
+		</InputField>
+		<InputField name="AnswerType" id="7">
+			<DataPath>Object.AnswerType</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="AnswerTypeContextMenu" id="8"/>
+			<ExtendedTooltip name="AnswerTypeExtendedTooltip" id="39"/>
+			<Events>
+				<Event name="OnChange">AnswerTypeOnChange</Event>
+			</Events>
+		</InputField>
+		<Table name="ValueList" id="9">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Object.ValueList</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ValueListContextMenu" id="10"/>
+			<AutoCommandBar name="ValueListCommandBar" id="11">
+				<ChildItems>
+					<Button name="ValueListDelete" id="53">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.ValueList.StandardCommand.Delete</CommandName>
+						<ExtendedTooltip name="ValueListDeleteExtendedTooltip" id="54"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ValueListExtendedTooltip" id="41"/>
+			<SearchStringAddition name="ValueListSearchString" id="42">
+				<AdditionSource>
+					<Item>ValueList</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ValueListSearchStringContextMenu" id="43"/>
+				<ExtendedTooltip name="ValueListSearchStringExtendedTooltip" id="44"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ValueListViewStatus" id="45">
+				<AdditionSource>
+					<Item>ValueList</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ValueListViewStatusContextMenu" id="46"/>
+				<ExtendedTooltip name="ValueListViewStatusExtendedTooltip" id="47"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ValueListSearchControl" id="48">
+				<AdditionSource>
+					<Item>ValueList</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ValueListSearchControlContextMenu" id="49"/>
+				<ExtendedTooltip name="ValueListSearchControlExtendedTooltip" id="50"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ValueListLineNumber" id="12">
+					<DataPath>Object.ValueList.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ValueListLineNumberContextMenu" id="13"/>
+					<ExtendedTooltip name="ValueListLineNumberExtendedTooltip" id="51"/>
+				</LabelField>
+				<InputField name="ValueListValue" id="14">
+					<DataPath>Object.ValueList.Value</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ValueListValueContextMenu" id="15"/>
+					<ExtendedTooltip name="ValueListValueExtendedTooltip" id="52"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<LabelDecoration name="Decoration1" id="55">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>You cannot change answer type and answers list if question is in quesionnaires.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нельзя изменять тип ответа и список ответов, если вопрос добавлен хотя бы в одну анкету.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Decoration1ContextMenu" id="56"/>
+			<ExtendedTooltip name="Decoration1ExtendedTooltip" id="57"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Question</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

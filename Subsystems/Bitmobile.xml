@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<Subsystem uuid="99231b08-a6f2-47fc-b550-c76406168887">
+		<Properties>
+			<Name>Bitmobile</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Bitmobile</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Bitmobile</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Bitmobile</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_Сервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_ПутьНаСервере</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_Пароль</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_ДатаПоследнейВыгрузкиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_СтатусПоследнейВыгрузкиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_ДатаПоследнейСинхронизацииУдаленныхДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_СтатусПоследнейСинхронизацииУдаленныхДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.bitmobile_НастройкиСинхронизации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.bitmobile_ИзмененныеДанные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_ИмяКонфигурации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_ВерсияКонфигурации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_ОтключитьПодпискиНаСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.bitmobile_СинхронизацияИНастройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.bitmobile_СоответствиеПеречислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.bitmobile_КонтролируемыеИзмеренияРегистров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.bitmobile_АдресаЭлПочтыДляОтчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_ИспользоватьОтправкуОтчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_РазмерПрикрепляемогоФайла</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_ПрикреплятьФайлДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_АутентификацияSMTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_ПарольSMTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_ПользовательSMTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_ПортSMTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_АдресСервераSMTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_Порт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.bitmobile_ОбъектыСОшибками</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_СинхронизацияЗапущена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_IDВыгрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_ДатаПоследнейЗагрузкиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">6e407c15-bc52-42f5-9298-148111d8a0e1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">f2761a5f-8f3e-4f49-aea9-9ef1eef7b59d</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ed3c5351-e37d-4413-aa80-881ad2f32145</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_СтатусПоследнейСинхронизацииФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_ДатаПоследнейСинхронизацииФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_СинхронизацияФайловЗапущена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_СтатусПоследнейЗагрузкиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_ДопустимыйРазмерФайла</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.bitmobile_Синхронизация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.bitmobile_СинхронизацияФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.bitmobile_ПриЗаписиСправочникаДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.bitmobile_ПриЗаписиРегистра</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.bitmobile_ОбработчикиСинхронизацииИПодписок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_КоличествоОбъектовВВыгрузке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.bitmobile_ОчисткаЖурналаРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.bitmobile_СинхронизацияСУчетнымиСистемами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_НеЗаписыватьСобытияСинхронизацииВЖурнал</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_СрокХраненияЖурналаРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.bitmobile_ХранилищеФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan.bitmobile_ОбменСУчетнымиСистемами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.bitmobile_ИспользуетсяSSLSMTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.bitmobile_ДействияПриСинхронизации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.bitmobile_НаправленияСинхронизации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.Admin</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УниверсальныйОбменДаннымиXML</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.1">
+	<Item id="f68dd827-75a6-4064-bfa1-8e9c5633a8b5">
+		<Name>ControlOrderReasonEnabled</Name>
+		<Code>000000006</Code>
+		<Description>ControlOrderReasonEnabled</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1e1d24ef-44cf-4ace-b2b7-5f27677fafff">
+		<Name>ControlVisitReasonEnabled</Name>
+		<Code>000000005</Code>
+		<Description>ControlVisitReasonEnabled</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c5b7f7a7-bcd8-4070-b801-9b6b8ab67e50">
+		<Name>CoordinateControlEnabled</Name>
+		<Code>000000002</Code>
+		<Description>CoordinateControlEnabled</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="78fe1747-9ab0-4a6d-b1eb-7f5b37c04762">
+		<Name>EmptyStockEnabled</Name>
+		<Code>000000004</Code>
+		<Description>EmptyStockEnabled</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="19de3b0e-5ac9-4a0c-876c-271571c6cb1b">
+		<Name>GPSSource</Name>
+		<Code>000000012</Code>
+		<Description>GPSSource</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cb655317-a692-4f49-a1e0-329ee2f707e5">
+		<Name>GPSTrackSendFrequency</Name>
+		<Code>000000013</Code>
+		<Description>GPSTrackSendFrequency</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="30379b20-6422-43f8-887f-1564f35e14c5">
+		<Name>GPSTrackWriteFrequency</Name>
+		<Code>000000014</Code>
+		<Description>GPSTrackWriteFrequency</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f832c4a1-d07b-411c-afd6-d2885d9d73e7">
+		<Name>MultistockEnabled</Name>
+		<Code>000000003</Code>
+		<Description>MultistockEnabled</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b5c9c9c3-b6dc-4aa2-9cbf-47e811e5ed19">
+		<Name>PlanVisitEnabled</Name>
+		<Code>000000001</Code>
+		<Description>PlanVisitEnabled</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="97f440f6-7270-42fc-9557-e5109d8d7820">
+		<Name>RecOrderEnabled</Name>
+		<Code>000000007</Code>
+		<Description>RecOrderEnabled</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="82b308a5-475a-4127-845e-b18c9ea02445">
+		<Name>SKUFeaturesRegistration</Name>
+		<Code>000000009</Code>
+		<Description>SKUFeaturesRegistration</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="05a932be-251a-4be6-8325-fc9ae11c7723">
+		<Name>SnapshotSize</Name>
+		<Code>000000008</Code>
+		<Description>SnapshotSize</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7a8f3f35-1064-4af8-bf57-e6937485dec2">
+		<Name>UseAutoFillForRecOrder</Name>
+		<Code>000000011</Code>
+		<Description>UseAutoFillForRecOrder</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d7a4fe02-7db5-4f75-b698-25a1b0b742f4">
+		<Name>UserCoordinatesActualityTime</Name>
+		<Code>000000010</Code>
+		<Description>UserCoordinatesActualityTime</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7bb11ea2-b16d-412b-841d-cb84fd6ddf96">
+		<Name>UseSaveQuest</Name>
+		<Code>000000015</Code>
+		<Description>UseSaveQuest</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

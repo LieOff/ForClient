@@ -1,0 +1,717 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>DataSource1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>DataSet1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Questionnaire</dataPath>
+			<field>Questionnaire</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Questionnaire</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Анкета</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Dotaznнk</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Outlet</dataPath>
+			<field>Outlet</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Outlet</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Торговая точка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Prodejnн mнsto</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ChildQuestion</dataPath>
+			<field>ChildQuestion</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Question</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вопрос</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Dotaz</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>QuestionType</dataPath>
+			<field>QuestionType</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Question type</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип вопроса</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Question type</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>DataSource1</dataSource>
+		<query>SELECT ALLOWED DISTINCT
+	Questionnaire.Ref AS Questionnaire,
+	MAX(CASE
+			WHEN QuestionnaireSelectors.Selector = "Catalog_Region"
+				THEN TRUE
+			ELSE FALSE
+		END) AS HasRegionSelector,
+	MAX(CASE
+			WHEN QuestionnaireSelectors.Selector = "Catalog_Territory"
+				THEN TRUE
+			ELSE FALSE
+		END) AS HasTerritorySelector,
+	MAX(CASE
+			WHEN QuestionnaireSelectors.Selector = "Catalog_OutletClass"
+				THEN TRUE
+			ELSE FALSE
+		END) AS HasClassSelector,
+	MAX(CASE
+			WHEN QuestionnaireSelectors.Selector = "Catalog_OutletType"
+				THEN TRUE
+			ELSE FALSE
+		END) AS HasTypeSelector,
+	MAX(CASE
+			WHEN QuestionnaireSelectors.Selector = "Catalog_Outlet"
+				THEN TRUE
+			ELSE FALSE
+		END) AS HasOutletSelector,
+	MAX(CASE
+			WHEN QuestionnaireSelectors.Selector = "Enum_OutletStatus"
+				THEN TRUE
+			ELSE FALSE
+		END) AS HasStatusSelector,
+	MAX(CASE
+			WHEN QuestionnaireSelectors.Selector = "Catalog_Distributor"
+				THEN TRUE
+			ELSE FALSE
+		END) AS HasDistributorSelector,
+	MAX(CASE
+			WHEN QuestionnaireSelectors.Selector = "Catalog_Positions"
+				THEN TRUE
+			ELSE FALSE
+		END) AS HasPositionSelector,
+	MAX(CASE
+			WHEN QuestionnaireSelectors.Selector = "Catalog_OutletParameter"
+				THEN TRUE
+			ELSE FALSE
+		END) AS HasParameterSelector,
+	CASE
+		WHEN COUNT(QuestionnaireSelectors.Selector) = 0
+			THEN FALSE
+		ELSE TRUE
+	END AS HasSelectors
+INTO SelectorsExistence
+FROM
+	Document.Questionnaire AS Questionnaire
+		LEFT JOIN Document.Questionnaire.Selectors AS QuestionnaireSelectors
+		ON Questionnaire.Ref = QuestionnaireSelectors.Ref
+WHERE
+	CASE
+			WHEN &amp;EndDate = DATETIME(1, 1, 1)
+				THEN TRUE
+			ELSE Questionnaire.BeginDate &lt;= &amp;EndDate
+		END
+	AND CASE
+			WHEN &amp;BeginDate = DATETIME(1, 1, 1)
+				THEN TRUE
+			ELSE CASE
+					WHEN Questionnaire.EndDate = DATETIME(1, 1, 1)
+						THEN TRUE
+					ELSE Questionnaire.EndDate &gt;= &amp;BeginDate
+				END
+		END
+
+GROUP BY
+	Questionnaire.Ref
+
+INDEX BY
+	Questionnaire,
+	HasRegionSelector,
+	HasTerritorySelector,
+	HasClassSelector,
+	HasTypeSelector,
+	HasOutletSelector,
+	HasStatusSelector,
+	HasDistributorSelector,
+	HasPositionSelector,
+	HasParameterSelector,
+	HasSelectors
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT ALLOWED DISTINCT
+	SelectorsExistence.Questionnaire AS Questionnaire,
+	SelectorsExistence.HasRegionSelector AS HasRegionSelector,
+	SelectorsExistence.HasTerritorySelector AS HasTerritorySelector,
+	SelectorsExistence.HasClassSelector AS HasClassSelector,
+	SelectorsExistence.HasTypeSelector AS HasTypeSelector,
+	SelectorsExistence.HasOutletSelector AS HasOutletSelector,
+	SelectorsExistence.HasStatusSelector AS HasStatusSelector,
+	SelectorsExistence.HasDistributorSelector AS HasDistributorSelector,
+	SelectorsExistence.HasPositionSelector AS HasPositionSelector,
+	SelectorsExistence.HasParameterSelector AS HasParameterSelector,
+	SelectorsExistence.HasSelectors AS HasSelectors,
+	QuestionnaireSelectors.Selector,
+	QuestionnaireSelectors.AdditionalParameter AS AdditionalParameter,
+	QuestionnaireSelectors.ComparisonType AS ComparisonType,
+	QuestionnaireSelectors.Value,
+	CAST(QuestionnaireSelectors.StringValue AS STRING(100)) AS StringValue,
+	Outlet.Ref AS Outlet
+INTO Selectors
+FROM
+	SelectorsExistence AS SelectorsExistence
+		LEFT JOIN Document.Questionnaire.Selectors AS QuestionnaireSelectors
+		ON SelectorsExistence.Questionnaire = QuestionnaireSelectors.Ref,
+	Catalog.Outlet AS Outlet
+
+INDEX BY
+	Questionnaire,
+	Outlet,
+	HasRegionSelector,
+	HasTerritorySelector,
+	HasClassSelector,
+	HasTypeSelector,
+	HasOutletSelector,
+	HasStatusSelector,
+	HasDistributorSelector,
+	HasPositionSelector,
+	HasParameterSelector,
+	HasSelectors,
+	ComparisonType,
+	AdditionalParameter,
+	StringValue
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT ALLOWED DISTINCT
+	Selectors.Questionnaire AS Questionnaire,
+	TerritoryOutlets.Outlet AS RegionOutlet
+INTO RegionOutlets
+FROM
+	Selectors AS Selectors
+		LEFT JOIN Catalog.Territory.Outlets AS TerritoryOutlets
+		ON (CASE
+				WHEN NOT Selectors.ComparisonType = VALUE(Enum.ComparisonType.NotEqual)
+					THEN Selectors.Value = TerritoryOutlets.Ref.Owner
+				ELSE NOT Selectors.Value = TerritoryOutlets.Ref.Owner
+			END)
+WHERE
+	Selectors.HasRegionSelector
+	AND NOT TerritoryOutlets.Outlet IS NULL 
+
+INDEX BY
+	Questionnaire,
+	RegionOutlet
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT ALLOWED DISTINCT
+	Selectors.Questionnaire AS Questionnaire,
+	TerritoryOutlets.Outlet AS TerritoryOutlet
+INTO TerritoryOutlets
+FROM
+	Selectors AS Selectors
+		LEFT JOIN Catalog.Territory.Outlets AS TerritoryOutlets
+		ON (CASE
+				WHEN NOT Selectors.ComparisonType = VALUE(Enum.ComparisonType.NotEqual)
+					THEN Selectors.Value = TerritoryOutlets.Ref
+				ELSE NOT Selectors.Value = TerritoryOutlets.Ref
+			END)
+WHERE
+	Selectors.HasTerritorySelector
+	AND NOT TerritoryOutlets.Outlet IS NULL 
+
+INDEX BY
+	Questionnaire,
+	TerritoryOutlet
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT ALLOWED DISTINCT
+	Selectors.Questionnaire AS Questionnaire,
+	OutletCatalog.Ref AS ClassOutlet
+INTO ClassOutlets
+FROM
+	Selectors AS Selectors
+		INNER JOIN Catalog.Outlet AS OutletCatalog
+		ON (CASE
+				WHEN NOT Selectors.ComparisonType = VALUE(Enum.ComparisonType.NotEqual)
+					THEN Selectors.Value = OutletCatalog.Class
+				ELSE NOT Selectors.Value = OutletCatalog.Class
+			END)
+WHERE
+	Selectors.HasClassSelector
+	AND NOT OutletCatalog.Ref IS NULL 
+
+INDEX BY
+	Questionnaire,
+	ClassOutlet
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT ALLOWED DISTINCT
+	Selectors.Questionnaire AS Questionnaire,
+	OutletCatalog.Ref AS TypeOutlet
+INTO TypeOutlets
+FROM
+	Selectors AS Selectors
+		LEFT JOIN Catalog.Outlet AS OutletCatalog
+		ON (CASE
+				WHEN NOT Selectors.ComparisonType = VALUE(Enum.ComparisonType.NotEqual)
+					THEN Selectors.Value = OutletCatalog.Type
+				ELSE NOT Selectors.Value = OutletCatalog.Type
+			END)
+WHERE
+	Selectors.HasTypeSelector
+	AND NOT OutletCatalog.Ref IS NULL 
+
+INDEX BY
+	Questionnaire,
+	TypeOutlet
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT ALLOWED DISTINCT
+	Selectors.Questionnaire AS Questionnaire,
+	OutletCatalog.Ref AS OutletOutlet
+INTO OutletOutlets
+FROM
+	Selectors AS Selectors
+		LEFT JOIN Catalog.Outlet AS OutletCatalog
+		ON (CASE
+				WHEN NOT Selectors.ComparisonType = VALUE(Enum.ComparisonType.NotEqual)
+					THEN Selectors.Value = OutletCatalog.Ref
+				ELSE NOT Selectors.Value = OutletCatalog.Ref
+			END)
+WHERE
+	Selectors.HasOutletSelector
+	AND NOT OutletCatalog.Ref IS NULL 
+
+INDEX BY
+	Questionnaire,
+	OutletOutlet
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT ALLOWED DISTINCT
+	Selectors.Questionnaire AS Questionnaire,
+	OutletCatalog.Ref AS StatusOutlet
+INTO StatusOutlets
+FROM
+	Selectors AS Selectors
+		LEFT JOIN Catalog.Outlet AS OutletCatalog
+		ON (CASE
+				WHEN NOT Selectors.ComparisonType = VALUE(Enum.ComparisonType.NotEqual)
+					THEN Selectors.Value = OutletCatalog.OutletStatus
+				ELSE NOT Selectors.Value = OutletCatalog.OutletStatus
+			END)
+WHERE
+	Selectors.HasStatusSelector
+	AND NOT OutletCatalog.Ref IS NULL 
+
+INDEX BY
+	Questionnaire,
+	StatusOutlet
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT ALLOWED DISTINCT
+	Selectors.Questionnaire AS Questionnaire,
+	TerritoryOutlets.Outlet AS PositionOutlet
+INTO PositionOutlets
+FROM
+	Selectors AS Selectors
+		LEFT JOIN Catalog.Territory.SRs AS TerritorySRs
+			LEFT JOIN Catalog.Territory.Outlets AS TerritoryOutlets
+			ON TerritorySRs.Ref = TerritoryOutlets.Ref
+		ON Selectors.Value = TerritorySRs.SR.Position
+WHERE
+	Selectors.HasPositionSelector
+	AND NOT TerritoryOutlets.Ref IS NULL 
+
+INDEX BY
+	Questionnaire,
+	PositionOutlet
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT ALLOWED DISTINCT
+	Selectors.Questionnaire AS Questionnaire,
+	OutletParameters.Ref AS ParameterOutlet
+INTO ParameterOutlets
+FROM
+	Selectors AS Selectors
+		LEFT JOIN Catalog.Outlet.Parameters AS OutletParameters
+		ON Selectors.AdditionalParameter = OutletParameters.Parameter
+			AND (CASE
+				WHEN NOT Selectors.ComparisonType = VALUE(Enum.ComparisonType.NotEqual)
+					THEN Selectors.StringValue = OutletParameters.Value
+				ELSE NOT Selectors.StringValue = OutletParameters.Value
+			END)
+WHERE
+	Selectors.HasParameterSelector
+	AND NOT OutletParameters.Ref IS NULL 
+
+INDEX BY
+	Questionnaire,
+	ParameterOutlet
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT DISTINCT
+	Selectors.Questionnaire AS Questionnaire,
+	Selectors.Outlet
+INTO QuestionnaireOutlets
+FROM
+	Selectors AS Selectors
+		FULL JOIN RegionOutlets AS RegionOutlets
+		ON Selectors.Questionnaire = RegionOutlets.Questionnaire
+			AND Selectors.Outlet = RegionOutlets.RegionOutlet
+		FULL JOIN TerritoryOutlets AS TerritoryOutlets
+		ON Selectors.Questionnaire = TerritoryOutlets.Questionnaire
+			AND Selectors.Outlet = TerritoryOutlets.TerritoryOutlet
+		FULL JOIN TypeOutlets AS TypeOutlets
+		ON Selectors.Outlet = TypeOutlets.TypeOutlet
+			AND Selectors.Questionnaire = TypeOutlets.Questionnaire
+		FULL JOIN ClassOutlets AS ClassOutlets
+		ON Selectors.Questionnaire = ClassOutlets.Questionnaire
+			AND Selectors.Outlet = ClassOutlets.ClassOutlet
+		FULL JOIN OutletOutlets AS OutletOutlets
+		ON Selectors.Questionnaire = OutletOutlets.Questionnaire
+			AND Selectors.Outlet = OutletOutlets.OutletOutlet
+		FULL JOIN StatusOutlets AS StatusOutlets
+		ON Selectors.Questionnaire = StatusOutlets.Questionnaire
+			AND Selectors.Outlet = StatusOutlets.StatusOutlet
+		FULL JOIN ParameterOutlets AS ParameterOutlets
+		ON Selectors.Outlet = ParameterOutlets.ParameterOutlet
+			AND Selectors.Questionnaire = ParameterOutlets.Questionnaire
+		FULL JOIN PositionOutlets AS PositionOutlets
+		ON Selectors.Questionnaire = PositionOutlets.Questionnaire
+			AND Selectors.Outlet = PositionOutlets.PositionOutlet
+WHERE
+	CASE
+			WHEN Selectors.HasRegionSelector
+				THEN NOT RegionOutlets.RegionOutlet IS NULL 
+			ELSE TRUE
+		END
+	AND CASE
+			WHEN Selectors.HasTerritorySelector
+				THEN NOT TerritoryOutlets.TerritoryOutlet IS NULL 
+			ELSE TRUE
+		END
+	AND CASE
+			WHEN Selectors.HasClassSelector
+				THEN NOT ClassOutlets.ClassOutlet IS NULL 
+			ELSE TRUE
+		END
+	AND CASE
+			WHEN Selectors.HasTypeSelector
+				THEN NOT TypeOutlets.TypeOutlet IS NULL 
+			ELSE TRUE
+		END
+	AND CASE
+			WHEN Selectors.HasOutletSelector
+				THEN NOT OutletOutlets.OutletOutlet IS NULL 
+			ELSE TRUE
+		END
+	AND CASE
+			WHEN Selectors.HasStatusSelector
+				THEN NOT StatusOutlets.StatusOutlet IS NULL 
+			ELSE TRUE
+		END
+	AND CASE
+			WHEN Selectors.HasPositionSelector
+				THEN NOT PositionOutlets.PositionOutlet IS NULL 
+			ELSE TRUE
+		END
+	AND CASE
+			WHEN Selectors.HasParameterSelector
+				THEN NOT ParameterOutlets.ParameterOutlet IS NULL 
+			ELSE TRUE
+		END
+
+GROUP BY
+	Selectors.Questionnaire,
+	Selectors.Outlet
+
+UNION ALL
+
+SELECT
+	Selectors.Questionnaire,
+	Selectors.Outlet
+FROM
+	Selectors AS Selectors
+WHERE
+	NOT Selectors.HasSelectors
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT
+	QuestionnaireOutlets.Questionnaire,
+	QuestionnaireOutlets.Outlet,
+	QuestionsInQuestionnairesSliceLast.ChildQuestion,
+	QuestionsInQuestionnairesSliceLast.QuestionType
+FROM
+	QuestionnaireOutlets AS QuestionnaireOutlets
+		LEFT JOIN InformationRegister.QuestionsInQuestionnaires.SliceLast(, ) AS QuestionsInQuestionnairesSliceLast
+		ON QuestionnaireOutlets.Questionnaire = QuestionsInQuestionnairesSliceLast.Questionnaire
+WHERE
+	CASE
+			WHEN NOT QuestionsInQuestionnairesSliceLast.ChildQuestion IS NULL 
+				THEN NOT QuestionsInQuestionnairesSliceLast.Status = VALUE(Enum.ValueTableRowStatuses.Deleted)
+			ELSE TRUE
+		END</query>
+	</dataSet>
+	<parameter>
+		<name>BeginDate</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Begin date</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>cz</v8:lang>
+				<v8:content>Začátek</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Period1.StartDate</expression>
+	</parameter>
+	<parameter>
+		<name>EndDate</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>End date</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>cz</v8:lang>
+				<v8:content>Konec</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Окончание действия</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Period1.EndDate</expression>
+	</parameter>
+	<parameter>
+		<name>Period1</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Period</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>cz</v8:lang>
+				<v8:content>Obdobн</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Period</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Period</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>cz</v8:lang>
+				<v8:content>Obdobн</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Default</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Default</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основной</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>cz</v8:lang>
+				<v8:content>Výchozí</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Outlet</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>f21e7ac6-9b54-49b5-8bf1-b5fbc6137eeb</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Questionnaire</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>9b15cf10-ce2d-4218-a57f-f44e2ae80733</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">QuestionType</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>b28c9334-5046-4991-8223-b0a9c386449e</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Period1</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>60985c1a-5bc2-411d-b35e-7d9a7384e760</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>AppearanceTemplate</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Arctic</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Outlet</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Questionnaire</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>QuestionType</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ChildQuestion</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

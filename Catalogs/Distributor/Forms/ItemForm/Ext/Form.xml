@@ -1,0 +1,828 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+		<Event name="OnWriteAtServer">OnWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Pages" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="PagesExtendedTooltip" id="37"/>
+			<ChildItems>
+				<Page name="GroupMasterData" id="62">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Master data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные данные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Primбrnн data</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group master data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group master data</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupMasterDataExtendedTooltip" id="63"/>
+					<ChildItems>
+						<InputField name="Code" id="1">
+							<DataPath>Object.Code</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="CodeContextMenu" id="2"/>
+							<ExtendedTooltip name="CodeExtendedTooltip" id="3"/>
+						</InputField>
+						<InputField name="Description" id="4">
+							<DataPath>Object.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="DescriptionContextMenu" id="5"/>
+							<ExtendedTooltip name="DescriptionExtendedTooltip" id="6"/>
+						</InputField>
+						<Table name="Contractors" id="242">
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.Contractors</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ContractorsContextMenu" id="243"/>
+							<AutoCommandBar name="ContractorsCommandBar" id="244">
+								<ChildItems>
+									<Button name="ContractorsAddContractor" id="270">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.AddContractor</CommandName>
+										<ExtendedTooltip name="ContractorsAddContractorExtendedTooltip" id="271"/>
+									</Button>
+									<Button name="ContractorsRemoveContractor" id="272">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.RemoveContractor</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.Delete</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ContractorsRemoveContractorExtendedTooltip" id="273"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ContractorsExtendedTooltip" id="245"/>
+							<SearchStringAddition name="ContractorsSearchString" id="246">
+								<AdditionSource>
+									<Item>Contractors</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ContractorsSearchStringContextMenu" id="249"/>
+								<ExtendedTooltip name="ContractorsSearchStringExtendedTooltip" id="250"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ContractorsViewStatus" id="251">
+								<AdditionSource>
+									<Item>Contractors</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ContractorsViewStatusContextMenu" id="254"/>
+								<ExtendedTooltip name="ContractorsViewStatusExtendedTooltip" id="255"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ContractorsSearchControl" id="256">
+								<AdditionSource>
+									<Item>Contractors</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ContractorsSearchControlContextMenu" id="259"/>
+								<ExtendedTooltip name="ContractorsSearchControlExtendedTooltip" id="260"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="ChoiceProcessing">ContractorsChoiceProcessing</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ContractorsContractor" id="264">
+									<DataPath>Object.Contractors.Contractor</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ContractorsContractorContextMenu" id="265"/>
+									<ExtendedTooltip name="ContractorsContractorExtendedTooltip" id="266"/>
+								</InputField>
+								<CheckBoxField name="ContractorsDefault" id="267">
+									<DataPath>Object.Contractors.Default</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ContractorsDefaultContextMenu" id="268"/>
+									<ExtendedTooltip name="ContractorsDefaultExtendedTooltip" id="269"/>
+									<Events>
+										<Event name="OnChange">ContractorsDefaultOnChange</Event>
+									</Events>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupContacts" id="38">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Contacts</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контакты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Kontakty</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group contacts</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group contacts</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupContactsExtendedTooltip" id="39"/>
+					<ChildItems>
+						<Table name="ContactList" id="182">
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.Contacts</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ContactListContextMenu" id="183"/>
+							<AutoCommandBar name="ContactListCommandBar" id="184">
+								<ChildItems>
+									<Button name="ContactListAddContact" id="238">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.AddContact</CommandName>
+										<ExtendedTooltip name="ContactListAddContactExtendedTooltip" id="239"/>
+									</Button>
+									<Button name="ContactListDeleteContact" id="240">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.DeleteContact</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.Delete</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ContactListDeleteContactExtendedTooltip" id="241"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ContactListExtendedTooltip" id="185"/>
+							<SearchStringAddition name="ContactListSearchString" id="186">
+								<AdditionSource>
+									<Item>ContactList</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ContactListSearchStringContextMenu" id="189"/>
+								<ExtendedTooltip name="ContactListSearchStringExtendedTooltip" id="190"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ContactListViewStatus" id="191">
+								<AdditionSource>
+									<Item>ContactList</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ContactListViewStatusContextMenu" id="194"/>
+								<ExtendedTooltip name="ContactListViewStatusExtendedTooltip" id="195"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ContactListSearchControl" id="196">
+								<AdditionSource>
+									<Item>ContactList</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ContactListSearchControlContextMenu" id="199"/>
+								<ExtendedTooltip name="ContactListSearchControlExtendedTooltip" id="200"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ContactListSelection</Event>
+								<Event name="ChoiceProcessing">ContactListChoiceProcessing</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ContactListContact" id="223">
+									<DataPath>Object.Contacts.Contact</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ContactListContactContextMenu" id="224"/>
+									<ExtendedTooltip name="ContactListContactExtendedTooltip" id="225"/>
+								</InputField>
+								<LabelField name="ContactListContactPosition" id="226">
+									<DataPath>Object.Contacts.Contact.Position</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ContactListContactPositionContextMenu" id="227"/>
+									<ExtendedTooltip name="ContactListContactPositionExtendedTooltip" id="228"/>
+								</LabelField>
+								<LabelField name="ContactListContactPhoneNumber" id="229">
+									<DataPath>Object.Contacts.Contact.PhoneNumber</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ContactListContactPhoneNumberContextMenu" id="230"/>
+									<ExtendedTooltip name="ContactListContactPhoneNumberExtendedTooltip" id="231"/>
+								</LabelField>
+								<LabelField name="ContactListContactEmail" id="232">
+									<DataPath>Object.Contacts.Contact.Email</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ContactListContactEmailContextMenu" id="233"/>
+									<ExtendedTooltip name="ContactListContactEmailExtendedTooltip" id="234"/>
+								</LabelField>
+								<CheckBoxField name="ContactListNotActual" id="235">
+									<DataPath>Object.Contacts.NotActual</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ContactListNotActualContextMenu" id="236"/>
+									<ExtendedTooltip name="ContactListNotActualExtendedTooltip" id="237"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupRegionsTerritories" id="115">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Regions and Territories</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регионы и территории</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group regions territories</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupRegionsTerritoriesExtendedTooltip" id="116"/>
+					<ChildItems>
+						<CommandBar name="GroupTerritoriesCommandPanel" id="167">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group territories command panel</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group territories command panel</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalLocation>Right</HorizontalLocation>
+							<ExtendedTooltip name="GroupTerritoriesCommandPanelExtendedTooltip" id="168"/>
+							<ChildItems>
+								<Button name="ShowAllTerritories" id="177">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ShowAllTerritories</CommandName>
+									<ExtendedTooltip name="ShowAllTerritoriesExtendedTooltip" id="178"/>
+								</Button>
+								<Button name="UncheckAllTerritories" id="175">
+									<Type>CommandBarButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.UncheckAllTerritories</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="UncheckAllTerritoriesExtendedTooltip" id="176"/>
+								</Button>
+								<Button name="CheckAllTerritories" id="173">
+									<Type>CommandBarButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.CheckAllTerritories</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.CheckAll</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="CheckAllTerritoriesExtendedTooltip" id="174"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<UsualGroup name="GroupRegionsTerritoriesTables" id="171">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group regions territories tables</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group regions territories tables</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupRegionsTerritoriesTablesExtendedTooltip" id="172"/>
+							<ChildItems>
+								<Table name="Regions" id="117">
+									<Representation>Tree</Representation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<RowSelectionMode>Row</RowSelectionMode>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<InitialTreeView>ExpandAllLevels</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Regions</DataPath>
+									<ContextMenu name="RegionsContextMenu" id="118"/>
+									<AutoCommandBar name="RegionsCommandBar" id="119"/>
+									<ExtendedTooltip name="RegionsExtendedTooltip" id="120"/>
+									<SearchStringAddition name="RegionsSearchString" id="121">
+										<AdditionSource>
+											<Item>Regions</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="RegionsSearchStringContextMenu" id="124"/>
+										<ExtendedTooltip name="RegionsSearchStringExtendedTooltip" id="125"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="RegionsViewStatus" id="126">
+										<AdditionSource>
+											<Item>Regions</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="RegionsViewStatusContextMenu" id="129"/>
+										<ExtendedTooltip name="RegionsViewStatusExtendedTooltip" id="130"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="RegionsSearchControl" id="131">
+										<AdditionSource>
+											<Item>Regions</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="RegionsSearchControlContextMenu" id="134"/>
+										<ExtendedTooltip name="RegionsSearchControlExtendedTooltip" id="135"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnActivateRow">RegionsOnActivateRow</Event>
+										<Event name="BeforeCollapse">RegionsBeforeCollapse</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="RegionsRegion" id="136">
+											<DataPath>Regions.Region</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="RegionsRegionContextMenu" id="137"/>
+											<ExtendedTooltip name="RegionsRegionExtendedTooltip" id="138"/>
+										</InputField>
+										<CheckBoxField name="RegionsUse" id="139">
+											<DataPath>Regions.Use</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="RegionsUseContextMenu" id="140"/>
+											<ExtendedTooltip name="RegionsUseExtendedTooltip" id="141"/>
+											<Events>
+												<Event name="OnChange">RegionsUseOnChange</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</Table>
+								<Table name="Territories" id="142">
+									<Representation>List</Representation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Territories</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="TerritoriesContextMenu" id="143"/>
+									<AutoCommandBar name="TerritoriesCommandBar" id="144"/>
+									<ExtendedTooltip name="TerritoriesExtendedTooltip" id="145"/>
+									<SearchStringAddition name="TerritoriesSearchString" id="146">
+										<AdditionSource>
+											<Item>Territories</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="TerritoriesSearchStringContextMenu" id="149"/>
+										<ExtendedTooltip name="TerritoriesSearchStringExtendedTooltip" id="150"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="TerritoriesViewStatus" id="151">
+										<AdditionSource>
+											<Item>Territories</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="TerritoriesViewStatusContextMenu" id="154"/>
+										<ExtendedTooltip name="TerritoriesViewStatusExtendedTooltip" id="155"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="TerritoriesSearchControl" id="156">
+										<AdditionSource>
+											<Item>Territories</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="TerritoriesSearchControlContextMenu" id="159"/>
+										<ExtendedTooltip name="TerritoriesSearchControlExtendedTooltip" id="160"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="BeforeRowChange">TerritoriesBeforeRowChange</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="TerritoriesRegion" id="179">
+											<DataPath>Territories.Region</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="TerritoriesRegionContextMenu" id="180"/>
+											<ExtendedTooltip name="TerritoriesRegionExtendedTooltip" id="181"/>
+										</InputField>
+										<InputField name="TerritoriesTerritory" id="161">
+											<DataPath>Territories.Territory</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="TerritoriesTerritoryContextMenu" id="162"/>
+											<ExtendedTooltip name="TerritoriesTerritoryExtendedTooltip" id="163"/>
+										</InputField>
+										<CheckBoxField name="TerritoriesUse" id="164">
+											<DataPath>Territories.Use</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="TerritoriesUseContextMenu" id="165"/>
+											<ExtendedTooltip name="TerritoriesUseExtendedTooltip" id="166"/>
+											<Events>
+												<Event name="OnChange">TerritoriesUseOnChange</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Distributor</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Regions" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Regions</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регионы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Regiony</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="Region" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Region</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регион</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Region</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Region</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Use" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Use</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Použit</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Territories" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Territories</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Территории</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Ъzemн</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="Territory" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Territory</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Территория</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Ъzemн</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Territory</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Use" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Use</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Použit</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Region" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Region</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регион</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Region</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Region</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="CurrentRegion" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Current region</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Region</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>TerritoriesUse</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Regions.Use</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ReadOnly</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="AddContractor" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Novэ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add contractor</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>AddContractor</Action>
+		</Command>
+		<Command name="RemoveContractor" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Remove</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Remove contractor</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>RemoveContractor</Action>
+		</Command>
+		<Command name="AddContact" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Novэ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add contact</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>AddContact</Action>
+		</Command>
+		<Command name="DeleteContact" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Delete contact</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Delete contact</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>DeleteContact</Action>
+		</Command>
+		<Command name="CheckAllTerritories" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Check all territories</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Check all territories</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>CheckAllTerritories</Action>
+		</Command>
+		<Command name="UncheckAllTerritories" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Uncheck all territories</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Uncheck all territories</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>UncheckAllTerritories</Action>
+		</Command>
+		<Command name="ShowAllTerritories" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show all territories</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Show all territories</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ShowAllTerritories</Action>
+		</Command>
+	</Commands>
+</Form>

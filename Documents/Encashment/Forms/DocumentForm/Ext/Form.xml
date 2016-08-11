@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnOpen">OnOpen</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Pages" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="PagesExtendedTooltip" id="47"/>
+			<ChildItems>
+				<Page name="PageMasterData" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Master data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные данные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Primбrnн data</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page master data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Page master data</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="PageMasterDataExtendedTooltip" id="49"/>
+					<ChildItems>
+						<InputField name="Number" id="1">
+							<DataPath>Object.Number</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="NumberContextMenu" id="2"/>
+							<ExtendedTooltip name="NumberРасширеннаяПодсказка" id="24"/>
+						</InputField>
+						<InputField name="Date" id="3">
+							<DataPath>Object.Date</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="DateContextMenu" id="4"/>
+							<ExtendedTooltip name="DateРасширеннаяПодсказка" id="25"/>
+						</InputField>
+						<InputField name="Visit" id="5">
+							<DataPath>Object.Visit</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="VisitContextMenu" id="6"/>
+							<ExtendedTooltip name="VisitРасширеннаяПодсказка" id="26"/>
+						</InputField>
+						<InputField name="EncashmentSum" id="16">
+							<DataPath>Object.EncashmentAmount</DataPath>
+							<ContextMenu name="EncashmentSumContextMenu" id="17"/>
+							<ExtendedTooltip name="EncashmentSumРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<InputField name="DocNumber" id="18">
+							<DataPath>Object.DocNumber</DataPath>
+							<ContextMenu name="DocNumberContextMenu" id="19"/>
+							<ExtendedTooltip name="DocNumberРасширеннаяПодсказка" id="28"/>
+						</InputField>
+						<InputField name="NameSurname" id="20">
+							<DataPath>Object.NameSurname</DataPath>
+							<ContextMenu name="NameSurnameContextMenu" id="21"/>
+							<ExtendedTooltip name="NameSurnameРасширеннаяПодсказка" id="29"/>
+						</InputField>
+						<InputField name="Commentary" id="22">
+							<DataPath>Object.Commentary</DataPath>
+							<ContextMenu name="CommentaryContextMenu" id="23"/>
+							<ExtendedTooltip name="CommentaryРасширеннаяПодсказка" id="30"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="PageDocuments" id="50">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Documents</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Dokumenty</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Page documents</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Page documents</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="PageDocumentsExtendedTooltip" id="51"/>
+					<ChildItems>
+						<Table name="ReceivableDocuments" id="7">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.EncashmentDocuments</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ReceivableDocumentsContextMenu" id="8"/>
+							<AutoCommandBar name="ReceivableDocumentsCommandBar" id="9">
+								<ChildItems>
+									<Button name="ReceivableDocumentsDelete" id="44">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.ReceivableDocuments.StandardCommand.Delete</CommandName>
+										<ExtendedTooltip name="ReceivableDocumentsDeleteExtendedTooltip" id="45"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ReceivableDocumentsРасширеннаяПодсказка" id="31"/>
+							<SearchStringAddition name="ReceivableDocumentsСтрокаПоиска" id="32">
+								<AdditionSource>
+									<Item>ReceivableDocuments</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ReceivableDocumentsСтрокаПоискаКонтекстноеМеню" id="33"/>
+								<ExtendedTooltip name="ReceivableDocumentsСтрокаПоискаРасширеннаяПодсказка" id="34"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ReceivableDocumentsСостояниеПросмотра" id="35">
+								<AdditionSource>
+									<Item>ReceivableDocuments</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ReceivableDocumentsСостояниеПросмотраКонтекстноеМеню" id="36"/>
+								<ExtendedTooltip name="ReceivableDocumentsСостояниеПросмотраРасширеннаяПодсказка" id="37"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ReceivableDocumentsУправлениеПоиском" id="38">
+								<AdditionSource>
+									<Item>ReceivableDocuments</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ReceivableDocumentsУправлениеПоискомКонтекстноеМеню" id="39"/>
+								<ExtendedTooltip name="ReceivableDocumentsУправлениеПоискомРасширеннаяПодсказка" id="40"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ReceivableDocumentsLineNumber" id="10">
+									<DataPath>Object.EncashmentDocuments.LineNumber</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ReceivableDocumentsLineNumberContextMenu" id="11"/>
+									<ExtendedTooltip name="ReceivableDocumentsLineNumberРасширеннаяПодсказка" id="41"/>
+								</LabelField>
+								<InputField name="ReceivableDocumentsDocumentName" id="12">
+									<DataPath>Object.EncashmentDocuments.DocumentName</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>30</Width>
+									<ContextMenu name="ReceivableDocumentsDocumentNameContextMenu" id="13"/>
+									<ExtendedTooltip name="ReceivableDocumentsDocumentNameРасширеннаяПодсказка" id="42"/>
+								</InputField>
+								<InputField name="ReceivableDocumentsEncasmentSum" id="14">
+									<DataPath>Object.EncashmentDocuments.EncashmentSum</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ReceivableDocumentsEncasmentSumContextMenu" id="15"/>
+									<ExtendedTooltip name="ReceivableDocumentsEncasmentSumРасширеннаяПодсказка" id="43"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Encashment</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

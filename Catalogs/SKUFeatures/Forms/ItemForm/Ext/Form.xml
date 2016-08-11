@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnOpen">OnOpen</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Code" id="1">
+			<DataPath>Object.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="CodeContextMenu" id="2"/>
+			<ExtendedTooltip name="CodeРасширеннаяПодсказка" id="14"/>
+		</InputField>
+		<InputField name="Description" id="3">
+			<DataPath>Object.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DescriptionContextMenu" id="4"/>
+			<ExtendedTooltip name="DescriptionРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<Table name="Features" id="5">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Object.Features</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="FeaturesContextMenu" id="6"/>
+			<AutoCommandBar name="FeaturesCommandBar" id="7">
+				<ChildItems>
+					<Button name="FeaturesDelete" id="29">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.Features.StandardCommand.Delete</CommandName>
+						<ExtendedTooltip name="FeaturesDeleteExtendedTooltip" id="30"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="FeaturesРасширеннаяПодсказка" id="16"/>
+			<SearchStringAddition name="FeaturesСтрокаПоиска" id="17">
+				<AdditionSource>
+					<Item>Features</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="FeaturesСтрокаПоискаКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="FeaturesСтрокаПоискаРасширеннаяПодсказка" id="19"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="FeaturesСостояниеПросмотра" id="20">
+				<AdditionSource>
+					<Item>Features</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="FeaturesСостояниеПросмотраКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="FeaturesСостояниеПросмотраРасширеннаяПодсказка" id="22"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="FeaturesУправлениеПоиском" id="23">
+				<AdditionSource>
+					<Item>Features</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="FeaturesУправлениеПоискомКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="FeaturesУправлениеПоискомРасширеннаяПодсказка" id="25"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="FeaturesLineNumber" id="8">
+					<DataPath>Object.Features.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="FeaturesLineNumberContextMenu" id="9"/>
+					<ExtendedTooltip name="FeaturesLineNumberРасширеннаяПодсказка" id="26"/>
+				</LabelField>
+				<InputField name="FeaturesProperty" id="10">
+					<DataPath>Object.Features.Property</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="FeaturesPropertyContextMenu" id="11"/>
+					<ExtendedTooltip name="FeaturesPropertyРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<InputField name="FeaturesValue" id="12">
+					<DataPath>Object.Features.Value</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="FeaturesValueContextMenu" id="13"/>
+					<ExtendedTooltip name="FeaturesValueРасширеннаяПодсказка" id="28"/>
+					<Events>
+						<Event name="OnChange">FeaturesValueOnChange</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.SKUFeatures</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

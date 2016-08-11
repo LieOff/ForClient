@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnOpen">OnOpen</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Number" id="1">
+			<DataPath>Object.Number</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="NumberContextMenu" id="2"/>
+			<ExtendedTooltip name="NumberРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Date" id="3">
+			<DataPath>Object.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DateContextMenu" id="4"/>
+			<ExtendedTooltip name="DateРасширеннаяПодсказка" id="19"/>
+		</InputField>
+		<InputField name="Distributor" id="5">
+			<DataPath>Object.Outlet</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DistributorContextMenu" id="6"/>
+			<ExtendedTooltip name="DistributorРасширеннаяПодсказка" id="20"/>
+		</InputField>
+		<Table name="ReceivableDocuments" id="7">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Object.ReceivableDocuments</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ReceivableDocumentsContextMenu" id="8"/>
+			<AutoCommandBar name="ReceivableDocumentsCommandBar" id="9">
+				<ChildItems>
+					<Button name="ReceivableDocumentsDelete" id="35">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.ReceivableDocuments.StandardCommand.Delete</CommandName>
+						<ExtendedTooltip name="ReceivableDocumentsDeleteExtendedTooltip" id="36"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ReceivableDocumentsРасширеннаяПодсказка" id="21"/>
+			<SearchStringAddition name="ReceivableDocumentsСтрокаПоиска" id="22">
+				<AdditionSource>
+					<Item>ReceivableDocuments</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ReceivableDocumentsСтрокаПоискаКонтекстноеМеню" id="23"/>
+				<ExtendedTooltip name="ReceivableDocumentsСтрокаПоискаРасширеннаяПодсказка" id="24"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ReceivableDocumentsСостояниеПросмотра" id="25">
+				<AdditionSource>
+					<Item>ReceivableDocuments</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ReceivableDocumentsСостояниеПросмотраКонтекстноеМеню" id="26"/>
+				<ExtendedTooltip name="ReceivableDocumentsСостояниеПросмотраРасширеннаяПодсказка" id="27"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ReceivableDocumentsУправлениеПоиском" id="28">
+				<AdditionSource>
+					<Item>ReceivableDocuments</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ReceivableDocumentsУправлениеПоискомКонтекстноеМеню" id="29"/>
+				<ExtendedTooltip name="ReceivableDocumentsУправлениеПоискомРасширеннаяПодсказка" id="30"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ReceivableDocumentsLineNumber" id="10">
+					<DataPath>Object.ReceivableDocuments.LineNumber</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ReceivableDocumentsLineNumberContextMenu" id="11"/>
+					<ExtendedTooltip name="ReceivableDocumentsLineNumberРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<InputField name="ReceivableDocumentsDocumentName" id="12">
+					<DataPath>Object.ReceivableDocuments.DocumentName</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>30</Width>
+					<ContextMenu name="ReceivableDocumentsDocumentNameContextMenu" id="13"/>
+					<ExtendedTooltip name="ReceivableDocumentsDocumentNameРасширеннаяПодсказка" id="32"/>
+				</InputField>
+				<InputField name="ReceivableDocumentsDocumentSum" id="14">
+					<DataPath>Object.ReceivableDocuments.DocumentSum</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ReceivableDocumentsDocumentSumContextMenu" id="15"/>
+					<ExtendedTooltip name="ReceivableDocumentsDocumentSumРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<CheckBoxField name="ReceivableDocumentsOverdue" id="16">
+					<DataPath>Object.ReceivableDocuments.Overdue</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ReceivableDocumentsOverdueContextMenu" id="17"/>
+					<ExtendedTooltip name="ReceivableDocumentsOverdueРасширеннаяПодсказка" id="34"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.AccountReceivable</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

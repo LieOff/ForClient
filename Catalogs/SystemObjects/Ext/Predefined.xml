@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.1">
+	<Item id="0765c578-350e-4fca-b4ef-0507fa8e5b18">
+		<Name>Section_Orders</Name>
+		<Code>000000011</Code>
+		<Description>en = 'Orders'; ru = 'Заказы'</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="ae7fe580-00ea-432f-af7d-625be728f601">
+				<Name>Catalogs_Section_Orders</Name>
+				<Code>000000210</Code>
+				<Description>en = 'Catalogs'; ru = 'Справочники'</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="0d02df1b-a734-4a4d-ac09-9551d9a69d50">
+						<Name>Catalog_OrderParameters</Name>
+						<Code>000000211</Code>
+						<Description>en = 'Order parameters'; ru = 'Параметры заказа'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="9ceca6fd-281a-4228-87fb-c80d7d316c90">
+				<Name>Documents_Section_Orders</Name>
+				<Code>000000169</Code>
+				<Description>en = 'Documents'; ru = 'Документы'</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="5a28497c-aea2-4691-a400-9aa470058a91">
+						<Name>Document_Order</Name>
+						<Code>000000170</Code>
+						<Description>en = 'Order'; ru = 'Заказ'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="ad3c2893-57c2-4ca0-8182-5126113d69a7">
+						<Name>Document_Return</Name>
+						<Code>000000212</Code>
+						<Description>en = 'Return'; ru = 'Возврат'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="1bd89d57-de16-4227-a2db-488859be6362">
+				<Name>Reports_Section_Orders</Name>
+				<Code>000000171</Code>
+				<Description>en = 'Reports'; ru = 'Отчеты'</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="e9671edc-75ce-4f0b-b125-d883f31012be">
+						<Name>Report_Orders</Name>
+						<Code>000000172</Code>
+						<Description>en = 'Orders report'; ru = 'Отчет по заказам'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="69194b64-0a2a-4c87-902f-59853766246f">
+						<Name>Report_Returns</Name>
+						<Code>000000213</Code>
+						<Description>en = 'Returns report'; ru = 'Отчет по возвратам'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="9689de96-ee74-497b-a4c4-3418102854ef">
+		<Name>Section_Outlets</Name>
+		<Code>000000068</Code>
+		<Description>en = 'Outlets'; ru = 'Торговые точки'</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="a045042b-4d56-4459-95fa-c2a46f93506d">
+				<Name>Catalogs_Section_Outlets</Name>
+				<Code>000000174</Code>
+				<Description>en = 'Catalogs'; ru = 'Справочники'</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="a72543eb-a83d-4fa1-8152-4961e2f6d3bf">
+						<Name>Catalog_ContactPersons</Name>
+						<Code>000000214</Code>
+						<Description>en = 'Contact persons'; ru = 'Контактные лица'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="dc544566-05db-4ba0-a330-2c06f660242e">
+						<Name>Catalog_AssortmentMatrix</Name>
+						<Code>000000140</Code>
+						<Description>en = 'Matrices of assortment'; ru = 'Ассортиментные матрицы'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="37bc4f5a-3551-4110-a7e1-6f7b7ec11a26">
+						<Name>Catalog_OutletsClasses</Name>
+						<Code>000000142</Code>
+						<Description>en = 'Outlets classes'; ru = 'Классы торговых точек'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="c7427693-93a9-4848-86ba-63611bd2fa61">
+						<Name>Catalog_OutletsParameters</Name>
+						<Code>000000143</Code>
+						<Description>en = 'Outlets parameters'; ru = 'Параметры торговых точек'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="bc6a26ee-317b-48ea-a205-023fd63765d6">
+						<Name>Catalog_OutletsPrimaryParametersSettings</Name>
+						<Code>000000208</Code>
+						<Description>en = 'Outlets primary parameters settings'; ru = 'Настройки основных параметров торговых точек'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="22d0c42f-a1e8-480d-bc0a-6de08829f8e9">
+						<Name>Catalog_OutletsStatusesSettings</Name>
+						<Code>000000209</Code>
+						<Description>en = 'Outlets statuses settings'; ru = 'Настройки статусов торговых точек'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="cf2f007c-93c0-4f21-bfcb-a69d344ce8e7">
+						<Name>Catalog_OutletsTypes</Name>
+						<Code>000000145</Code>
+						<Description>en = 'Outlets types'; ru = 'Типы торговых точек'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="9189d441-8d1e-4884-b21d-8424f9afbb10">
+						<Name>Catalog_Outlets</Name>
+						<Code>000000146</Code>
+						<Description>en = 'Outlets'; ru = 'Торговые точки'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="ee4e3789-c6db-491e-94e4-32487db848c9">
+						<Name>Catalog_Distributors</Name>
+						<Code>000000141</Code>
+						<Description>en = 'Partners'; ru = 'Партнеры'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="6a1ab065-7716-4dd7-bc51-b7afe00f8f2c">
+						<Name>Catalog_Regions</Name>
+						<Code>000000147</Code>
+						<Description>en = 'Regions'; ru = 'Регионы'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="a3c2a935-41a3-49d1-89d7-735c1687a611">
+						<Name>Catalog_Territories</Name>
+						<Code>000000148</Code>
+						<Description>en = 'Territories'; ru = 'Территории'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="96a6c143-9f48-4cbc-a262-be76766ba0d1">
+						<Name>Catalog_Contractors</Name>
+						<Code>000000215</Code>
+						<Description>en = 'Сontractors'; ru = 'Контрагенты'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="0f89d18f-b79b-46cb-a32a-fb8916ea4328">
+				<Name>Reports_Section_Outlets</Name>
+				<Code>000000175</Code>
+				<Description>en = 'Reports'; ru = 'Отчеты'</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="6580f779-18d8-41d1-992e-5a893cdba02a">
+						<Name>Report_AnalysisOutletParameters</Name>
+						<Code>000000195</Code>
+						<Description>en = 'Additional outlet parameters'; ru = 'Дополнительные параметры торговых точек'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="36bcab3a-5a0b-45e5-9a28-8266d24a5daf">
+						<Name>Report_BindingOutlets</Name>
+						<Code>000000196</Code>
+						<Description>en = 'Binding outlets'; ru = 'Привязка торговых точек к территориям'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="96d9da41-053a-4ce2-9c78-ddf97cf3ca38">
+						<Name>Report_NumberOfOutlets</Name>
+						<Code>000000194</Code>
+						<Description>en = 'Number of outlets'; ru = 'Общее количество точек'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="cad96052-e5af-4844-862a-77302300892e">
+						<Name>Report_OutletAssortmentAvailability</Name>
+						<Code>000000207</Code>
+						<Description>en = 'Outlet assortment availability'; ru = 'Отчет о наличии ассортимента в ТТ'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="3499ea12-38e7-483e-a81c-4624f8c860da">
+						<Name>Report_OutletPhotosReport</Name>
+						<Code>000000204</Code>
+						<Description>en = 'Outlet photos report'; ru = 'Отчет по фото сделанным в торговой точке'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="b53b67ca-8f9d-4b1f-a69a-db9746886217">
+						<Name>Report_OutletWithoutCoordinates</Name>
+						<Code>000000218</Code>
+						<Description>en = 'Outlet without coordinats'; ru = 'Торговые точки без координат'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="33f411c4-cff3-4c05-a7f0-24326b5980bc">
+						<Name>Report_OutletsStatuses</Name>
+						<Code>000000197</Code>
+						<Description>en = 'Outlets statuses'; ru = 'Статусы торговых точек'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="97ddb6a5-f1f5-4ca3-b475-8b6118981339">
+						<Name>Report_PlanFactSKUStockReport</Name>
+						<Code>000000206</Code>
+						<Description>en = 'Plan fact SKU stock report'; ru = 'Отчет о соответствии фактических товарных остатков плановым показателям'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="13b2d13f-6913-41cb-bbf5-962bb4785a9f">
+						<Name>Report_ShowOutletsOnMap</Name>
+						<Code>000000219</Code>
+						<Description>en= 'Show outlets on map'; ru = 'Торговые точки на карте'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="1a457f28-d955-405e-b35c-546dc4459e8b">
+		<Name>Section_Questioning</Name>
+		<Code>000000051</Code>
+		<Description>en = 'Questioning'; ru = 'Анкетирование'</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="0f48e3b9-c969-4485-9ac1-961e34c884dc">
+				<Name>Catalogs_Section_Questioning</Name>
+				<Code>000000177</Code>
+				<Description>en = 'Catalogs'; ru = 'Справочники'</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="f31cfcc9-12b3-4a4f-b0a7-a9d78ea0ad32">
+						<Name>Catalog_QuestionsGroups</Name>
+						<Code>000000150</Code>
+						<Description>en = 'Questions groups'; ru = 'Группы вопросов'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="5e9495fa-5676-409c-93db-96689a2fde62">
+						<Name>Catalog_Questions</Name>
+						<Code>000000151</Code>
+						<Description>en = 'Questions'; ru = 'Вопросы'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="4cedc8fb-cabd-49f8-8af4-e5720f120a26">
+				<Name>Documents_Section_Questioning</Name>
+				<Code>000000176</Code>
+				<Description>en = 'Documents'; ru = 'Документы'</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="072309fd-2947-472c-b407-e5a96759f2f9">
+						<Name>Document_Questionnaire</Name>
+						<Code>000000149</Code>
+						<Description>en = 'Questionnaire'; ru = 'Анкета'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="2b22efb7-fb5f-4cbe-ad8a-7491481ef69b">
+				<Name>Reports_Section_Questioning</Name>
+				<Code>000000190</Code>
+				<Description>en = 'Reports'; ru = 'Отчеты'</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="4478d122-6765-4501-82c8-238f5475ccec">
+						<Name>Report_PriceMonitoring</Name>
+						<Code>000000201</Code>
+						<Description>en = 'Price monitoring'; ru = 'Мониторинг цен'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="77992fb1-2802-447e-acae-485d493f79ba">
+						<Name>Report_PromoActionsReport</Name>
+						<Code>000000203</Code>
+						<Description>en = 'Promo actions report'; ru = 'Отчет по промо акциям'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="1f74408b-9a3a-4ff6-a48e-a9825479e681">
+						<Name>Report_QuestionsOnOutlets</Name>
+						<Code>000000193</Code>
+						<Description>en = 'Report on questions in questionnaires (questions on outlets)'; ru = 'Отчет по вопросам анкет (вопросы по ТТ)'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="44889c2f-64ac-4b8a-84f2-2c8601b6da6b">
+						<Name>Report_QuestionsOnSKUs</Name>
+						<Code>000000191</Code>
+						<Description>en = 'Report on questions in questionnaires (questions on SKUs)'; ru = 'Отчет по вопросам анкет (вопросы по номенклатуре)'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="d5497ec1-5e37-410f-b737-f096f08cf774">
+						<Name>Report_ShelfSpaceShare</Name>
+						<Code>000000202</Code>
+						<Description>en = 'Shelf space share'; ru = 'Отчет о доле полочного пространства'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="1ddf906f-3ca9-48fc-b627-c27dcc539158">
+						<Name>Report_SKUChangeAnalysis</Name>
+						<Code>000000192</Code>
+						<Description>en = 'SKU change in outlets analysis'; ru = 'Изменения товаров в торговых точках'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="1e66f1a9-2ecc-48ef-a72b-4340c76c534a">
+						<Name>Report_SKUsStockInOutlet</Name>
+						<Code>000000200</Code>
+						<Description>en = 'SKUs stock in outlet'; ru = 'Остатки товара в магазине'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="ae0f6b4e-174b-406f-8820-d6cc587ed8d5">
+		<Name>Section_SKUs</Name>
+		<Code>000000107</Code>
+		<Description>en = 'SKUs'; ru = 'Номенклатура'</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="745c2096-2c7c-4579-a40a-cd5f7891bfaf">
+				<Name>Catalogs_Section_SKUs</Name>
+				<Code>000000179</Code>
+				<Description>en = 'Catalogs'; ru = 'Справочники'</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="1f5b53b0-9ab9-45c0-9472-4c8df02fc12d">
+						<Name>Catalog_Brands</Name>
+						<Code>000000152</Code>
+						<Description>en = 'Brands'; ru = 'Бренды'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="6f549b2f-1192-4355-95ee-8013cccad0b9">
+						<Name>Catalog_SKUsFeatures</Name>
+						<Code>000000154</Code>
+						<Description>en = 'SKUs features'; ru = 'Характеристики номенклатуры'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="fb4c645f-1208-4ef8-b52c-ffc61838eb17">
+						<Name>Catalog_SKUsGroups</Name>
+						<Code>000000155</Code>
+						<Description>en = 'SKUs groups'; ru = 'Группы номенклатуры'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="097eaa6f-1fa1-4fc1-91d9-dfcd37db2540">
+						<Name>Catalog_SKUsPropertiesValues</Name>
+						<Code>000000199</Code>
+						<Description>en = 'SKUs properties values'; ru = 'Значения свойств характеристик'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="ae72ff06-2034-46ec-876c-a217a0ae96ce">
+						<Name>Catalog_SKUsProperties</Name>
+						<Code>000000198</Code>
+						<Description>en = 'SKUs properties'; ru = 'Свойства номенклатуры'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="a6f7b063-17c2-4bfb-9e0e-cc1681715beb">
+						<Name>Catalog_SKUs</Name>
+						<Code>000000156</Code>
+						<Description>en = 'SKUs'; ru = 'Номенклатура'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="3f709314-1e2f-4dc2-8bfe-b424b2063e5a">
+						<Name>Catalog_Stocks</Name>
+						<Code>000000157</Code>
+						<Description>en = 'Stocks'; ru = 'Склады'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="fdbe130c-48cc-4388-98ff-d93459307612">
+						<Name>Catalog_UnitsOfMeasures</Name>
+						<Code>000000158</Code>
+						<Description>en = 'Units of measures'; ru = 'Единицы измерений'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="d42209b8-2f91-4702-9e9f-8a5f767d9496">
+				<Name>Documents_Section_SKUs</Name>
+				<Code>000000178</Code>
+				<Description>en = 'Documents'; ru = 'Документы'</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="01511f6c-206f-4302-9cb9-b4a28ea7de40">
+						<Name>Document_PriceList</Name>
+						<Code>000000153</Code>
+						<Description>en = 'Price list'; ru = 'Прайс-лист'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="1ba0a904-7d72-4901-88e2-07e86e4b20be">
+		<Name>Section_Users</Name>
+		<Code>000000136</Code>
+		<Description>en = 'Users'; ru = 'Пользователи'</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="38f939cb-939d-4d39-a84a-fe6764ac8e37">
+				<Name>Catalogs_Section_Users</Name>
+				<Code>000000180</Code>
+				<Description>en = 'Catalogs'; ru = 'Справочники'</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="8576497f-d52c-4e30-a332-a0b38b1431d2">
+						<Name>Catalog_Positions</Name>
+						<Code>000000159</Code>
+						<Description>en = 'Positions'; ru = 'Должности'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="4d4a655a-236c-4cf7-97d3-6685c73ebef6">
+						<Name>Catalog_RolesOfUsers</Name>
+						<Code>000000160</Code>
+						<Description>en = 'Roles of users'; ru = 'Роли пользователей'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="95a41ddd-9102-4e5e-b119-ef7746ca8e49">
+						<Name>Catalog_Users</Name>
+						<Code>000000161</Code>
+						<Description>en = 'Users'; ru = 'Пользователи'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="c93cc8d6-50f7-4c48-b5f2-05985bac01d2">
+		<Name>Section_Visits</Name>
+		<Code>000000016</Code>
+		<Description>en = 'Visits'; ru = 'Визиты'</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="8a2c98d1-4e4b-4c5b-b157-191518f28391">
+				<Name>Catalogs_Section_Visits</Name>
+				<Code>000000181</Code>
+				<Description>en = 'Catalogs'; ru = 'Справочники'</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="54e08841-f64a-45ff-9199-a63567081e85">
+						<Name>Catalog_ReasonsForNotOfTakingOrder</Name>
+						<Code>000000164</Code>
+						<Description>en = 'Reasons for not of taking order'; ru = 'Причины не взятия заказа'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="9ed2d240-6e5e-45f0-ab05-91066b7e5828">
+						<Name>Catalog_ReasonsForVisit</Name>
+						<Code>000000165</Code>
+						<Description>en = 'Reasons for visit'; ru = 'Причины внепланового визита'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="60261b7a-7f21-4614-9918-17f043fe0893">
+				<Name>Documents_Section_Visits</Name>
+				<Code>000000182</Code>
+				<Description>en = 'Documents'; ru = 'Документы'</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="05b356a3-f958-43d4-ba60-f78a0023f244">
+						<Name>Document_AccountReceivable</Name>
+						<Code>000000162</Code>
+						<Description>en = 'Account receivable'; ru = 'Дебиторская задолженность'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="786e3b9b-5072-4746-818a-e7de559de643">
+						<Name>Document_Encashment</Name>
+						<Code>000000163</Code>
+						<Description>en = 'Encashment'; ru = 'Инкассация'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="36619a70-7031-4ef2-8ad9-e173be75958f">
+						<Name>Document_Task</Name>
+						<Code>000000166</Code>
+						<Description>en = 'Task'; ru = 'Задача'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="ee15ef07-4f6d-477a-82c5-780479ebfa5d">
+						<Name>Document_VisitPlan</Name>
+						<Code>000000167</Code>
+						<Description>en = 'Visit plan'; ru = 'План визитов'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="b699d7af-edd6-4bb9-83bb-bf31510d5d0b">
+						<Name>Document_Visit</Name>
+						<Code>000000168</Code>
+						<Description>en = 'Visit'; ru = 'Визит'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="6d3c8498-e2bd-49bd-99c4-e0e0314e9d30">
+				<Name>Reports_Section_Visits</Name>
+				<Code>000000183</Code>
+				<Description>en = 'Reports'; ru = 'Отчеты'</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="910159b4-f805-466a-93db-23e2e7c2bbda">
+						<Name>Report_AccountReceivable</Name>
+						<Code>000000205</Code>
+						<Description>en = 'Account receivable'; ru = 'Дебиторская задолженность'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="f0fe6e31-5dc2-4226-af8c-1f8613a2c6f8">
+						<Name>Report_VisitsAnalysis</Name>
+						<Code>000000184</Code>
+						<Description>en = 'Analysis of visits'; ru = 'Анализ визитов'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="4bf9ee7c-4ab6-4743-a0d5-e7bf9de657c6">
+						<Name>Report_Encashment</Name>
+						<Code>000000186</Code>
+						<Description>en = 'Encashment'; ru = 'Инкассация'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="9e698329-19c7-467c-befb-6cc29d0a016c">
+						<Name>Report_TaskReport</Name>
+						<Code>000000217</Code>
+						<Description>en = 'Task report'; ru = 'Отчет по задачам'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="24507939-3d7b-43ee-a35d-3123448d4de5">
+						<Name>Report_VisitEfficiency</Name>
+						<Code>000000189</Code>
+						<Description>en = 'Visit efficiency'; ru = 'Эффективность визитов'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="066d66d8-4b4d-41b4-8288-c52c0eca91df">
+						<Name>Report_VisitResults</Name>
+						<Code>000000188</Code>
+						<Description>en = 'Visit results'; ru = 'Результаты визитов'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="c9b8df3f-f04d-451b-8b6e-acb4b44e861f">
+						<Name>Report_VisitMonitoring</Name>
+						<Code>000000216</Code>
+						<Description>en = 'VisitMonitoring'; ru = 'Мониторинг посещений'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="44201e7a-63b4-486d-868c-c3b99bda598a">
+						<Name>Report_VisitsOnMap</Name>
+						<Code>000000185</Code>
+						<Description>en = 'Visits on map'; ru = 'Визиты на карте'</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

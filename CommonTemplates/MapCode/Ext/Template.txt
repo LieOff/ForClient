@@ -1,0 +1,335 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	html {
+		height: 100%;
+	}
+
+	body {
+		height: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	p {
+		margin-bottom: 0.1em;
+		margin-top: 0.1em;
+	}
+
+	.invis {
+		display: none;
+	}
+
+	#mapdiv {
+		width: 100%;
+		height: 100%;
+	}
+
+	</style>
+	<meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+	<script src="http://maps.google.com/maps/api/js?sensor=true&amp;v=3.22"></script>
+	<script type="text/javascript">
+	var markers = [];
+	var pathCoordinates = [];
+	var pathInfo = [];
+	var circles = [];
+	var path;
+	var map;
+	var geocoder;
+	var infowindow;
+	function initMap() {
+		geocoder = new google.maps.Geocoder();
+
+		var mapdiv = document.getElementById('mapdiv');
+		var mapOptions = {
+			zoom: 11,
+			panControl: false,
+			streetViewControl: false,
+			overviewMapControl: false,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		}
+		map = new google.maps.Map(mapdiv, mapOptions);
+
+		initMapCenterOnAddress();
+
+		if (isSingleMarker()) {
+			google.maps.event.addListener(map, 'click', function(event) {
+				addMarker(event.latLng, map);
+			});
+		}
+
+		google.maps.event.addListenerOnce(map, 'idle', function() {
+			if (getLastMarkerLat() && getLastMarkerLng()) {
+				setMapCenter();
+			}
+
+			// На случай, если мы подобавляли маркеров до того как карта была инициализирована
+			// мы явно говорим всем маркерам, что они принадлежат этой карте
+			for (var i = 0; i < markers.length; i++) {
+				markers[i].setMap(map);
+			}
+
+			for (var i = 0; i < circles.length; i++) {
+				circles[i].setMap(map);
+			}
+
+			if (path) {
+				path.setMap(map);
+			}
+
+			if (isSingleMarker()) {
+				addMarkerOnCoords();
+			}
+
+		});
+	}
+
+	function setMapCenter() {
+		map.setCenter(new google.maps.LatLng({lat: getLastMarkerLat(), lng: getLastMarkerLng()}));
+	}
+
+	function initMapCenterOnAddress() {
+		geocoder.geocode( {'address': getAddress()}, function(results, status) {
+			if (status == google.maps.GeocoderStatus.OK) {
+				map.setCenter(results[0].geometry.location);
+			} else {
+				geocoder.geocode({'address': "Москва"}, function(results, status) {
+					if (status == google.maps.GeocoderStatus.OK) {
+						map.setCenter(results[0].geometry.location);
+					} else {
+						map.setCenter({lat: getInitialLat(), lng: getInitialLng()})
+					}
+				});
+			}
+		});
+	}
+
+	function addMarkerOnAddress() {
+		geocoder.geocode( {'address': getAddress()}, function(results, status) {
+			if (status == google.maps.GeocoderStatus.OK) {
+				map.setCenter(results[0].geometry.location);
+				addMarker(results[0].geometry.location);
+			} else {
+				alert("Не удалось получить координаты по причине: " + status);
+			}
+		});
+	}
+
+	function addMarkerOnCoords() {
+		if (getLastMarkerLat() && getLastMarkerLng()) {
+			addMarker(new google.maps.LatLng({lat: getLastMarkerLat(), lng: getLastMarkerLng()}), getColor());
+		}
+	}
+
+	function clearPathCoordinates() {
+		pathCoordinates = [];
+	}
+
+	function addPathCoordinates() {
+		if (getLastMarkerLat() && getLastMarkerLng()) {
+			pathCoordinates.push({lat: getLastMarkerLat(), lng: getLastMarkerLng()});
+			pathInfo.push(getAdditionalInfo());
+		}
+	}
+
+	function showPath() {
+
+		var lineSymbol = {
+			path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW
+		};
+		path = new google.maps.Polyline({
+			path: pathCoordinates,
+			suppressUndo: true,
+			editable: true,
+			dragable: false,
+			geodesic: true,
+			strokeColor: '#FF0000',
+			strokeOpacity: 1.0,
+			strokeWeight: 2,
+			icons: [{
+				icon: lineSymbol,
+				offset: '90%'
+			}]
+		});
+		path.setMap(map);
+
+		google.maps.event.addListener(path, 'click', function(event) {
+			if (infowindow) {
+				infowindow.close();
+			}
+			if (event.vertex != undefined) {
+				infowindow = new google.maps.InfoWindow({
+					content: pathInfo[event.vertex],
+					maxWidth: 100
+				});
+				infowindow.setPosition(event.latLng);
+				infowindow.open(map);
+			}
+		});
+
+		google.maps.event.addListener(path, 'mousedown', function(event) {
+			if (event.vertex != undefined) {
+				google.maps.event.addListenerOnce(path.getPath(), 'set_at', function(vertex) {
+					this.setAt(vertex, event.latLng);
+				});
+			}
+			if (event.edge != undefined) {
+				google.maps.event.addListenerOnce(path.getPath(), 'insert_at', function(edge) {
+					this.removeAt(edge);
+				});
+			}
+		});
+
+	}
+
+	function clearPath() {
+		if (path) {
+			path.setMap(null);
+		}
+	}
+
+	function addMarker(location, color) {
+
+		if (isSingleMarker()) {
+			clearMarkers();
+		}
+
+		var newMarker = new google.maps.Marker({
+			position: location,
+			map: map
+		});
+		
+		if (!(isSingleMarker())) {
+			
+			var content = document.getElementById("description").innerHTML;
+			
+			if (content) {
+				newMarker.addListener('mouseover', function() {
+					if (infowindow) {
+						infowindow.close();
+					}
+					infowindow = new google.maps.InfoWindow({
+						content: content,
+						maxWidth: 300
+					});
+					
+					infowindow.open(map, newMarker);
+				});
+			}
+			
+			var fullinfo = document.getElementById("fullInfo").innerHTML;
+			
+			if (fullInfo) {
+				newMarker.addListener('click', function() {
+					if (infowindow) {
+						infowindow.close();
+					}
+					infowindow = new google.maps.InfoWindow({
+						content: fullinfo,
+						maxWidth: 300
+					});
+					infowindow.open(map, newMarker);
+				});
+			}
+		}
+		
+		document.getElementById("lastMarkerLat").innerHTML = location.lat();
+		document.getElementById("lastMarkerLng").innerHTML = location.lng();
+
+		markers.push(newMarker);
+	}
+
+	function addStartCircle() {
+		addCircle(new google.maps.LatLng({lat: getLastMarkerLat(), lng: getLastMarkerLng()}));
+	}
+
+	function addCircle(location) {
+		var circle = new google.maps.Marker({
+			position: location,
+			map: map,
+			icon: {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 7
+			}
+		});
+		circles.push(circle);
+	}
+
+	function clearMarkers() {
+		for (var i = 0; i < markers.length; i++) {
+			markers[i].setMap(null);
+		}
+	}
+
+
+	function clearCircles() {
+		for (var i = 0; i < circles.length; i++) {
+			circles[i].setMap(null);
+		}
+	}
+
+	function value(varName) {
+		return document.getElementById(varName).innerHTML;
+	}
+
+	function getColor() {
+		return value("color");
+	}
+
+	function isSingleMarker() {
+		return !!(value("singleMarker"));
+	}
+
+	function getAddress() {
+		return value("address");
+	}
+
+	function getLastMarkerLat() {
+		return Number(value("lastMarkerLat"));
+	}
+
+	function getLastMarkerLng() {
+		return Number(value("lastMarkerLng"));
+	}
+
+	function getAdditionalInfo() {
+		return value("additionalInfo");
+	}
+
+	function getInitialLat() {
+		return Number(value("initialLat"));
+	}
+
+	function getInitialLng() {
+		return Number(value("initialLng"));
+	}
+
+	</script>
+	
+</head>
+<body onload="initMap()">
+	<div id="mapdiv"></div>
+	<div id="singleMarker" class="invis"></div>
+	<input type=button style="display: none" id="addMarkerOnCoords" onclick="addMarkerOnCoords()" />
+	<input type=button style="display: none" id="clearMarkers" onclick="clearMarkers()" />
+	<input type=button style="display: none" id="setMapCenter" onclick="setMapCenter()" />
+	<input type=button style="display: none" id="addPathCoordinates" onclick="addPathCoordinates()" />
+	<input type=button style="display: none" id="clearPathCoordinates" onclick="clearPathCoordinates()" />
+	<input type=button style="display: none" id="showPath" onclick="showPath()" />
+	<input type=button style="display: none" id="clearPath" onclick="clearPath()" />
+	<input type=button style="display: none" id="addMarkerOnAddress" onClick="addMarkerOnAddress()" />
+	<input type=button style="display: none" id="addStartCircle" onClick="addStartCircle()" />
+	<input type=button style="display: none" id="clearCircles" onClick="clearCircles()" />
+	<input type=button style="display: none" id="debug" onclick="debug()" />
+	<div id="lastMarkerLat" class="invis"></div>
+	<div id="lastMarkerLng" class="invis"></div>
+	<div id="additionalInfo" class="invis"></div>
+	<div id="description" class="invis"></div>
+	<div id="fullInfo" class="invis"></div>
+	<div id="color" class="invis"></div>
+	<div id="address" class="invis"></div>
+	<div id="initialLat" class="invis">55.755</div>
+	<div id="initialLng" class="invis">37.617</div>
+</body>
+</html>

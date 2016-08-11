@@ -1,0 +1,2386 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<ChildItems>
+			<Button name="FormCommonCommandCreateTasks" id="61">
+				<Type>CommandBarButton</Type>
+				<CommandName>CommonCommand.CreateTasks</CommandName>
+				<ExtendedTooltip name="FormCommonCommandCreateTasksExtendedTooltip" id="143"/>
+			</Button>
+			<Button name="FormCommonCommandHistoryTask" id="62">
+				<Type>CommandBarButton</Type>
+				<CommandName>CommonCommand.HistoryTask</CommandName>
+				<ExtendedTooltip name="FormCommonCommandHistoryTaskExtendedTooltip" id="144"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">AfterWrite</Event>
+		<Event name="AfterWriteAtServer">AfterWriteAtServer</Event>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnReadAtServer">OnReadAtServer</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="BeforeWrite">BeforeWrite</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeWriteAtServer">BeforeWriteAtServer</Event>
+		<Event name="OnWriteAtServer">OnWriteAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Pages" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="PagesExtendedTooltip" id="159"/>
+			<ChildItems>
+				<Page name="GroupMasterData" id="232">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Master data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные данные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Primбrnн data</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group master data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group master data</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupMasterDataExtendedTooltip" id="233"/>
+					<ChildItems>
+						<UsualGroup name="CodeGroup" id="58">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Code group</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Kуd skupiny</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Code group</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Kуd skupiny</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="CodeGroupExtendedTooltip" id="145"/>
+							<ChildItems>
+								<InputField name="Code" id="1">
+									<DataPath>Object.Code</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="CodeContextMenu" id="2"/>
+									<ExtendedTooltip name="CodeExtendedTooltip" id="146"/>
+								</InputField>
+								<InputField name="OutletStatus" id="121">
+									<DataPath>Object.OutletStatus</DataPath>
+									<ContextMenu name="OutletStatusContextMenu" id="122"/>
+									<ExtendedTooltip name="OutletStatusExtendedTooltip" id="147"/>
+									<Events>
+										<Event name="OnChange">OutletStatusOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="ClosingCause" id="123">
+									<DataPath>Object.ClosingCause</DataPath>
+									<Visible>false</Visible>
+									<Width>1</Width>
+									<ContextMenu name="ClosingCauseContextMenu" id="124"/>
+									<ExtendedTooltip name="ClosingCauseExtendedTooltip" id="148"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Description" id="3">
+							<DataPath>Object.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="DescriptionContextMenu" id="4"/>
+							<ExtendedTooltip name="DescriptionExtendedTooltip" id="149"/>
+						</InputField>
+						<InputField name="Owner" id="5">
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="OwnerContextMenu" id="6"/>
+							<ExtendedTooltip name="OwnerExtendedTooltip" id="150"/>
+						</InputField>
+						<InputField name="Type" id="7">
+							<DataPath>Object.Type</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="TypeContextMenu" id="8"/>
+							<ExtendedTooltip name="TypeExtendedTooltip" id="151"/>
+						</InputField>
+						<InputField name="Class" id="9">
+							<DataPath>Object.Class</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ClassContextMenu" id="10"/>
+							<ExtendedTooltip name="ClassExtendedTooltip" id="152"/>
+						</InputField>
+						<InputField name="Distributor" id="11">
+							<DataPath>Object.Distributor</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ChooseType>false</ChooseType>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="DistributorContextMenu" id="12"/>
+							<ExtendedTooltip name="DistributorExtendedTooltip" id="153"/>
+							<Events>
+								<Event name="OnChange">DistributorOnChange</Event>
+								<Event name="StartChoice">DistributorStartChoice</Event>
+							</Events>
+						</InputField>
+						<InputField name="Address" id="13">
+							<DataPath>Object.Address</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="AddressContextMenu" id="14"/>
+							<ExtendedTooltip name="AddressExtendedTooltip" id="154"/>
+						</InputField>
+						<InputField name="ReceivableLimit" id="71">
+							<DataPath>Object.ReceivableLimit</DataPath>
+							<ContextMenu name="ReceivableLimitContextMenu" id="72"/>
+							<ExtendedTooltip name="ReceivableLimitExtendedTooltip" id="155"/>
+						</InputField>
+						<UsualGroup name="Positions" id="73">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Positions</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Должности</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Positions</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Positions</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Должности</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Positions</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="PositionsExtendedTooltip" id="156"/>
+							<ChildItems>
+								<InputField name="Lattitude" id="74">
+									<DataPath>Object.Lattitude</DataPath>
+									<ContextMenu name="LattitudeContextMenu" id="75"/>
+									<ExtendedTooltip name="LattitudeExtendedTooltip" id="157"/>
+									<Events>
+										<Event name="OnChange">LattitudeOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="Longitude" id="76">
+									<DataPath>Object.Longitude</DataPath>
+									<ContextMenu name="LongitudeContextMenu" id="77"/>
+									<ExtendedTooltip name="LongitudeExtendedTooltip" id="158"/>
+									<Events>
+										<Event name="OnChange">LongitudeOnChange</Event>
+									</Events>
+								</InputField>
+								<Button name="SetCoordinates" id="438">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.SetCoordinates</CommandName>
+									<ExtendedTooltip name="SetCoordinatesExtendedTooltip" id="439"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="GroupDetails" id="90">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Details</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизиты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Detaily</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group details</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group details</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupDetailsExtendedTooltip" id="179"/>
+					<ChildItems>
+						<InputField name="LegalName" id="91">
+							<DataPath>Object.LegalName</DataPath>
+							<ContextMenu name="LegalNameContextMenu" id="92"/>
+							<ExtendedTooltip name="LegalNameExtendedTooltip" id="180"/>
+						</InputField>
+						<InputField name="LegalAddress" id="93">
+							<DataPath>Object.LegalAddress</DataPath>
+							<ContextMenu name="LegalAddressContextMenu" id="94"/>
+							<ExtendedTooltip name="LegalAddressExtendedTooltip" id="181"/>
+						</InputField>
+						<InputField name="OwnershipType" id="95">
+							<DataPath>Object.OwnershipType</DataPath>
+							<ContextMenu name="OwnershipTypeContextMenu" id="96"/>
+							<ExtendedTooltip name="OwnershipTypeExtendedTooltip" id="182"/>
+						</InputField>
+						<InputField name="INN" id="97">
+							<DataPath>Object.INN</DataPath>
+							<ContextMenu name="INNContextMenu" id="98"/>
+							<ExtendedTooltip name="INNExtendedTooltip" id="183"/>
+						</InputField>
+						<InputField name="KPP" id="99">
+							<DataPath>Object.KPP</DataPath>
+							<ContextMenu name="KPPContextMenu" id="100"/>
+							<ExtendedTooltip name="KPPExtendedTooltip" id="184"/>
+						</InputField>
+						<InputField name="PhoneNumber" id="101">
+							<DataPath>Object.PhoneNumber</DataPath>
+							<ContextMenu name="PhoneNumberContextMenu" id="102"/>
+							<ExtendedTooltip name="PhoneNumberExtendedTooltip" id="185"/>
+						</InputField>
+						<InputField name="Email" id="103">
+							<DataPath>Object.Email</DataPath>
+							<ContextMenu name="EmailContextMenu" id="104"/>
+							<ExtendedTooltip name="EmailExtendedTooltip" id="186"/>
+						</InputField>
+						<InputField name="WebSite" id="105">
+							<DataPath>Object.WebSite</DataPath>
+							<ContextMenu name="WebSiteContextMenu" id="106"/>
+							<ExtendedTooltip name="WebSiteExtendedTooltip" id="187"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="GroupContractors" id="337">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Contractors</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагенты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group contractors</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupContractorsExtendedTooltip" id="338"/>
+					<ChildItems>
+						<Table name="ContractorsList" id="409">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ContractorsList</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ContractorsListContextMenu" id="410"/>
+							<AutoCommandBar name="ContractorsListCommandBar" id="411">
+								<ChildItems>
+									<Button name="AddContractor" id="431">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.AddContractor</CommandName>
+										<ExtendedTooltip name="AddContractorExtendedTooltip" id="432"/>
+									</Button>
+									<Button name="DeleteContractor" id="433">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.DeleteContractor</CommandName>
+										<ExtendedTooltip name="DeleteContractorExtendedTooltip" id="434"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ContractorsListExtendedTooltip" id="412"/>
+							<SearchStringAddition name="ContractorsListSearchString" id="413">
+								<AdditionSource>
+									<Item>ContractorsList</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ContractorsListSearchStringContextMenu" id="416"/>
+								<ExtendedTooltip name="ContractorsListSearchStringExtendedTooltip" id="417"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ContractorsListViewStatus" id="418">
+								<AdditionSource>
+									<Item>ContractorsList</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ContractorsListViewStatusContextMenu" id="421"/>
+								<ExtendedTooltip name="ContractorsListViewStatusExtendedTooltip" id="422"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ContractorsListSearchControl" id="423">
+								<AdditionSource>
+									<Item>ContractorsList</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ContractorsListSearchControlContextMenu" id="426"/>
+								<ExtendedTooltip name="ContractorsListSearchControlExtendedTooltip" id="427"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="ChoiceProcessing">ContractorsListChoiceProcessing</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ContractorsListContractor" id="428">
+									<DataPath>ContractorsList.Contractor</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ContractorsListContractorContextMenu" id="429"/>
+									<ExtendedTooltip name="ContractorsListContractorExtendedTooltip" id="430"/>
+								</InputField>
+								<CheckBoxField name="ContractorsListDefault" id="435">
+									<DataPath>ContractorsList.Default</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ContractorsListDefaultContextMenu" id="436"/>
+									<ExtendedTooltip name="ContractorsListDefaultExtendedTooltip" id="437"/>
+									<Events>
+										<Event name="OnChange">ContractorsListDefaultOnChange</Event>
+									</Events>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupContacts" id="107">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Contacts</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контакты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Kontakty</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group contacts</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group contacts</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupContactsExtendedTooltip" id="188"/>
+					<ChildItems>
+						<Table name="ContactList" id="368">
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.ContactPersons</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ContactListContextMenu" id="369"/>
+							<AutoCommandBar name="ContactListCommandBar" id="370">
+								<ChildItems>
+									<Button name="ContactListAddContact" id="405">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.AddContact</CommandName>
+										<ExtendedTooltip name="ContactListAddContactExtendedTooltip" id="406"/>
+									</Button>
+									<Button name="ContactListDeleteContact" id="407">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.DeleteContact</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.Delete</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ContactListDeleteContactExtendedTooltip" id="408"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ContactListExtendedTooltip" id="371"/>
+							<SearchStringAddition name="ContactListSearchString" id="372">
+								<AdditionSource>
+									<Item>ContactList</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ContactListSearchStringContextMenu" id="375"/>
+								<ExtendedTooltip name="ContactListSearchStringExtendedTooltip" id="376"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ContactListViewStatus" id="377">
+								<AdditionSource>
+									<Item>ContactList</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ContactListViewStatusContextMenu" id="380"/>
+								<ExtendedTooltip name="ContactListViewStatusExtendedTooltip" id="381"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ContactListSearchControl" id="382">
+								<AdditionSource>
+									<Item>ContactList</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ContactListSearchControlContextMenu" id="385"/>
+								<ExtendedTooltip name="ContactListSearchControlExtendedTooltip" id="386"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ContactListSelection</Event>
+								<Event name="ChoiceProcessing">ContactListChoiceProcessing</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ContactPersonsContactPerson" id="390">
+									<DataPath>Object.ContactPersons.ContactPerson</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ContactPersonsContactPersonContextMenu" id="391"/>
+									<ExtendedTooltip name="ContactPersonsContactPersonExtendedTooltip" id="392"/>
+								</InputField>
+								<LabelField name="ContactPersonsContactPersonPosition" id="396">
+									<DataPath>Object.ContactPersons.ContactPerson.Position</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ContactPersonsContactPersonPositionContextMenu" id="397"/>
+									<ExtendedTooltip name="ContactPersonsContactPersonPositionExtendedTooltip" id="398"/>
+								</LabelField>
+								<LabelField name="ContactPersonsContactPersonPhoneNumber" id="399">
+									<DataPath>Object.ContactPersons.ContactPerson.PhoneNumber</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ContactPersonsContactPersonPhoneNumberContextMenu" id="400"/>
+									<ExtendedTooltip name="ContactPersonsContactPersonPhoneNumberExtendedTooltip" id="401"/>
+								</LabelField>
+								<LabelField name="ContactPersonsContactPersonEmail" id="402">
+									<DataPath>Object.ContactPersons.ContactPerson.Email</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ContactPersonsContactPersonEmailContextMenu" id="403"/>
+									<ExtendedTooltip name="ContactPersonsContactPersonEmailExtendedTooltip" id="404"/>
+								</LabelField>
+								<CheckBoxField name="ContactPersonsNotActual" id="393">
+									<DataPath>Object.ContactPersons.NotActual</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ContactPersonsNotActualContextMenu" id="394"/>
+									<ExtendedTooltip name="ContactPersonsNotActualExtendedTooltip" id="395"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupTerritories" id="65">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Territories</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Территории</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Ъzemн</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group territories</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group territories</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupTerritoriesExtendedTooltip" id="171"/>
+					<ChildItems>
+						<Table name="TerritoriesList" id="66">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>TerritoriesList</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="TerritoriesListContextMenu" id="67"/>
+							<AutoCommandBar name="TerritoriesListCommandBar" id="68">
+								<ChildItems>
+									<Button name="TerritoriesListDelete" id="323">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.TerritoriesList.StandardCommand.Delete</CommandName>
+										<ExtendedTooltip name="TerritoriesListDeleteExtendedTooltip" id="324"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="TerritoriesListExtendedTooltip" id="172"/>
+							<SearchStringAddition name="TerritoriesListSearchString" id="205">
+								<AdditionSource>
+									<Item>TerritoriesList</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="TerritoriesListSearchStringContextMenu" id="206"/>
+								<ExtendedTooltip name="TerritoriesListSearchStringExtendedTooltip" id="207"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="TerritoriesListViewStatus" id="208">
+								<AdditionSource>
+									<Item>TerritoriesList</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="TerritoriesListViewStatusContextMenu" id="209"/>
+								<ExtendedTooltip name="TerritoriesListViewStatusExtendedTooltip" id="210"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="TerritoriesListSearchControl" id="211">
+								<AdditionSource>
+									<Item>TerritoriesList</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="TerritoriesListSearchControlContextMenu" id="212"/>
+								<ExtendedTooltip name="TerritoriesListSearchControlExtendedTooltip" id="213"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeDeleteRow">TerritoriesListBeforeDeleteRow</Event>
+								<Event name="AfterDeleteRow">TerritoriesListAfterDeleteRow</Event>
+								<Event name="OnChange">TerritoriesListOnChange</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="TerritoriesListValue" id="69">
+									<DataPath>TerritoriesList.Value</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="TerritoriesListValueContextMenu" id="70"/>
+									<ExtendedTooltip name="TerritoriesListValueExtendedTooltip" id="173"/>
+									<Events>
+										<Event name="OnChange">TerritoriesListValueOnChange</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupPriceLists" id="80">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Price lists</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прайс-листы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Cenнky</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group price lists</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group price lists</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="GroupPriceListsExtendedTooltip" id="174"/>
+					<ChildItems>
+						<Table name="Prices" id="81">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.Prices</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="PricesContextMenu" id="82"/>
+							<AutoCommandBar name="PricesCommandBar" id="83">
+								<ChildItems>
+									<Button name="PricesDelete" id="325">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.Prices.StandardCommand.Delete</CommandName>
+										<ExtendedTooltip name="PricesDeleteExtendedTooltip" id="326"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="PricesExtendedTooltip" id="175"/>
+							<SearchStringAddition name="PricesSearchString" id="214">
+								<AdditionSource>
+									<Item>Prices</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="PricesSearchStringContextMenu" id="215"/>
+								<ExtendedTooltip name="PricesSearchStringExtendedTooltip" id="216"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="PricesViewStatus" id="217">
+								<AdditionSource>
+									<Item>Prices</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="PricesViewStatusContextMenu" id="218"/>
+								<ExtendedTooltip name="PricesViewStatusExtendedTooltip" id="219"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="PricesSearchControl" id="220">
+								<AdditionSource>
+									<Item>Prices</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="PricesSearchControlContextMenu" id="221"/>
+								<ExtendedTooltip name="PricesSearchControlExtendedTooltip" id="222"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="PricesLineNumber" id="84">
+									<DataPath>Object.Prices.LineNumber</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="PricesLineNumberContextMenu" id="85"/>
+									<ExtendedTooltip name="PricesLineNumberExtendedTooltip" id="176"/>
+								</LabelField>
+								<InputField name="PricesPriceList" id="86">
+									<DataPath>Object.Prices.PriceList</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ChoiceButtonRepresentation>ShowInDropListAndInInputField</ChoiceButtonRepresentation>
+									<ContextMenu name="PricesPriceListContextMenu" id="87"/>
+									<ExtendedTooltip name="PricesPriceListExtendedTooltip" id="177"/>
+									<Events>
+										<Event name="OnChange">PricesPriceListOnChange</Event>
+										<Event name="StartChoice">PricesPriceListStartChoice</Event>
+									</Events>
+								</InputField>
+								<LabelField name="PricesPriceListDescription" id="88">
+									<DataPath>Object.Prices.PriceList.Description</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наименование</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Description</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>cz</v8:lang>
+											<v8:content>Popis</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="PricesPriceListDescriptionContextMenu" id="89"/>
+									<ExtendedTooltip name="PricesPriceListDescriptionExtendedTooltip" id="178"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupParameters" id="64">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Parameters</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Parameters</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group parameters</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group parameters</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="GroupParametersExtendedTooltip" id="160"/>
+					<ChildItems>
+						<UsualGroup name="Param_table" id="129">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Param table</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Param table</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Param table</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Param table</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Param_tableExtendedTooltip" id="161"/>
+							<ChildItems>
+								<Table name="Parameters" id="236">
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Object.Parameters</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ParametersContextMenu" id="237"/>
+									<AutoCommandBar name="ParametersCommandBar" id="238">
+										<ChildItems>
+											<Button name="UpdateParameters" id="264">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.UpdateParameters</CommandName>
+												<ExtendedTooltip name="UpdateParametersExtendedTooltip" id="265"/>
+											</Button>
+											<Button name="ClearValue" id="273">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Command.ClearValue</CommandName>
+												<ExtendedTooltip name="ClearValueExtendedTooltip" id="274"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ParametersExtendedTooltip" id="239"/>
+									<SearchStringAddition name="ParametersSearchString" id="240">
+										<AdditionSource>
+											<Item>Parameters</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ParametersSearchStringContextMenu" id="243"/>
+										<ExtendedTooltip name="ParametersSearchStringExtendedTooltip" id="244"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ParametersViewStatus" id="245">
+										<AdditionSource>
+											<Item>Parameters</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ParametersViewStatusContextMenu" id="248"/>
+										<ExtendedTooltip name="ParametersViewStatusExtendedTooltip" id="249"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ParametersSearchControl" id="250">
+										<AdditionSource>
+											<Item>Parameters</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ParametersSearchControlContextMenu" id="253"/>
+										<ExtendedTooltip name="ParametersSearchControlExtendedTooltip" id="254"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">ParametersSelection</Event>
+										<Event name="OnActivateRow">ParametersOnActivateRow</Event>
+										<Event name="OnStartEdit">ParametersOnStartEdit</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ParametersParameter" id="258">
+											<DataPath>Object.Parameters.Parameter</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ParametersParameterContextMenu" id="259"/>
+											<ExtendedTooltip name="ParametersParameterExtendedTooltip" id="260"/>
+										</InputField>
+										<InputField name="ParametersPresentation" id="266">
+											<DataPath>Object.Parameters.Presentation</DataPath>
+											<ChoiceButton>true</ChoiceButton>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="ParametersPresentationContextMenu" id="267"/>
+											<ExtendedTooltip name="ParametersPresentationExtendedTooltip" id="268"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Preview" id="125">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Preview</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Предпросмотр</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Nбhled</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Preview</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Предпросмотр</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Nбhled</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="PreviewExtendedTooltip" id="168"/>
+							<ChildItems>
+								<CommandBar name="GroupParametersSnapshotCommands" id="335">
+									<Title>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group parameters snapshot commands</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group parameters snapshot commands</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="GroupParametersSnapshotCommandsExtendedTooltip" id="336"/>
+									<ChildItems>
+										<Button name="PictureAddressContextMenuOpenParameterSnapshot" id="329">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.OpenParameterSnapshot</CommandName>
+											<ExtendedTooltip name="PictureAddressContextMenuOpenParameterSnapshotExtendedTooltip" id="330"/>
+										</Button>
+									</ChildItems>
+								</CommandBar>
+								<PictureField name="PictureAddress" id="127">
+									<DataPath>PictureAddress</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<PictureSize>AutoSize</PictureSize>
+									<Zoomable>true</Zoomable>
+									<Hyperlink>true</Hyperlink>
+									<NonselectedPictureText>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Add snapshot</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Добавить фотоснимок</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>cz</v8:lang>
+											<v8:content>Novй foto</v8:content>
+										</v8:item>
+									</NonselectedPictureText>
+									<TextColor>#C0C0C0</TextColor>
+									<ContextMenu name="PictureAddressContextMenu" id="128"/>
+									<ExtendedTooltip name="PictureAddressExtendedTooltip" id="169"/>
+									<Events>
+										<Event name="Click">PictureAddressClick</Event>
+									</Events>
+								</PictureField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="GroupOutletSnapshots" id="275">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Snapshots</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изображения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Snapshots</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group outlet snapshots</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Group outlet snapshots</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="GroupOutletSnapshotsExtendedTooltip" id="276"/>
+					<ChildItems>
+						<Table name="Snapshots" id="277">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.Snapshots</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="SnapshotsContextMenu" id="278"/>
+							<AutoCommandBar name="SnapshotsCommandBar" id="279">
+								<ChildItems>
+									<Button name="DeleteSnapshots" id="327">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.Snapshots.StandardCommand.Delete</CommandName>
+										<ExtendedTooltip name="DeleteSnapshotsExtendedTooltip" id="328"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="SnapshotsExtendedTooltip" id="280"/>
+							<SearchStringAddition name="SnapshotsSearchString" id="281">
+								<AdditionSource>
+									<Item>Snapshots</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="SnapshotsSearchStringContextMenu" id="284"/>
+								<ExtendedTooltip name="SnapshotsSearchStringExtendedTooltip" id="285"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="SnapshotsViewStatus" id="286">
+								<AdditionSource>
+									<Item>Snapshots</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="SnapshotsViewStatusContextMenu" id="289"/>
+								<ExtendedTooltip name="SnapshotsViewStatusExtendedTooltip" id="290"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="SnapshotsSearchControl" id="291">
+								<AdditionSource>
+									<Item>Snapshots</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="SnapshotsSearchControlContextMenu" id="294"/>
+								<ExtendedTooltip name="SnapshotsSearchControlExtendedTooltip" id="295"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">SnapshotsSelection</Event>
+								<Event name="OnActivateRow">SnapshotsOnActivateRow</Event>
+								<Event name="OnStartEdit">SnapshotsOnStartEdit</Event>
+								<Event name="AfterDeleteRow">SnapshotsAfterDeleteRow</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="SnapshotsPresentation" id="310">
+									<DataPath>Object.Snapshots.Presentation</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ChoiceButton>true</ChoiceButton>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="SnapshotsPresentationContextMenu" id="311"/>
+									<ExtendedTooltip name="SnapshotsPresentationExtendedTooltip" id="312"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="GroupOutletSnapshotsPreview" id="308">
+							<Title>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Preview</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Предпросмотр</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Nбhled</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group outlet snapshots preview</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>cz</v8:lang>
+									<v8:content>Group outlet snapshots preview</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupOutletSnapshotsPreviewExtendedTooltip" id="309"/>
+							<ChildItems>
+								<CommandBar name="GroupSnapshotCommands" id="333">
+									<Title>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group snapshot commands</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group snapshot commands</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="GroupSnapshotCommandsExtendedTooltip" id="334"/>
+									<ChildItems>
+										<Button name="OutletSnapshotAddressContextMenuOpenSnapshot" id="331">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.OpenSnapshot</CommandName>
+											<ExtendedTooltip name="OutletSnapshotAddressContextMenuOpenSnapshotExtendedTooltip" id="332"/>
+										</Button>
+									</ChildItems>
+								</CommandBar>
+								<PictureField name="OutletSnapshotAddress" id="305">
+									<DataPath>OutletSnapshotAddress</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<PictureSize>AutoSize</PictureSize>
+									<Zoomable>true</Zoomable>
+									<Hyperlink>true</Hyperlink>
+									<NonselectedPictureText>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>No snapshot</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Нет фотоснимка</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>cz</v8:lang>
+											<v8:content>No snapshot</v8:content>
+										</v8:item>
+									</NonselectedPictureText>
+									<TextColor>#C0C0C0</TextColor>
+									<ContextMenu name="OutletSnapshotAddressContextMenu" id="306"/>
+									<ExtendedTooltip name="OutletSnapshotAddressExtendedTooltip" id="307"/>
+									<Events>
+										<Event name="Click">OutletSnapshotAddressClick</Event>
+									</Events>
+								</PictureField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Outlet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<Columns>
+				<AdditionalColumns table="Object.Parameters">
+					<Column name="Presentation" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Value</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Значение</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Hodnota</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="StorageAddress" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Storage address</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Adresa uložiště </v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Extension" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Extension</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Расширение</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Extension</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Type" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Type</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тип</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Typ</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="IsPicture" id="5">
+						<Title>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Is picture</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Is picture</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Object.Snapshots">
+					<Column name="Presentation" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Snapshot</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Изображение</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Foto</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="StorageAddress" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Storage address</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Adresa uložiště </v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Extension" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Extension</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Расширение</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Extension</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Type" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Type</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тип</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Typ</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Object.Contacts"/>
+			</Columns>
+		</Attribute>
+		<Attribute name="TerritoriesList" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Territories list</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Seznam ъzemн</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Value" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Value</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>cz</v8:lang>
+							<v8:content>Hodnota</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Territory</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="PictureAddress" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Picture address</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Picture address</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="PictureExtension" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Picture extension</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Picture extension</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="OutletSnapshotAddress" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Outlet snapshot address</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Outlet snapshot address</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="OutletSnapshotExtension" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Outlet snapshot extension</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Outlet snapshot extension</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="HaveEditParametersRight" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Have edit parameters right</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Have edit parameters right</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ThumbnailSize" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Thumbnail size</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Thumbnail size</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ContractorsList" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Contractors list</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Contractor" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Contractor</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Contractors</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Default" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Default</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По-умолчанию</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ParametersPresentation</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.Parameters.Type</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Snapshot</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>BackColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Text</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Snapshot</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Фотоснимок</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Foto</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ParametersPresentation</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.Parameters.Type</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">WebDAVFailed</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>BackColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Text</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Snapshot load from WebDAV failed</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Не удалось загрузить изображение с WebDAV</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Snapshot load from WebDAV failed</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ParametersPresentation</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.Parameters.Type</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">NotFound</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>BackColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Text</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Snapshot not found on server</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Фотоснимок не найден на сервере</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Foto nebylo nalezeno na serveru</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ParametersPresentation</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.Parameters.Type</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">NotUID</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>BackColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Text</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Error getting snapshot</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ошибка при получении фотоснимка</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Chyba během pořízení foto</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ParametersPresentation</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.Parameters.Type</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">NoSnapshot</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>BackColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Text</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>No snapshot</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Нет фотоснимка</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>No snapshot</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ParametersPresentation</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.Parameters.Type</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">New</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>BackColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Text</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Snapshot is loaded from disk</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Фотоснимок загружен с диска</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Snapshot is loaded from disk</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ParametersPresentation</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.Parameters.Type</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Private</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Text</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Snapshot from "Private"</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Фотоснимок из "Private"</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Snapshot from "Private"</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ParametersPresentation</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.Parameters.Type</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Shared</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Text</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Snapshot from "Shared"</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Фотоснимок из "Shared"</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Snapshot from "Shared"</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>SnapshotsPresentation</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.Snapshots.Type</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">New</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>BackColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Text</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Snapshot is loaded from disk</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Фотоснимок загружен с диска</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Snapshot is loaded from disk</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>SnapshotsPresentation</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.Snapshots.Type</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Private</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Text</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Snapshot from "Private"</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Фотоснимок из "Private"</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Snapshot from "Private"</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>SnapshotsPresentation</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.Snapshots.Type</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Shared</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Text</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Snapshot from "Shared"</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Фотоснимок из "Shared"</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Snapshot from "Shared"</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>SnapshotsPresentation</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.Snapshots.Type</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Snapshot</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>BackColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Text</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Snapshot</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Фотоснимок</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Foto</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>SnapshotsPresentation</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.Snapshots.Type</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">WebDAVFailed</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>BackColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Text</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Snapshot load from WebDAV failed</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Не удалось загрузить изображение с WebDAV</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Snapshot load from WebDAV failed</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>SnapshotsPresentation</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.Snapshots.Type</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">NotFound</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>BackColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Text</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Snapshot not found on server</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Фотоснимок не найден на сервере</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Foto nebylo nalezeno na serveru</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>SnapshotsPresentation</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.Snapshots.Type</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">NotUID</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>BackColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Text</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Error getting snapshot</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ошибка при получении фотоснимка</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>Chyba během pořízení foto</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>SnapshotsPresentation</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Object.Snapshots.Type</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">NoSnapshot</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>BackColor</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Text</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>No snapshot</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Нет фотоснимка</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>cz</v8:lang>
+								<v8:content>No snapshot</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="UpdateParameters" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Update</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Update</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Update parameters</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Update parameters</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>UpdateParameters</Action>
+		</Command>
+		<Command name="ClearValue" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Clear value</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить значение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Vyčistit hodnotu</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Clear value</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить значение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Vyčistit hodnotu</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Clear</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ClearValue</Action>
+		</Command>
+		<Command name="OpenParameterSnapshot" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Open snapshot</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть фотоснимок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Open snapshot</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Open parameter snapshot</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Open parameter snapshot</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Magnifier</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>OpenParameterSnapshot</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="OpenSnapshot" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Open snapshot</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть фотоснимок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Open snapshot</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Open snapshot</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть фотоснимок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Open snapshot</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Magnifier</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>OpenSnapshot</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="AddContractor" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Novэ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add contractor</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>AddContractor</Action>
+		</Command>
+		<Command name="DeleteContractor" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Delete</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Odstranit</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Delete contractor</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>DeleteContractor</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="AddContact" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Novэ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add contact</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>AddContact</Action>
+		</Command>
+		<Command name="DeleteContact" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Delete contact</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Delete contact</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>DeleteContact</Action>
+		</Command>
+		<Command name="SetCoordinates" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Set coordinates</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить координаты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Set coordinates</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить координаты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>SetCoordinates</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ref">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Outlet</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>3:6dbe2ff9-443e-4d86-b703-f689e8d3886a</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

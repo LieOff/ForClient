@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<Subsystem uuid="6e5ed7bd-9f08-4e0b-9181-eeea2713ba09">
+		<Properties>
+			<Name>Reports</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Reports</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>cz</v8:lang>
+					<v8:content>Vэkazy</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.QuestionsOnOutlets</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">c7812be4-b5b9-425a-8759-0843be5b7212</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.SKUChangeAnalysis</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ShowQuestionsOnOutlets</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ShowSKUChangeAnalysis</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ShowQuestionsOnSKUs</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ShowSKUsStockInOutlet</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ShowPriceMonitoring</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ShowShelfSpaceShare</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ShowPromoActionsReport</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ShowOutletPhotosReport</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.OutletPhotosReport</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.PriceMonitoring</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.PromoActionsReport</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ShelfSpaceShare</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.SKUsStockInOutlet</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.QuestionsOnSKUs</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>
